@@ -1,0 +1,10 @@
+{ Token Id: 7238, Name: [c][FF0000]CacheKey[-][/c]
+  Description: [c][FF0000]Unlocks Arcadia Cache on Arcadia Station[-][/c]
+  RemoveOnUse: true
+  CustomIcon: ARC_CacheKey
+}
+{ Token Id: 7239, Name: [c][9370DB]ChampionKey[-][/c]
+  Description: [c][9370DB]Unlocks Elite Vendors at Arcadia Cache[-][/c]
+  RemoveOnUse: true
+  CustomIcon: ARC_ChampionKey
+}

@@ -1,0 +1,272 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.61.5.1874, Playfield Version: 10.0.0 [2446] (Alpha EXPERIMENTAL 10)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+TemperatureDay: -100
+PlayfieldLevel: 10
+Music: space
+Description: Arcadia Station
+PlanetType: Space
+PlayfieldType: Space
+AtmosphereEnabled: False
+Difficulty: 2
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Build: 2449
+Radiation: 1
+PvP: False
+UseFixed: True
+AllowBA: False
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: False
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+POIs:
+   Fixed:
+   -  Type: BA_Admin
+      Prefab: ARC_ARCADIASTATION
+      Mode: Survival
+      Name: Arcadia Station
+      Pos: [-100, -1000, 0]
+      Rot: [0, 0, 0]
+      Faction: Admin
+      InitPower: True
+      Properties:
+      -  Key: Music
+         Value: NebularClouds
+      -  Key: StationInterface
+         Value: "Fuel:1.5,O2:1.2,Warp:1,Ammo:0.7,Repair:8,Shield:1"
+   -  Type: BA_Admin
+      Prefab: ARC_FRESHMARTSPACE
+      Mode: Survival
+      Name: FreshMart
+      Pos: [-1650, -1100, 1450]
+      Rot: [0, 0, 0]
+      Faction: Admin
+      InitPower: True
+      Properties:
+      -  Key: Music
+         Value: NebularClouds
+   -  Type: BA_Admin
+      Prefab: ARC_SMELTINGSTATION
+      Mode: Survival
+      Name: Smelting Station
+      Pos: [1450, -1100, -1650]
+      Rot: [0, 0, 0]
+      Faction: Admin
+      InitPower: True
+      Properties:
+      -  Key: Music
+         Value: NebularClouds
+   -  Type: AsteroidFieldRectangle2
+      Name: Asteroid Field
+      Pos: [0, -2000, 0]
+      Rot: [0, 0, 0]
+   -  Type: AsteroidVoxel02Ice
+      Prefab: AsteroidVoxel02Ice
+      Name: Ice Asteroid
+      Pos: [-5080, 3175, -2750]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Ice
+      Prefab: AsteroidVoxel03Ice
+      Name: Ice Asteroid
+      Pos: [-4236, -3015, 1473]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Ice
+      Prefab: AsteroidVoxel03Ice
+      Name: Ice Asteroid
+      Pos: [-14281, 212, 2223]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Ice
+      Prefab: AsteroidVoxel02Ice
+      Name: Ice Asteroid
+      Pos: [-9134, 1533, 7719]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Ice
+      Prefab: AsteroidVoxel02Ice
+      Name: Ice Asteroid
+      Pos: [3134, 133, 4719]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+
+   FixedPlayerStart:
+   -  Mode: Debug
+      Pos: [0, 500, 0]
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+   -  Mode: Survival
+      Spawn: Structure
+      Structure: ARC_ARCADIASTATION
+      Items: ['SurvivalTool, ConstructorSurvival, AssaultRifle, 5.8mmBullet:200, EVABoost, PowerBar:2, Medikit04:2, Bandages:2, AntibioticOintment:2, MobileAirCon, OxygenGeneratorSmall, BioFuel:5, OxygenBottleSmall:3, TransportationBoost:2', 'SurvivalTool, ConstructorSurvival, AssaultRifle, 5.8mmBullet:200, EVABoost, EnergyCell:2, PowerBar, Medikit04:2, Bandages, AntibioticOintment, MobileAirCon, OxygenGeneratorSmall, BioFuel:2, OxygenBottleSmall:3, TransportationBoost:2', 'SurvivalTool, ConstructorSurvival, IronIngot:5, CopperIngot:5, SiliconIngot:5, GoldCoins:50, EVABoost, EnergyCell:5, PowerBar, Medikit04, OxygenBottleSmall:5, TransportationBoost:2', '#FreshStart: SurvivalTool, Medikit04, OxygenBottleSmall:3, IronIngot:5, CopperIngot:5, SiliconIngot:5']
+      Status: ['Food:500, Health: 1000', 'Food:500, Health: 500', 'Food:350, Health: 350', '#FreshStart:Food:500, Health: 250']
+      Armor: ArmorLight
+DroneBaseSetup:
+   Fixed:
+   -  Name: MainDroneBase
+      Pos: [-5817, -1734, -1846]
+      DroneOnDuty:
+      -  Name: SpaceDronePlasma
+         Pos: [-3282, -281, 3098]
+         Radius: 685
+      -  Name: SpaceDroneLaser
+         Pos: [-501, 1756, 7458]
+         Radius: 595
+      -  Name: SpaceDronePlasma
+         Pos: [630, 982, 5959]
+         Radius: 731
+      -  Name: SpaceDroneLaser
+         Pos: [4573, -1073, -1557]
+         Radius: 589
+      SpaceVessel:
+      -  Name: PolarisScienceVessel
+         Faction: Polaris
+         FixedMaxSpeed: 10
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [5000, 1400, 4100]
+            - [3500, 1400, 4400]
+            - [3500, 1400, 5000]
+            - [3800, 1400, 6000]
+            - [-5000, 1400, 4100]
+            - [-3500, 1400, 4400]
+            - [-3500, 1400, 5000]
+            - [-3800, 1400, 6000]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 4
+            Extra: 0
+      -  Name: PolarisScienceVessel
+         Faction: Polaris
+         FixedMaxSpeed: 10
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-5000, 800, 4100]
+            - [-3500, 800, 4400]
+            - [-3500, 800, 5000]
+            - [-3800, 800, 6000]
+            - [5000, 800, 4100]
+            - [3500, 800, 4400]
+            - [3500, 800, 5000]
+            - [3800, 800, 6000]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 4
+            Extra: 0
+      -  Name: PolarisScienceVessel
+         Faction: Polaris
+         FixedMaxSpeed: 8
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [5300, 1000, 4175]
+            - [3100, 1000, 4275]
+            - [3400, 1000, 5075]
+            - [3700, 1000, 6075]
+            - [5300, 800, -4175]
+            - [3100, 800, -4475]
+            - [3300, 800, -5075]
+            - [3400, 800, -6075]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 4
+            Extra: 0
+      -  Name: PolarisFueler
+         Faction: Polaris
+         FixedMaxSpeed: 15
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-2685, 3057, -4518]
+            - [-5080, 2975, -2750]
+            - [-6460, 2725, -710]
+            - [-4236, 2815, 1473]
+            - [-3807, 2625, 4738]
+            - [-432, 2927, 5650]
+            - [2433, 2730, 6167]
+            - [4671, 2660, 4773]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 12
+            Extra: 0
+      -  Name: PolarisScienceVessel
+         Faction: Polaris
+         FixedMaxSpeed: 10
+         Mission: SpacePatrol
+         Properties:
+         -  Key: RegenAfter
+            Value: 45
+         RangePatrol:
+            Position3D: [-6128.742, -7945.16, -173.4829]
+            Radius: 882
+         Immobile: {}
+         Freighter: {}
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 15
+            Extra: 1
+      -  Name: SyndicateSpaceTron
+         Faction: Pirates
+         FixedMaxSpeed: 15
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [15300, 1000, 4175]
+            - [13100, 1000, 4275]
+            - [13400, 1000, 5075]
+            - [13700, 1000, 6075]
+            - [15300, 800, -4175]
+            - [13100, 800, -4475]
+            - [13300, 800, -5075]
+            - [13400, 800, -6075]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 4
+            Extra: 0

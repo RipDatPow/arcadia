@@ -1,0 +1,2719 @@
+  - ChapterTitle: pda_8mWwuoC
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_qimKuCY
+        Actions:
+          - ActionTitle: pda_08Ge0WU
+            Description: pda_VKiCW88
+            Check: WaitAction
+            Amount: 3
+    Description: pda_KC8EWeO
+    PictureFile: ArcArcadia.jpg
+  - ChapterTitle: pda_uue2C2p
+    Category: Tutorial
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_titK1iK
+        Actions:
+          - ActionTitle: pda_0SuKW8W
+            Description: pda_WaGCgOG
+            Check: WaitAction
+            Amount: 3
+        StartMessage: mbox;20|pda_CAU4O8u
+      - TaskTitle: pda_rL8iu48
+        Actions:
+          - ActionTitle: pda_aWG04aC
+            Description: pda_TCKOGm0
+            Check: WaitAction
+            Amount: 3
+        StartMessage: mbox;20|pda_QCGC8S4
+      - TaskTitle: pda_08ummqG
+        Actions:
+          - ActionTitle: pda_qM4i4IS
+            Description: pda_C4CmO64
+            Check: WaitAction
+            Amount: 3
+        StartMessage: mbox;20|pda_jCi0mG8
+    Description: pda_iCGmauO
+    PictureFile: ArcArcadia.jpg
+  - ChapterTitle: pda_u4u8q0H
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_rauWKq8
+        Actions:
+          - ActionTitle: pda_eGeHKaG
+            Description: pda_q4GGOaC
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - Resort
+      - TaskTitle: pda_uOeSS0i
+        Actions:
+          - ActionTitle: pda_4m8iOCC
+            Check: NearUnit
+            GuidingDistance: 40
+            TriggerDistance: 40
+            Description: pda_4OqaGO4
+            Names:
+              - Resort
+              - START
+        CompletedMessage: mbox;20|pda_KeqeSy8
+      - TaskTitle: pda_S9mKueL
+        Actions:
+          - ActionTitle: pda_iCqWKCm
+            Description: pda_m4mSSaS
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 6
+            Names:
+              - Resort
+              - Resort Manager
+        StartMessage: mbox;20|pda_uWOMCKU
+      - TaskTitle: pda_eSOoOo4
+        Actions:
+          - ActionTitle: pda_WWM0wS4
+            Description: pda_0caeCaf
+            Check: DialogOption
+            Names:
+              - HC_ResortManagement_StartQuest_5
+            Value: 1
+      - TaskTitle: pda_eWG3GqC
+        Actions:
+          - ActionTitle: pda_00OGuUK
+            Description: pda_4uuCuEo
+            Check: Signal
+            Names:
+              - enableRadio
+      - TaskTitle: pda_Oia8tuS
+        Actions:
+          - ActionTitle: pda_0qGG4eS
+            Description: pda_Suq4G88
+            Check: Signal
+            Names:
+              - RadioPowerOn
+            CompletedMessage: mbox;20|pda_KWeCqam
+      - TaskTitle: pda_OGWSeWS
+        Actions:
+          - ActionTitle: pda_2uo5Wmi
+            Description: pda_mGi0F8S
+            Check: NearUnit
+            GuidingDistance: 50
+            TriggerDistance: 12
+            Names:
+              - Resort
+              - Emergency Exit
+        StartMessage: mbox;20|pda_Pu88uGU
+        CompletedMessage: mbox;20|pda_CQOiOqu
+        StartDelay: 5
+      - TaskTitle: pda_4eO0aSu
+        Actions:
+          - ActionTitle: pda_GCqukmY
+            Description: pda_Sqa4Wqi
+            Check: WaitAction
+            Amount: 30
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    Rewards:
+      - Type: XP
+        Count: 5000
+      - Item: Eden_DiamondCut
+        Count: 10
+      - Item: GoldCoins
+        Count: 200
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: pda_80am8Ci
+    CompletedMessage: dlg;HC_HavenVR_HavenCorpResort_PDAComplete|
+    PictureFile: ArcResort.jpg
+  - ChapterTitle: pda_Sk448iC
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Rewards:
+      - Type: XP
+        Count: 5000
+      - Item: LargeOptronicMatrix
+        Count: 5
+      - Item: AncientRelics
+        Count: 10
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    Tasks:
+      - TaskTitle: pda_GmFq84K
+        StartMessage: mbox;20|pda_ae4uauO
+        Actions:
+          - ActionTitle: pda_OABWSBa
+            Description: pda_q0KuKHW
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - Expedition
+      - TaskTitle: pda_mOu0iCK
+        Actions:
+          - ActionTitle: pda_OCCMauO
+            Description: pda_aKqPKmS
+            Check: NearUnit
+            GuidingDistance: 20
+            TriggerDistance: 20
+            CompletedMessage: mbox;20|pda_GeSuTOi
+            Names:
+              - Expedition
+              - START
+      - TaskTitle: pda_OOqGiKq
+        Actions:
+          - ActionTitle: pda_Y8CSKKK
+            Description: pda_4GmKKGK
+            Check: Signal
+            Names:
+              - '*reachedmlvl'
+              - reachedmlvl
+            CompletedMessage: mbox;20|pda_WKWiKWq
+      - TaskTitle: pda_qZOaWSa
+        Actions:
+          - ActionTitle: pda_iO8qiQe
+            Description: pda_0iuegOu
+            Check: Signal
+            Names:
+              - '*openbsmnt'
+              - openbsmnt
+            CompletedMessage: mbox;20|pda_iaeOK1q
+      - TaskTitle: pda_uKhe4Sa
+        Actions:
+          - ActionTitle: pda_8CWiK0e
+            Description: pda_KGqKOS4
+            Check: Signal
+            Names:
+              - '*tunnel'
+              - tunnel
+            CompletedMessage: mbox;20|pda_4uqaG0e
+      - TaskTitle: pda_Oa0CeGS
+        Actions:
+          - ActionTitle: pda_mmaAKe8
+            Description: pda_GacKrqm
+            Check: Signal
+            Names:
+              - '*hiddenrooms'
+              - hiddenrooms
+            CompletedMessage: mbox;20|pda_DueqieG
+      - TaskTitle: pda_GKHqqeu
+        Actions:
+          - ActionTitle: pda_qmuaKOu
+            Description: pda_C84E4CO
+            Check: Signal
+            Names:
+              - '*exitportal'
+              - exitportal
+            CompletedMessage: mbox;20|pda_iuSS3Oa
+      - TaskTitle: pda_Gm4qW8C
+        Actions:
+          - ActionTitle: pda_8eW08eg
+            Description: pda_4CG0OWW
+            Check: WaitAction
+            Amount: 20
+    Description: pda_QK8K1GK
+    CompletedMessage: dlg;HC_HavenVR_ExpeditionRescue_PDAComplete|
+    PictureFile: ArcExpedition.jpg
+  - ChapterTitle: pda_CWuZumC
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Description: pda_G0mCmSs
+    Tasks:
+      - TaskTitle: pda_miO8am0
+        Actions:
+          - ActionTitle: pda_mKuK8G8
+            Description: pda_GWkqe8S
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - BusinessCenter
+        StartMessage: mbox;20|pda_8SCGSSC
+      - TaskTitle: pda_u0m0Waq
+        Actions:
+          - ActionTitle: pda_KwSgCuq
+            Description: pda_aGKqG0m
+            Check: NearUnit
+            GuidingDistance: 60
+            TriggerDistance: 10
+            Names:
+              - Business Center
+              - RECEPTIONIST
+      - TaskTitle: pda_qqeg8m0
+        Actions:
+          - ActionTitle: pda_mKqCtSm
+            Description: pda_iqCaaq0
+            Check: DialogOption
+            Names:
+              - HC_BusinessCenter_Receptionist_CheckIn_Approved_2
+            Value: 1
+      - TaskTitle: pda_8WM8OmK
+        Actions:
+          - ActionTitle: pda_6iu2omO
+            Description: pda_OKqGGSS
+            Check: WaitAction
+            Amount: 5
+      - TaskTitle: pda_k4emea0
+        Actions:
+          - ActionTitle: pda_44GK80P
+            Description: pda_0q40HC0
+            Check: Signal
+            Names:
+              - '*RADIO_FOUND'
+              - '*RR1'
+              - RR1
+              - '*RR2'
+              - RR2
+        StartMessage: mbox;20|pda_SuaKS8O
+      - TaskTitle: pda_mK0OWWC
+        Actions:
+          - ActionTitle: pda_KK0SemG
+            Description: pda_8CWiweC
+            Check: Signal
+            Names:
+              - '*VLF'
+              - VLF RADIO
+              - VLF
+          - ActionTitle: pda_iSmGGiD
+            Description: pda_8lmGQ8q
+            Check: Signal
+            Names:
+              - '*ELF'
+              - ELF RADIO
+              - ELF
+          - ActionTitle: pda_SqGwaGW
+            Description: pda_uWY6qi0
+            Check: Signal
+            Names:
+              - '*UHF'
+              - UHF RADIO
+              - UHF
+          - ActionTitle: pda_44UcS8q
+            Description: pda_eeSOSuC
+            Check: Signal
+            Names:
+              - '*VHF'
+              - VHF RADIO
+              - VHF
+        StartMessage: mbox;20|pda_i0KSiZC
+      - TaskTitle: pda_OO8WmOm
+        Actions:
+          - ActionTitle: pda_m8GqWGs
+            Description: pda_QS8qOWg
+            Check: NearUnit
+            GuidingDistance: 20
+            TriggerDistance: 8
+            Names:
+              - Business Center
+              - EXITPORTAL
+      - TaskTitle: pda_eaim080
+        Actions:
+          - ActionTitle: pda_Om4oaeK
+            Description: pda_eOmu02S
+            Check: WaitAction
+            Amount: 30
+    Rewards:
+      - Type: XP
+        Count: 5000
+      - Type: Reputation
+        Faction:
+          - Polaris
+          - Talon
+          - Trader
+          - Colonists
+        Count: 1000
+      - Item: Eden_DiamondCut
+        Count: 10
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    CompletedMessage: dlg;HC_HavenVR_BusinessCenter_PDAComplete|
+    PictureFile: ArcBusinessCenter.jpg
+  - ChapterTitle: pda_ZmSZiqK
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_qOuG8eW
+        Actions:
+          - ActionTitle: pda_iSpWue4
+            Description: pda_KKSuW00
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - RaptorInc
+      - TaskTitle: pda_KK0SWGS
+        Actions:
+          - ActionTitle: pda_WCGWK4q
+            Description: pda_a5GmG8a
+            Check: DialogOption
+            Names:
+              - HC_RaptorLab_Worker_4
+            Value: 1
+      - TaskTitle: pda_iGKaaaG
+        Actions:
+          - ActionTitle: pda_WOaGOu8
+            Description: pda_00K4CJi
+            Check: Signal
+            Names:
+              - ScanSensor
+        StartMessage: norm;20|pda_S0Ce0uk
+      - TaskTitle: pda_GeGupCW
+        Actions:
+          - ActionTitle: pda_GSGeEGi
+            Description: pda_CeeuOe0
+            Check: NearUnit
+            GuidingDistance: 20
+            TriggerDistance: 6
+            CompletedMessage: norm;20|pda_W0iG0Ei
+            Names:
+              - Raptor Inc
+              - Lab Entrance
+      - TaskTitle: pda_0WMqCi0
+        Actions:
+          - ActionTitle: pda_0iG4Geg
+            Description: pda_CeWA8We
+            Check: NearUnit
+            GuidingDistance: 25
+            TriggerDistance: 6
+            CompletedMessage: norm;20|pda_iWqa46G
+            Names:
+              - Raptor Inc
+              - MedBaySwitch
+      - TaskTitle: pda_8CWVu14
+        Actions:
+          - ActionTitle: pda_e8OaCGa
+            Description: pda_OYmK08u
+            Check: NearUnit
+            GuidingDistance: 25
+            TriggerDistance: 6
+            CompletedMessage: norm;20|pda_GSBGia8
+            Names:
+              - Raptor Inc
+              - StorageSwitch
+      - TaskTitle: pda_OrOCemW
+        Actions:
+          - ActionTitle: pda_aOeWOeG
+            Description: pda_iPCq0c0
+            Check: NearUnit
+            GuidingDistance: 25
+            TriggerDistance: 6
+            Names:
+              - Raptor Inc
+              - ElevatorSwitch
+      - TaskTitle: pda_4SGmSCS
+        Actions:
+          - ActionTitle: pda_3mWKOam
+            Description: pda_SAF8SiC
+            Check: NearUnit
+            GuidingDistance: 25
+            TriggerDistance: 6
+            CompletedMessage: norm;20|pda_GiiGGGV
+            Names:
+              - Raptor Inc
+              - Take The Elevator
+      - TaskTitle: pda_W06o00a
+        Actions:
+          - ActionTitle: pda_eGi0oPm
+            Description: pda_W4Wa9PS
+            Check: Signal
+            Names:
+              - ExplodeEntry
+              - '*ExplodeEntry'
+            CompletedMessage: norm;20|pda_iWGKWaa
+      - TaskTitle: pda_m3mKWiK
+        Actions:
+          - ActionTitle: pda_uGiZqua
+            Description: pda_xi0ieum
+            Check: Signal
+            Names:
+              - RepOVRD
+              - '*RepOVRD'
+            CompletedMessage: norm;20|pda_Me4my6K
+      - TaskTitle: pda_SaKKKC8
+        Actions:
+          - ActionTitle: pda_6uqG88O
+            Description: pda_WiqfiOK
+            Check: Signal
+            Names:
+              - ReplicatorCutoff
+              - '*ReplicatorCutoff'
+            CompletedMessage: norm;20|pda_WqGeSqG
+      - TaskTitle: pda_uau4mii
+        Actions:
+          - ActionTitle: pda_4AWiOWW
+            Description: pda_m0KSGou
+            Check: WaitAction
+            Amount: 30
+      - TaskTitle: pda_K0eSSWG
+        Actions:
+          - ActionTitle: pda_00WC04G
+            Description: pda_liiKK0m
+            Check: NearUnit
+            GuidingDistance: 20
+            TriggerDistance: 10
+            Names:
+              - Raptor Inc
+              - LabWorker
+      - TaskTitle: pda_i8GuCKK
+        Actions:
+          - ActionTitle: pda_K8Guq0u
+            Description: pda_8mGKO4u
+            Check: NearPoi
+            Names:
+              - Arcadia Station
+            TriggerDistance: 100
+    Rewards:
+      - Type: XP
+        Count: 5000
+      - Item: LargeOptronicMatrix
+        Count: 5
+      - Item: ScienceEquipment
+        Count: 10
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    CompletedMessage: dlg;HC_HavenVR_RaptorLab_PDAComplete|
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    Description: pda_q4S8Q80
+    PictureFile: ArcRaptorInc.jpg
+  - ChapterTitle: pda_auqGGZ4
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_q3uSuei
+        Actions:
+          - ActionTitle: pda_8xG4quC
+            Description: pda_MWOOC8i
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - AncientVault
+      - TaskTitle: pda_mOWOKC8
+        Actions:
+          - ActionTitle: pda_K0O8kSS
+            Description: pda_q8mm8CO
+            Check: Signal
+            Names:
+              - StartPlate
+              - '*StartPlate'
+      - TaskTitle: pda_qAGgSue
+        Actions:
+          - ActionTitle: pda_u408MGu
+            Description: pda_Oe480mi
+            Check: Signal
+            Names:
+              - EntryDoor
+              - '*EntryDoor'
+      - TaskTitle: pda_08iaOu4
+        Actions:
+          - ActionTitle: pda_n0eOSW9
+            Description: pda_CSuu8OC
+            Check: Signal
+            Names:
+              - PartOneDoor
+              - '*PartOneDoor'
+      - TaskTitle: pda_4SWmOum
+        Actions:
+          - ActionTitle: pda_qOOOWC8
+            Description: pda_8OG34qn
+            Check: Signal
+            Names:
+              - PortalON
+              - '*PortalON'
+      - TaskTitle: pda_iWQ8aSS
+        Actions:
+          - ActionTitle: pda_0OGOaWY
+            Description: pda_KWm0mci
+            Check: WaitAction
+            Amount: 30
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    Description: pda_8q8ie4i
+    CompletedMessage: dlg;HC_HavenVR_VaultOfTheDoomed_PDAComplete|
+    Rewards:
+      - Type: XP
+        Count: 5000
+      - Item: TechnicalArtifact
+        Count: 10
+      - Item: SmallOptronicBridge
+        Count: 5
+      - Item: SmallOptronicMatrix
+        Count: 5
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    PictureFile: ArcVault.jpg
+  - ChapterTitle: pda_mmSmZ84
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_WqeGieW
+        Actions:
+          - ActionTitle: pda_eKeqeOl
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Description: pda_iKOQCeC
+            Names:
+              - Arcadia Station
+              - SyndicateLair
+      - TaskTitle: pda_4SuuCxC
+        Actions:
+          - ActionTitle: pda_8imOaOO
+            Description: pda_m8aaS8C
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 7
+            Names:
+              - Syndicate Lair
+              - Entrance
+      - TaskTitle: pda_G4e00Ku
+        Actions:
+          - ActionTitle: pda_uGsK4eW
+            Description: pda_R2SOm8C
+            Check: NearUnit
+            GuidingDistance: 30
+            TriggerDistance: 7
+            Names:
+              - Syndicate Lair
+              - DoorCode
+      - TaskTitle: pda_i84W80i
+        Actions:
+          - ActionTitle: pda_KQSCCSS
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 10
+            Description: pda_Cuiqi8O
+            Names:
+              - Syndicate Lair
+              - SecretEntrance
+      - TaskTitle: pda_i80SuUS
+        Actions:
+          - ActionTitle: pda_uiqW0CS
+            Description: pda_C9meW4i
+            Check: BlockDestroyed
+            Types:
+              - SentryGun01
+            Amount: 3
+          - ActionTitle: pda_SKSe48G
+            Description: pda_eiWuqCa
+            Check: SubjectKilled
+            Names:
+              - TotalHorror
+              - Spider02
+              - CaveWormGreen
+              - ZiraxMinigun
+              - ZiraxSniper
+            Amount: 15
+          - ActionTitle: pda_ee8Suqu
+            Description: pda_G4aWuuq
+            Check: Signal
+            Names:
+              - EXITLEVER
+          - ActionTitle: pda_VaicGSC
+            Description: pda_U8OKGOW
+            Check: Signal
+            Names:
+              - PortalPower
+      - TaskTitle: pda_meOS880
+        Actions:
+          - ActionTitle: pda_CGg48Cp
+            Description: pda_KK04OSq
+            Check: WaitAction
+            Amount: 30
+    Description: pda_GiKWOOa
+    CompletedMessage: dlg;HC_HavenVR_SyndicateLair_PDAComplete|
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    Rewards:
+      - Type: XP
+        Count: 5000
+      - Item: Eden_DiamondCut
+        Count: 10
+      - Item: AncientRelics
+        Count: 10
+      - Item: Token
+        Count: 1
+        Meta: 7239
+    PictureFile: ArcLair.jpg
+  - ChapterTitle: pda_KWm4mS5
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_KumqOOC
+        Actions:
+          - ActionTitle: pda_a8WSaOC
+            Description: pda_iP8ma9C
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - TempleOfHarvest
+      - TaskTitle: pda_mqCiWKa
+        Actions:
+          - ActionTitle: pda_kqWqiCi
+            Description: pda_iWOCWme
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 10
+            CompletedMessage: mbox;20|pda_KBOWCsO
+            Names:
+              - Temple of Harvest
+              - TEMPLE_ENTRANCE
+      - TaskTitle: pda_S0mSKOg
+        Actions:
+          - ActionTitle: pda_Iiu4OWe
+            Description: pda_qqaWIWa
+            Check: WaitAction
+            Amount: 45
+      - TaskTitle: pda_uWWW0uq
+        Actions:
+          - ActionTitle: pda_a4kKMae
+            Description: pda_KmCCi8K
+            Check: NearUnit
+            GuidingDistance: 50
+            TriggerDistance: 3
+            Names:
+              - Temple of Harvest
+              - INNERLABDOOR
+        StartMessage: mbox;20|pda_YuWGK4K
+      - TaskTitle: pda_KmaWW89
+        Actions:
+          - ActionTitle: pda_8wK40Ge
+            Description: pda_uKS9mWK
+            Check: Signal
+            Names:
+              - SW_INNERBIG
+              - '*SW_INNERBIG'
+      - TaskTitle: pda_K0umq4G
+        Actions:
+          - ActionTitle: pda_Sqimam0
+            Description: pda_uKO8Y8K
+            Check: Signal
+            Names:
+              - SW_BIG3
+              - '*SW_BIG3'
+      - TaskTitle: pda_eCeiqGe
+        Actions:
+          - ActionTitle: pda_u0NaCq4
+            Description: pda_GO0Ki0C
+            Check: BlockDestroyed
+            Amount: 2
+            Types:
+              - SentryGun01
+              - SentryGun02
+      - TaskTitle: pda_Oie0mOe
+        Actions:
+          - ActionTitle: pda_84qoK4O
+            Description: pda_9uECWGG
+            Check: DialogOption
+            Names:
+              - HC_TempleOfHarvest_MainMenu_3_Menu_4_Menu_3
+            Value: 1
+        StartMessage: mbox;20|pda_uK80qOi
+        CompletedMessage: mbox;20|pda_i8WuM6m
+      - TaskTitle: pda_eGGWOm8
+        Actions:
+          - ActionTitle: pda_44eSK8u
+            Description: pda_O4qSqi8
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 10
+            Names:
+              - Temple of Harvest
+              - EXIT
+      - TaskTitle: pda_aOGG0ue
+        Actions:
+          - ActionTitle: pda_eC4mGiC
+            Description: pda_e40m0mG
+            Check: Signal
+            Names:
+              - SW_ENDLOOT
+              - '*SW_ENDLOOT'
+            CompletedMessage: mbox;20|pda_CiaOo0O
+      - TaskTitle: pda_CCCKGm6
+        Actions:
+          - ActionTitle: pda_meEa0C8
+            Description: pda_wSWSGi4
+            Check: NearUnit
+            GuidingDistance: 300
+            TriggerDistance: 4
+            Names:
+              - Temple of Harvest
+              - DONT_FORGET_THE_LOOT
+      - TaskTitle: pda_84u8Wi0
+        Actions:
+          - ActionTitle: pda_e8eCOCu
+            Description: pda_uKCeuTe
+            Check: WaitAction
+            Amount: 30
+    Description: pda_SWqGSQe
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    CompletedMessage: dlg;HC_HavenVR_TempleOfHarvest_PDAComplete|
+    Rewards:
+      - Type: XP
+        Count: 5000
+      - Item: AncientRelics
+        Count: 10
+      - Item: LargeOptronicBridge
+        Count: 5
+      - Item: Token
+        Count: 1
+        Meta: 7238
+      - Item: RocketLauncherEpic
+        Count: 1
+    PictureFile: ArcTempleOfHarvest.jpg
+  - ChapterTitle: pda_au48SPW
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_amuqmCG
+        Actions:
+          - ActionTitle: pda_SVCmC0W
+            Description: pda_eaG8WGe
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - TheArena
+      - TaskTitle: pda_S80ummq
+        Actions:
+          - ActionTitle: pda_04eSSCS
+            Description: pda_tO4GaCK
+            Check: NearUnit
+            GuidingDistance: -1
+            TriggerDistance: 20
+            Names:
+              - Tribal Arena
+              - The Arena
+      - TaskTitle: pda_8SCuues
+        Actions:
+          - ActionTitle: pda_K0uii4a
+            Description: pda_4OiI4OC
+            Check: DialogOption
+            Names:
+              - HC_TribalArena_GameMaster_Enroll
+            Value: 1
+      - TaskTitle: pda_88Oe4a8
+        Actions:
+          - ActionTitle: pda_aJJuuem
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 20
+            Description: pda_WeeK84W
+            Names:
+              - Tribal Arena
+              - Games Entrance
+      - TaskTitle: pda_e4GqieK
+        Actions:
+          - ActionTitle: pda_oGbqWWi
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 10
+            Description: pda_qiKI09I
+            Names:
+              - Tribal Arena
+              - FlameOfTheFallenKin
+          - ActionTitle: pda_8WSGGWm
+            Description: pda_Oiriuam
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 10
+            Names:
+              - Tribal Arena
+              - ScaleFathersSigil
+          - ActionTitle: pda_iGdQCCe
+            Description: pda_SCG0eqO
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 10
+            Names:
+              - Tribal Arena
+              - BloodRootTree
+          - ActionTitle: pda_iCaiWWY
+            Description: pda_G8G4oW4
+            Check: SubjectKilled
+            Names:
+              - AlienAssassinGrey
+              - AlienAssassinRed
+              - AlienAssassinInfected
+              - Overseer
+              - RaptorNight
+              - AlienBug02
+              - AlienBug03
+              - AlienBug04
+              - Spider03
+              - Spider03Small
+              - Spider02
+              - Spider01
+            Amount: 100
+      - TaskTitle: pda_m8GmeWi
+        Actions:
+          - ActionTitle: pda_OCmaWuS
+            Description: pda_meqW0fa
+            Check: NearUnit
+            GuidingDistance: -1
+            TriggerDistance: 15
+            Names:
+              - Tribal Arena
+              - GameMaster
+      - TaskTitle: pda_O8u8Cqf
+        Actions:
+          - ActionTitle: pda_0S4Vueq
+            Description: pda_SeS4e8a
+            Check: WaitAction
+            Amount: 10
+            CompletedMessage: dlg;HC_HavenVR_TribalArena_PDAComplete_Victory|
+      - TaskTitle: pda_GOq0qui
+        Actions:
+          - ActionTitle: pda_0heGeme
+            Description: pda_Ce40mG4
+            Check: NearUnit
+            GuidingDistance: -1
+            TriggerDistance: 40
+            Names:
+              - Tribal Arena
+              - ReturnToArcadiaStation
+      - TaskTitle: pda_4Ke4CKm
+        Actions:
+          - ActionTitle: pda_eeCi0uK
+            Description: pda_uK0aa0O
+            Check: WaitAction
+            Amount: 10
+    CompletedMessage: dlg;HC_HavenVR_TribalArena_PDAComplete|
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    Description: pda_20qGuum
+    PictureFile: ArcArena.jpg
+    Rewards:
+      - Type: XP
+        Count: 5000
+      - Item: AncientRelics
+        Count: 10
+      - Item: Leather
+        Count: 10
+      - Item: Token
+        Count: 1
+        Meta: 7239
+  - ChapterTitle: pda_SeG7G4q
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_euO0a8G
+        Actions:
+          - ActionTitle: pda_u8CquOx
+            Description: pda_iC048uS
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - InfestedMine
+      - TaskTitle: pda_8iSCKSi
+        Actions:
+          - ActionTitle: pda_8E8OiWD
+            Description: pda_O0m4SWm
+            Check: DialogOption
+            Names:
+              - HC_Mine_Foreman
+            Value: 1
+      - TaskTitle: pda_e0qmGu8
+        Actions:
+          - ActionTitle: pda_q0K4OsC
+            Description: pda_Fmmau2m
+            Check: NearUnit
+            GuidingDistance: -1
+            TriggerDistance: 15
+            Names:
+              - Infested Mine
+              - MineLowerLevels
+      - TaskTitle: pda_O4SKiGu
+        Actions:
+          - ActionTitle: pda_i4iCSOq
+            Description: pda_SXeSCta
+            Check: WaitAction
+            Amount: 20
+      - TaskTitle: pda_OKm8Sa4
+        Actions:
+          - ActionTitle: pda_40G8UUq
+            Description: pda_WGiw8aa
+            Check: NearUnit
+            GuidingDistance: 20
+            TriggerDistance: 10
+            Names:
+              - Infested Mine
+              - ElevatorEntrance
+      - TaskTitle: pda_Ga40GKa
+        Actions:
+          - ActionTitle: pda_qOCWG8e
+            Check: NearUnit
+            GuidingDistance: 20
+            TriggerDistance: 10
+            Description: pda_qOAWcGh
+            Names:
+              - Infested Mine
+              - MineAccessControls
+      - TaskTitle: pda_qOWqOKm
+        Actions:
+          - ActionTitle: pda_404uEKu
+            Description: pda_OueiaWO
+            Check: NearUnit
+            GuidingDistance: 20
+            TriggerDistance: 10
+            Names:
+              - Infested Mine
+              - InnerMine
+      - TaskTitle: pda_284eaui
+        Actions:
+          - ActionTitle: pda_Cem0aeO
+            Description: pda_e4uGmCK
+            Check: NearUnit
+            GuidingDistance: 20
+            TriggerDistance: 10
+            Names:
+              - Infested Mine
+              - BossFightRoom
+      - TaskTitle: pda_qOOmKmi
+        Actions:
+          - ActionTitle: pda_8Oi4uYu
+            Description: pda_SOSsGag
+            Check: NearUnit
+            GuidingDistance: 20
+            TriggerDistance: 10
+            Names:
+              - Infested Mine
+              - DANGER
+      - TaskTitle: pda_8W4amSm
+        Actions:
+          - ActionTitle: pda_eaWSK88
+            Description: pda_aOC4OCS
+            Check: BlockDestroyed
+            Types:
+              - ProtoInfectorBoss
+            Amount: 1
+      - TaskTitle: pda_a6SmGqK
+        Actions:
+          - ActionTitle: pda_4uKSAmG
+            Description: pda_4m0VCOu
+            Check: WaitAction
+            Amount: 10
+      - TaskTitle: pda_qWuO0SK
+        Actions:
+          - ActionTitle: pda_4W0Oiai
+            Description: pda_iCidm0G
+            Check: NearUnit
+            GuidingDistance: -1
+            TriggerDistance: 10
+            Names:
+              - Infested Mine
+              - ArcadiaStationPortal
+      - TaskTitle: pda_saOWqVq
+        Actions:
+          - ActionTitle: pda_K4GuKmG
+            Description: pda_Smc0Ki0
+            Check: WaitAction
+            Amount: 15
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    CompletedMessage: dlg;HC_HavenVR_InfestedMine_PDAComplete|
+    Description: pda_mOGGi4u
+    PictureFile: ArcInfestedMine.jpg
+    Rewards:
+      - Type: XP
+        Count: 5000
+      - Item: Token
+        Count: 1
+        Meta: 7238
+      - Item: Eden_Polymer
+        Count: 20
+      - Item: Eden_ComputerT2
+        Count: 5
+  - ChapterTitle: pda_CaKqu4G
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_4qGuSei
+        Actions:
+          - ActionTitle: pda_a8OSGuK
+            Description: pda_eKmOmmi
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - InfestedDeepMine
+      - TaskTitle: pda_KCW8Gah
+        Actions:
+          - ActionTitle: pda_p8K48GK
+            Description: pda_OmOi0Aa
+            Check: DialogOption
+            Names:
+              - HC_DeepMine_ForemanRouter
+            Value: 1
+      - TaskTitle: pda_iOeqG48
+        Actions:
+          - ActionTitle: pda_SSaE8im
+            Description: pda_ZgWS0un
+            Check: Signal
+            Names:
+              - DrillControl
+      - TaskTitle: pda_iee0am0
+        Actions:
+          - ActionTitle: pda_u0WCGaO
+            Description: pda_O8OuGE0
+            Check: WaitAction
+            Amount: 15
+      - TaskTitle: pda_Sia4qiO
+        Actions:
+          - ActionTitle: pda_Su84OqG
+            Description: pda_8iuq88O
+            Check: NearUnit
+            GuidingDistance: -1
+            TriggerDistance: 10
+            Names:
+              - Infested Deep Mine
+              - BlastDoorSwitch
+          - ActionTitle: pda_aKMqc4O
+            Description: pda_GkeSSG0
+            Check: Signal
+            Names:
+              - BlastEntrance
+      - TaskTitle: pda_SKGeKa0
+        Actions:
+          - ActionTitle: pda_ciX48GI
+            Description: pda_8WOMWe8
+            Check: SubjectKilled
+            Names:
+              - TotalHorror
+            Amount: 30
+          - ActionTitle: pda_488Y4iu
+            Description: pda_8Q4aOce
+            Check: NearUnit
+            GuidingDistance: 50
+            TriggerDistance: 10
+            Names:
+              - Infested Deep Mine
+              - BossEntranceSwitch
+      - TaskTitle: pda_uGWSKOO
+        Actions:
+          - ActionTitle: pda_KuCOS0m
+            Description: pda_TmqCaum
+            Check: NearUnit
+            GuidingDistance: -1
+            TriggerDistance: 10
+            Names:
+              - Infested Deep Mine
+              - BossEntrance
+      - TaskTitle: pda_CmGSeG8
+        Actions:
+          - ActionTitle: pda_CaSUaGC
+            Description: pda_CCeSKCq
+            Check: BlockDestroyed
+            Types:
+              - EntitySpawner1
+            Amount: 6
+          - ActionTitle: pda_W8K4CC8
+            Description: pda_K8iSWGi
+            Check: BlockDestroyed
+            Types:
+              - LegacyTurretShell
+            Amount: 1
+      - TaskTitle: pda_eima04I
+        Actions:
+          - ActionTitle: pda_SCst88a
+            Description: pda_GWjG4KK
+            Check: NearUnit
+            GuidingDistance: -1
+            TriggerDistance: 10
+            Names:
+              - Infested Deep Mine
+              - ArcadiaStationPortal
+      - TaskTitle: pda_aGCeO4u
+        Actions:
+          - ActionTitle: pda_WmiV0W0
+            Description: pda_CaMuWac
+            Check: WaitAction
+            Amount: 20
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    CompletedMessage: dlg;HC_HavenVR_InfestedDeepMine_PDAComplete|
+    Description: pda_6uqmOqe
+    PictureFile: ArcInfestedDeepMine.jpg
+    Rewards:
+      - Type: XP
+        Count: 5000
+      - Item: Token
+        Count: 1
+        Meta: 7239
+      - Item: Tablet
+        Count: 20
+      - Item: Eden_Electromagnet
+        Count: 5
+  - ChapterTitle: pda_pWeKe4O
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Description: pda_mkWOe4a
+    StartMessage: mbox;20|pda_mKKKC4q
+    Tasks:
+      - TaskTitle: pda_aC08G8l
+        Actions:
+          - ActionTitle: pda_0memCSe
+            Description: pda_WaOAKOi
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - RedWater
+      - TaskTitle: pda_CWo0KCK
+        Actions:
+          - ActionTitle: pda_uC48iS0
+            Description: pda_Cari9Wm
+            Check: WaitAction
+            Amount: 10
+            CompletedMessage: mbox;20|pda_GGCSaie
+          - ActionTitle: pda_4qCCwO4
+            Description: pda_oG0wqC8
+            Check: NearPoi
+            Names:
+              - ARC_INFERNOCLUB
+            GuidingDistance: -1
+            TriggerDistance: 120
+      - TaskTitle: pda_m4Su0S0
+        Actions:
+          - ActionTitle: pda_4uuCMCG
+            Description: pda_ummW4qa
+            Check: NearUnit
+            GuidingDistance: 150
+            TriggerDistance: 5
+            Names:
+              - INFERNO CLUB
+              - ClubEntrance
+      - TaskTitle: pda_4i4Kq5O
+        Actions:
+          - ActionTitle: pda_488AKtS
+            Description: pda_aimaaiu
+            Check: NearUnit
+            GuidingDistance: 200
+            TriggerDistance: 5
+            Names:
+              - INFERNO CLUB
+              - ClubManager
+      - TaskTitle: pda_0auKeCW
+        Actions:
+          - ActionTitle: pda_0m0Kaea
+            Description: pda_Si0iuWa
+            Check: DialogOption
+            Names:
+              - HC_RedWater_ClubManager_MissionRouter
+            Value: 5
+      - TaskTitle: pda_SuW4SO8
+        Actions:
+          - ActionTitle: pda_8G0q0aw
+            Description: pda_i4KW4Wa
+            Check: Signal
+            Names:
+              - '*ELEVATOR'
+              - ELEVATOR
+      - TaskTitle: pda_e4W0eKC
+        Actions:
+          - ActionTitle: pda_9WWaS80
+            Description: pda_OY044k4
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 5
+            Names:
+              - INFERNO CLUB
+              - TheElevator
+      - TaskTitle: pda_a4imWaG
+        Actions:
+          - ActionTitle: pda_KOi0ieO
+            Description: pda_qSW8CA8
+            Check: NearUnit
+            GuidingDistance: 50
+            TriggerDistance: 5
+            Names:
+              - INFERNO CLUB
+              - FindAWayInside
+          - ActionTitle: pda_GWWK7eh
+            Description: pda_ui0CK2a
+            Check: Signal
+            Names:
+              - '*FIRSTBOOM'
+              - FIRSTBOOM
+      - TaskTitle: pda_KKeWOKC
+        Actions:
+          - ActionTitle: pda_ac20m0o
+            Description: pda_GimeWi8
+            Check: NearUnit
+            GuidingDistance: 50
+            TriggerDistance: 5
+            Names:
+              - INFERNO CLUB
+              - Loot
+      - TaskTitle: pda_iCaeK4u
+        Actions:
+          - ActionTitle: pda_SGOSk4S
+            Description: pda_iiu0HuK
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 6
+            Names:
+              - INFERNO CLUB
+              - ClubManager
+        CompletedMessage: mbox;20|pda_S6tKaKW
+      - TaskTitle: pda_YSK8ci4
+        Actions:
+          - ActionTitle: pda_qWqiu0q
+            Description: pda_qG4WSOa
+            Check: NearPoi
+            Names:
+              - ARC_TOPBREWERY
+            GuidingDistance: -1
+            TriggerDistance: 140
+      - TaskTitle: pda_uKCCuqe
+        Actions:
+          - ActionTitle: pda_Cu8OW4m
+            Description: pda_48ua08q
+            Check: NearUnit
+            GuidingDistance: 200
+            TriggerDistance: 5
+            Names:
+              - TOPBREWERY
+              - Office
+      - TaskTitle: pda_OWK8iS4
+        Actions:
+          - ActionTitle: pda_iWS44OW
+            Description: pda_8OGG4Wu
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 5
+            Names:
+              - TOPBREWERY
+              - OperationsManager
+          - ActionTitle: pda_eW80eKS
+            Description: pda_KCu20G1
+            Check: DialogOption
+            Names:
+              - HC_RedWater_OperationsMainGreeeting3_Repeat
+            Value: 3
+      - TaskTitle: pda_4mCqq8A
+        Actions:
+          - ActionTitle: pda_aaGqm8u
+            Description: pda_OmmCu8q
+            Check: NearUnit
+            GuidingDistance: 300
+            TriggerDistance: 5
+            Names:
+              - TOPBREWERY
+              - BrewmasterUlfric
+          - ActionTitle: pda_am6mWSS
+            Description: pda_qiSuqi8
+            Check: DialogOption
+            Names:
+              - HC_RedWater_UlfricMissionRouter
+            Value: 4
+      - TaskTitle: pda_OSqsiOm
+        Actions:
+          - ActionTitle: pda_eSmKKGG
+            Description: pda_CUmqaeW
+            Check: NearUnit
+            GuidingDistance: 200
+            TriggerDistance: 6
+            Names:
+              - TOPBREWERY
+              - FiltrationCutoffSwitch
+          - ActionTitle: pda_qeKIeaa
+            Description: pda_vuKeiC8
+            Check: Signal
+            Names:
+              - '*SW_FILTRATION'
+              - SW_FILTRATION
+            CompletedMessage: mbox;20|pda_a4aO4K4
+          - ActionTitle: pda_i80maaG
+            Description: pda_G8iuOWK
+            Check: NearUnit
+            GuidingDistance: 200
+            TriggerDistance: 6
+            Names:
+              - TOPBREWERY
+              - RedWaterPumps
+          - ActionTitle: pda_u4eCa0i
+            Description: pda_gG4KT8e
+            Check: Signal
+            Names:
+              - '*SW_REDWATER'
+              - SW_REDWATER
+            CompletedMessage: mbox;20|pda_OSWKWSi
+      - TaskTitle: pda_SOKSeiO
+        Actions:
+          - ActionTitle: pda_oGWSGQi
+            Description: pda_uO4i1up
+            Check: SubjectKilled
+            Names:
+              - ZiraxMinigun
+              - ZiraxShotgun
+              - Mechanoid
+              - TurretRobotV2
+              - MechanoidMinigun
+              - ZiraxLaser
+            Amount: 30
+        StartDelay: 10
+        StartMessage: mbox;20|pda_Dmu7SoG
+      - TaskTitle: pda_8q8Seua
+        Actions:
+          - ActionTitle: pda_qeS8e0S
+            Description: pda_6eeKOmq
+            Check: NearUnit
+            GuidingDistance: 200
+            TriggerDistance: 6
+            CompletedMessage: mbox;20|pda_OK80aqq
+            Names:
+              - TOPBREWERY
+              - BrewmasterUlfric
+      - TaskTitle: pda_OOui6M2
+        Actions:
+          - ActionTitle: pda_8CGWGeW
+            Description: pda_uqAmGOE
+            Check: Signal
+            Names:
+              - '*StashSwitch'
+              - StashSwitch
+        StartDelay: 3
+        StartMessage: mbox;20|pda_qk8uGWa
+      - TaskTitle: pda_8w48SiO
+        Actions:
+          - ActionTitle: pda_C8miGq0
+            Description: pda_mGeYLme
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 6
+            Names:
+              - TOPBREWERY
+              - STASH
+      - TaskTitle: pda_iC4mkmq
+        Actions:
+          - ActionTitle: pda_0ucC804
+            Description: pda_8iKK4WS
+            Check: NearPoi
+            Names:
+              - ArcadiaPortal
+            GuidingDistance: -1
+            TriggerDistance: 200
+    CompletedMessage: dlg;HC_HavenVR_RedWater_PDAComplete|
+    Rewards:
+      - Type: Reputation
+        Faction:
+          - Zirax
+        Count: 30000
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+    PictureFile: ArcRedWater.jpg
+  - ChapterTitle: pda_aiq3uK4
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_qmC8m0G
+        Actions:
+          - ActionTitle: pda_m0OqC0A
+            Description: pda_aC0m0OO
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - RoyalFlush
+      - TaskTitle: pda_0OC0WiW
+        Actions:
+          - ActionTitle: pda_KG0DCq8
+            Description: pda_8SiaSeG
+            Check: NearPoi
+            Names:
+              - Criminal City
+            GuidingDistance: -1
+            TriggerDistance: 80
+            CompletedMessage: mbox;20|pda_OmKKYS4
+      - TaskTitle: pda_W0K4CeS
+        Actions:
+          - ActionTitle: pda_uKKKi4a
+            Description: pda_C8SWaa8
+            Check: NearUnit
+            GuidingDistance: 50
+            TriggerDistance: 6
+            CompletedMessage: mbox;20|pda_08eqCqO
+            Names:
+              - Criminal City
+              - Royal Flush
+      - TaskTitle: pda_qWma0ei
+        Actions:
+          - ActionTitle: pda_4OOSG40
+            Description: pda_WOqOKe0
+            Check: Signal
+            Names:
+              - Flush
+              - '*Flush'
+            CompletedMessage: mbox;20|pda_GKKu4Ge
+      - TaskTitle: pda_iWWiGu8
+        Actions:
+          - ActionTitle: pda_sScSqq0
+            Description: pda_wa40qGq
+            Check: NearUnit
+            GuidingDistance: 50
+            TriggerDistance: 8
+            CompletedMessage: mbox;20|pda_WmO08OK
+            Names:
+              - Criminal City
+              - Hatch
+      - TaskTitle: pda_fWaS0gW
+        Actions:
+          - ActionTitle: pda_G4uO8qO
+            Check: NearUnit
+            GuidingDistance: 50
+            TriggerDistance: 8
+            Description: pda_KCOeGeS
+            CompletedMessage: mbox;20|pda_SCiOGWq
+            Names:
+              - Criminal City
+              - Production Floor
+      - TaskTitle: pda_qW0S8uW
+        Actions:
+          - ActionTitle: pda_eiOquWO
+            Description: pda_SOqCGKC
+            Check: DialogOption
+            Names:
+              - HC_CriminalCity_BugtronAI_MENU_OPT3
+            Value: 1
+            CompletedMessage: mbox;20|pda_S00CiOe
+      - TaskTitle: pda_W0K00O0
+        Actions:
+          - ActionTitle: pda_uC400Cu
+            Description: pda_q8Vi0su
+            Check: Signal
+            Names:
+              - BugtronOne
+              - '*BugtronOne'
+          - ActionTitle: pda_maGCwBa
+            Description: pda_qs8W0ii
+            Check: Signal
+            Names:
+              - BugtronTwo
+              - '*BugtronTwo'
+          - ActionTitle: pda_SOmAikG
+            Description: pda_mq04smC
+            Check: Signal
+            Names:
+              - BugtronThree
+              - '*BugtronThree'
+        CompletedMessage: mbox;20|pda_084qRmu
+      - TaskTitle: pda_4taSq8u
+        Actions:
+          - ActionTitle: pda_KGSGaae
+            Description: pda_cWKUSGK
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 8
+            Names:
+              - Criminal City
+              - City Core Override
+      - TaskTitle: pda_3uaSW0e
+        Actions:
+          - ActionTitle: pda_8OSuG0M
+            Description: pda_Leme8S8
+            Check: Signal
+            Names:
+              - CompPower
+              - '*CompPower'
+            CompletedMessage: mbox;20|pda_WaGiWmG
+      - TaskTitle: pda_q0nCi0W
+        Actions:
+          - ActionTitle: pda_mm4KCiG
+            Description: pda_4iKueiq
+            Check: NearUnit
+            GuidingDistance: 200
+            TriggerDistance: 30
+            Names:
+              - Criminal City
+              - City Core
+      - TaskTitle: pda_Oa8oiI2
+        Actions:
+          - ActionTitle: pda_mmWiKmO
+            Description: pda_mOOIaqu
+            Check: BlockDestroyed
+            Types:
+              - CoreNPCAdmin
+            Amount: 1
+      - TaskTitle: pda_S4umSau
+        Actions:
+          - ActionTitle: pda_aui0a88
+            Description: pda_iqClaqO
+            Check: WaitAction
+            Amount: 30
+      - TaskTitle: pda_SmWmuK8
+        Actions:
+          - ActionTitle: pda_KoWmqaS
+            Description: pda_V8eS440
+            Check: NearPoi
+            Names:
+              - ArcadiaPortal
+            GuidingDistance: -1
+            TriggerDistance: 200
+    Rewards:
+      - Item: SmallOptronicBridge
+        Count: 5
+      - Item: LargeOptronicBridge
+        Count: 5
+      - Type: XP
+        Count: 5000
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    CompletedMessage: dlg;HC_HavenVR_RoyalFlush_PDAComplete|
+    Description: pda_umAiCmE
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    PictureFile: ArcRoyalFlush.jpg
+  - ChapterTitle: pda_XKiiaKS
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_eqqa8SC
+        Actions:
+          - ActionTitle: pda_G8Wl0aC
+            Description: pda_meSWWWu
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - PirateNet
+      - TaskTitle: pda_m8i0qyG
+        Actions:
+          - ActionTitle: pda_O48aICa
+            Description: pda_eMeSamK
+            Check: NearPoi
+            Names:
+              - Pirate Relay
+            GuidingDistance: -1
+            TriggerDistance: 200
+      - TaskTitle: pda_Ks0mmeR
+        Actions:
+          - ActionTitle: pda_OeRu0aS
+            Description: pda_0uq8SuC
+            Check: BlockDestroyed
+            Types:
+              - SentryGun01
+              - SentryGun02Retract
+              - SentryGun01Retract
+            Amount: 5
+          - ActionTitle: pda_OmimqIC
+            Description: pda_KGCw0O8
+            Check: SubjectKilled
+            Names:
+              - Mechanoid
+              - TurretRobotV2
+            Amount: 5
+      - TaskTitle: pda_m4WeKGm
+        Actions:
+          - ActionTitle: pda_aFaOeX4
+            Description: pda_maOemEW
+            Check: Signal
+            Names:
+              - PirateRadio
+      - TaskTitle: pda_K0muOGm
+        Actions:
+          - ActionTitle: pda_eOCuW8T
+            Description: pda_Sia6ig8
+            Check: Signal
+            Names:
+              - BigBadaBoom
+      - TaskTitle: pda_iCumuiC
+        Actions:
+          - ActionTitle: pda_m0uSKiY
+            Description: pda_muWKqxO
+            Check: WaitAction
+            Amount: 10
+      - TaskTitle: pda_m4m4uG7
+        Actions:
+          - ActionTitle: pda_aiCKKS8
+            Description: pda_Ke4KSum
+            Check: NearPoi
+            Names:
+              - PirateNet
+            GuidingDistance: -1
+            TriggerDistance: 200
+      - TaskTitle: pda_0Su0qHS
+        Actions:
+          - ActionTitle: pda_KWKauO8
+            Check: NearUnit
+            GuidingDistance: 500
+            TriggerDistance: 10
+            Description: pda_Ua08GYa
+            Names:
+              - PirateNet
+              - DataCenter Entrance
+      - TaskTitle: pda_0e4uOmu
+        Actions:
+          - ActionTitle: pda_eSGqqKe
+            Description: pda_8K4uKC8
+            Check: Signal
+            Names:
+              - '*SW_CLUSTER_D'
+              - SW_CLUSTER_D
+          - ActionTitle: pda_OmeUCsg
+            Description: pda_4CWeCCG
+            Check: Signal
+            Names:
+              - '*LOADBALS'
+              - LOADBALS
+          - ActionTitle: pda_Kmq0iS4
+            Description: pda_iiqKOe0
+            Check: SubjectKilled
+            Names:
+              - TurretRobotV2
+              - Mechanoid
+            Amount: 10
+          - ActionTitle: pda_CuOqv00
+            Description: pda_Oqi4CC0
+            Check: Signal
+            Names:
+              - '*FINALBOSS'
+              - FINALBOSS
+          - ActionTitle: pda_aWiaqKS
+            Description: pda_0WS4eLW
+            Check: SubjectKilled
+            Names:
+              - AssaultMech
+            Amount: 1
+      - TaskTitle: pda_qq8SeGK
+        Actions:
+          - ActionTitle: pda_SS48Gau
+            Description: pda_SmP8PSS
+            Check: WaitAction
+            Amount: 30
+      - TaskTitle: pda_au04eWG
+        Actions:
+          - ActionTitle: pda_u0eiKa4
+            Description: pda_VauSCue
+            Check: NearPoi
+            Names:
+              - ArcadiaPortal
+            GuidingDistance: -1
+            TriggerDistance: 200
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    Description: pda_m0amuO4
+    CompletedMessage: dlg;HC_HavenVR_PirateNet_PDAComplete|
+    Rewards:
+      - Item: MoneyCard
+        Count: 50000
+      - Type: XP
+        Count: 5000
+      - Item: Eden_DiamondCut
+        Count: 10
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    PictureFile: ArcPirateNet.jpg
+  - ChapterTitle: pda_uum00mO
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_8m8GV0K
+        Actions:
+          - ActionTitle: pda_4eSiKDS
+            Description: pda_mqCmOaa
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - PrisonBreak
+      - TaskTitle: pda_4mOI6i4
+        Actions:
+          - ActionTitle: pda_4SKiGie
+            Description: pda_KSG8mOK
+            Check: NearPoi
+            Names:
+              - Prisoner Transport
+            GuidingDistance: -1
+            TriggerDistance: 200
+      - TaskTitle: pda_eKuqee4
+        Actions:
+          - ActionTitle: pda_K9R0aKi
+            Description: pda_QCOmGeq
+            Check: BlockDestroyed
+            Types:
+              - SentryGun01Retract
+            Amount: 2
+          - ActionTitle: pda_qS4DGKa
+            Description: pda_KCuOX88
+            Check: SubjectKilled
+            Names:
+              - TurretRobotV2
+            Amount: 2
+      - TaskTitle: pda_u8oCWWK
+        Actions:
+          - ActionTitle: pda_maSmR0q
+            Description: pda_8WG8OW0
+            Check: NearUnit
+            GuidingDistance: -1
+            TriggerDistance: 10
+            Names:
+              - Prisoner Transport
+              - PRISONER
+      - TaskTitle: pda_GuvEiiG
+        Actions:
+          - ActionTitle: pda_uq0qkKC
+            Description: pda_eCJuSqO
+            Check: DialogOption
+            Names:
+              - HC_CriminalTransport_VIP
+            Value: 2
+      - TaskTitle: pda_W4eKEdC
+        Actions:
+          - ActionTitle: pda_0mCO4WW
+            Description: pda_0488ee4
+            Check: Signal
+            GuidingDistance: -1
+            TriggerDistance: 10
+            Names:
+              - StashSignal
+      - TaskTitle: pda_UCuSU88
+        Actions:
+          - ActionTitle: pda_84qWmO4
+            Description: pda_iak4KSi
+            Check: NearPoi
+            Names:
+              - Prison
+            GuidingDistance: -1
+            TriggerDistance: 200
+      - TaskTitle: pda_uaiCSmI
+        Actions:
+          - ActionTitle: pda_aeuaaae
+            Check: NearUnit
+            GuidingDistance: 150
+            TriggerDistance: 8
+            Description: pda_KwiamqQ
+            Names:
+              - Prison
+              - Prison Lobby
+      - TaskTitle: pda_iOtiWeM
+        Actions:
+          - ActionTitle: pda_NCeu4SW
+            Check: NearUnit
+            GuidingDistance: 50
+            TriggerDistance: 7
+            Description: pda_ua2i4G4
+            Names:
+              - Prison
+              - PrisonAccessSwitch
+      - TaskTitle: pda_uMwiqGc
+        Actions:
+          - ActionTitle: pda_G1e4OiW
+            Check: NearUnit
+            Description: pda_0SuiiUi
+            Names:
+              - Prison
+              - MainEntrance
+      - TaskTitle: pda_K4KmC0S
+        Actions:
+          - ActionTitle: pda_K8GC6Ge
+            Check: NearUnit
+            GuidingDistance: 80
+            TriggerDistance: 6
+            Description: pda_4muqSuS
+            Names:
+              - Prison
+              - Level_B_Access
+      - TaskTitle: pda_8SWC0oO
+        Actions:
+          - ActionTitle: pda_WCiKitO
+            Description: pda_YmW0qO0
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 10
+            Names:
+              - Prison
+              - SecurityRoom
+      - TaskTitle: pda_i4qiGCm
+        Actions:
+          - ActionTitle: pda_iqmKioG
+            Description: pda_SudMeaO
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 10
+            Names:
+              - Prison
+              - CoreRoom
+        StartDelay: 10
+      - TaskTitle: pda_8iqGGMS
+        Actions:
+          - ActionTitle: pda_OqGeWGS
+            Description: pda_uKO0CSK
+            Check: Signal
+            Names:
+              - OverloadCore
+      - TaskTitle: pda_KCimiOe
+        Actions:
+          - ActionTitle: pda_0KWaCmK
+            Description: pda_WKJ09C0
+            Check: NearUnit
+            GuidingDistance: -1
+            TriggerDistance: 10
+            Names:
+              - Prison
+              - CellBlockB4
+      - TaskTitle: pda_msucquq
+        Actions:
+          - ActionTitle: pda_q4aiKOG
+            Description: pda_WYLssKS
+            Check: NearUnit
+            GuidingDistance: -1
+            TriggerDistance: 10
+            Names:
+              - Prison
+              - Prisoner
+          - ActionTitle: pda_uSuOKBw
+            Description: pda_aeKmWCS
+            Check: DialogOption
+            Names:
+              - HC_PrisonBreak_Prisoner
+            Value: 2
+      - TaskTitle: pda_mmqOoiS
+        Actions:
+          - ActionTitle: pda_W4efLuW
+            Description: pda_OSKmmOS
+            Check: WaitAction
+            Amount: 60
+      - TaskTitle: pda_8q848OW
+        Actions:
+          - ActionTitle: pda_iQCSuma
+            Description: pda_CwLCC0S
+            Check: NearPoi
+            Names:
+              - ArcadiaPortal
+            GuidingDistance: -1
+            TriggerDistance: 200
+    Description: pda_ueKSK7O
+    CompletedMessage: dlg;HC_HavenVR_PrisonBreak_PDAComplete|
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    Rewards:
+      - Item: MoneyCard
+        Count: 50000
+      - Type: XP
+        Count: 5000
+      - Item: Token
+        Count: 1
+        Meta: 7239
+    PictureFile: ArcPrisonBreak.jpg
+  - ChapterTitle: pda_K0u4WeF
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_BGqCi4G
+        Actions:
+          - ActionTitle: pda_ume4W0K
+            Description: pda_KWmwSaC
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - OceanLab
+      - TaskTitle: pda_4C0W4qu
+        Actions:
+          - ActionTitle: pda_0qoLiiO
+            Description: pda_mO0Su0K
+            Check: NearPoi
+            Names:
+              - Ocean Lab
+            GuidingDistance: -1
+            TriggerDistance: 180
+      - TaskTitle: pda_ia0OmeS
+        Actions:
+          - ActionTitle: pda_IqaaeiG
+            Description: pda_OaiaOSG
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 5
+            Names:
+              - Ocean Lab
+              - TalonCaptain
+      - TaskTitle: pda_iK4iuq2
+        Actions:
+          - ActionTitle: pda_WmOZ8WC
+            Description: pda_4uoCiee
+            Check: NearUnit
+            GuidingDistance: 20
+            TriggerDistance: 5
+            Names:
+              - Ocean Lab
+              - LabEntrance
+      - TaskTitle: pda_4qiKWqu
+        Actions:
+          - ActionTitle: pda_aSqSqoO
+            Check: NearUnit
+            GuidingDistance: 30
+            TriggerDistance: 5
+            Description: pda_a0WGmmS
+            Names:
+              - Ocean Lab
+              - UpperAccess
+      - TaskTitle: pda_WSCmqk0
+        Actions:
+          - ActionTitle: pda_eGSCGm8
+            Check: Signal
+            Names:
+              - UpperAccess
+            Description: pda_0GGWSWe
+      - TaskTitle: pda_m0A0s08
+        Actions:
+          - ActionTitle: pda_K6W0O0W
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 5
+            Description: pda_CGaK4ia
+            Names:
+              - Ocean Lab
+              - TalonChief
+      - TaskTitle: pda_SW4eGum
+        Actions:
+          - ActionTitle: pda_8mWaimK
+            Check: Signal
+            Names:
+              - CoreSwitch
+            Description: pda_mu0i8Gn
+      - TaskTitle: pda_808kSeW
+        Actions:
+          - ActionTitle: pda_WCSKGS6
+            Description: pda_a8w8OKI
+            Check: WaitAction
+            Amount: 30
+      - TaskTitle: pda_awaOGA0
+        Actions:
+          - ActionTitle: pda_aSOqOKO
+            Description: pda_uHGWCeO
+            Check: NearPoi
+            Names:
+              - ArcadiaPortal
+            GuidingDistance: -1
+            TriggerDistance: 200
+    Description: pda_kCeeG8W
+    CompletedMessage: dlg;HC_HavenVR_OceanLab_PDAComplete|
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    Rewards:
+      - Item: MoneyCard
+        Count: 50000
+      - Type: Reputation
+        Faction:
+          - Talon
+        Count: 5000
+      - Type: XP
+        Count: 5000
+      - Item: Robotics
+        Count: 10
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    PictureFile: ArcOceanLab.jpg
+  - ChapterTitle: pda_uWSeemC
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_sK2CumO
+        Actions:
+          - ActionTitle: pda_0I0mOu0
+            Description: pda_GD0aCeK
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - AbandonedPyramid
+      - TaskTitle: pda_KSG8g8K
+        Actions:
+          - ActionTitle: pda_ua0geC4
+            Description: pda_uKCm0KW
+            Check: NearPoi
+            Names:
+              - GoldSmugglers
+            GuidingDistance: -1
+            TriggerDistance: 200
+      - TaskTitle: pda_qOZ88WO
+        Actions:
+          - ActionTitle: pda_emKK88i
+            Description: pda_Oq88ieG
+            Check: SubjectKilled
+            Names:
+              - PirateThugSG
+              - PirateThugAR
+              - PirateThugLR
+            Amount: 6
+          - ActionTitle: pda_aOeOKaC
+            Description: pda_qWlW4mC
+            Check: BlockDestroyed
+            Types:
+              - SentryGun02
+            Amount: 2
+      - TaskTitle: pda_mWe4aam
+        Actions:
+          - ActionTitle: pda_780GGKC
+            Description: pda_WGK0a8i
+            Check: NearUnit
+            GuidingDistance: -1
+            TriggerDistance: 10
+            Names:
+              - GoldSmugglers
+              - GoldStash
+        Headline: ''
+      - TaskTitle: pda_SkmC47K
+        Actions:
+          - ActionTitle: pda_OaaiO8a
+            Description: pda_WKqOOeK
+            Check: WaitAction
+            Amount: 30
+      - TaskTitle: pda_0884WOa
+        Actions:
+          - ActionTitle: pda_SSGuQ8S
+            Description: pda_SgaSC8e
+            Check: NearUnit
+            GuidingDistance: -1
+            TriggerDistance: 25
+            Names:
+              - Abandoned Pyramid
+              - PyramidEntrance
+      - TaskTitle: pda_JK8OWcm
+        Actions:
+          - ActionTitle: pda_CuKaqEW
+            Description: pda_8uOa8W8
+            Check: NearUnit
+            GuidingDistance: 25
+            TriggerDistance: 8
+            Names:
+              - Abandoned Pyramid
+              - GoldStash1
+          - ActionTitle: pda_ueGOKC4
+            Description: pda_4uGc8GK
+            Check: NearUnit
+            GuidingDistance: 25
+            TriggerDistance: 8
+            Names:
+              - Abandoned Pyramid
+              - GoldStash2
+          - ActionTitle: pda_mGa80bu
+            Description: pda_GKmCC80
+            Check: NearUnit
+            GuidingDistance: 25
+            TriggerDistance: 8
+            Names:
+              - Abandoned Pyramid
+              - GoldStash3
+      - TaskTitle: pda_qO2KCKa
+        Actions:
+          - ActionTitle: pda_OWe4q40
+            Description: pda_Gi88quO
+            Check: WaitAction
+            Amount: 30
+      - TaskTitle: pda_KWYBm0a
+        Actions:
+          - ActionTitle: pda_KtaCi4m
+            Description: pda_DASKKRW
+            Check: NearUnit
+            GuidingDistance: -1
+            TriggerDistance: 10
+            Names:
+              - Abandoned Pyramid
+              - BossFightLever
+      - TaskTitle: pda_mmKYACK
+        Actions:
+          - ActionTitle: pda_OAO4Sne
+            Description: pda_CKKOSri
+            Check: SubjectKilled
+            Names:
+              - MechaBotTank
+            Amount: 1
+      - TaskTitle: pda_Kew48ii
+        Actions:
+          - ActionTitle: pda_5dqaoGK
+            Description: pda_GaC04CC
+            Check: NearUnit
+            GuidingDistance: 10
+            TriggerDistance: 10
+            Names:
+              - Abandoned Pyramid
+              - PyramidExit
+      - TaskTitle: pda_8a8be6K
+        Actions:
+          - ActionTitle: pda_SV2OqGo
+            Description: pda_4mGsCaG
+            Check: NearPoi
+            Names:
+              - ArcadiaPortal
+            GuidingDistance: -1
+            TriggerDistance: 200
+    Description: pda_SWa8eCg
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    CompletedMessage: dlg;HC_HavenVR_AbanPyramid_PDAComplete|
+    Rewards:
+      - Type: XP
+        Count: 5000
+      - Type: Reputation
+        Faction:
+          - Trader
+        Count: 5000
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    PictureFile: ArcAbandonedPyramid.jpg
+  - ChapterTitle: pda_q4KiKSp
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_GGxuaiR
+        Actions:
+          - ActionTitle: pda_Wi4iqaG
+            Description: pda_cum0uaW
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - HallOfChampions
+        CompletedMessage: mbox;20|pda_SGqGWD8
+      - TaskTitle: pda_a4OSTmq
+        Actions:
+          - ActionTitle: pda_ES4i8O0
+            Description: pda_44i0OW4
+            Check: Signal
+            Names:
+              - '*SENS_ENTER'
+              - SENS_ENTER
+        CompletedMessage: mbox;20|pda_m0dSqCa
+      - TaskTitle: pda_WauC040
+        Actions:
+          - ActionTitle: pda_KMSO8q0
+            Description: pda_OO85KW4
+            Check: NearUnit
+            GuidingDistance: 50
+            TriggerDistance: 6
+            Names:
+              - Hall of Champions
+              - LVR_BEGIN
+        CompletedMessage: mbox;20|pda_gOimmCi
+      - TaskTitle: pda_eWUa4CO
+        Actions:
+          - ActionTitle: pda_RG4EWaG
+            Description: pda_Sm480CW
+            Check: Signal
+            Names:
+              - LVR_BEGIN
+              - '*LVR_BEGIN'
+      - TaskTitle: pda_4WeKKGK
+        Actions:
+          - ActionTitle: pda_Gu0qaiS
+            Description: pda_S08LmmW
+            Check: Signal
+            Names:
+              - '*LVR_C1COMPLETE'
+              - LVR_C1COMPLETE
+        StartMessage: high;20|pda_6eGC0mq
+      - TaskTitle: pda_88Kqw8G
+        Actions:
+          - ActionTitle: pda_YZOiCYO
+            Description: pda_0qqKOGC
+            Check: Signal
+            Names:
+              - '*LVR_C2COMPLETE'
+              - LVR_C2COMPLETE
+        StartMessage: high;20|pda_4eKGnKb
+      - TaskTitle: pda_eKGSqm0
+        Actions:
+          - ActionTitle: pda_ue088ei
+            Description: pda_q0SjOaa
+            Check: Signal
+            Names:
+              - '*LVR_C3_BOOM'
+              - LVR_C3_BOOM
+        CompletedMessage: mbox;20|pda_4mOMu88
+        StartMessage: high;20|pda_CG4Kamq
+      - TaskTitle: pda_uCqemGe
+        Actions:
+          - ActionTitle: pda_UCai8ea
+            Description: pda_qiaGCKW
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 20
+            Names:
+              - Hall of Champions
+              - Portal
+        CompletedMessage: mbox;20|pda_1SmiGa8
+      - TaskTitle: pda_MOe8WC4
+        Actions:
+          - ActionTitle: pda_C0GGOuw
+            Description: pda_uegCKi8
+            Check: WaitAction
+            Amount: 30
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    CompletedMessage: dlg;HC_HavenVR_HallofChampions_PDAComplete|
+    Rewards:
+      - Type: XP
+        Count: 10000
+      - Type: Reputation
+        Faction:
+          - Polaris
+          - Talon
+          - Trader
+          - Colonists
+        Count: 2000
+      - Item: Token
+        Meta: 7239
+        Count: 1
+      - Item: Robotics
+        Count: 25
+      - Item: Eden_PlasmaRifleEntropic
+        Count: 1
+      - Item: Eden_PlasmaChargeEntropic
+        Count: 25
+    Description: pda_8gisSiC
+    PictureFile: ArcHallOfChampions.jpg
+  - ChapterTitle: pda_eeuGqKm
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_uSaSGmS
+        Actions:
+          - ActionTitle: pda_mC0a84u
+            Description: pda_aGaWO0e
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - RoboticsTunnel
+        CompletedMessage: mbox;20|pda_qGaiGYu
+      - TaskTitle: pda_8CYKTWO
+        Actions:
+          - ActionTitle: pda_C88a0Gi
+            Check: Signal
+            Names:
+              - Entrance
+            Description: pda_qq4O4Gu
+            GuidingDistance: 50
+            TriggerDistance: 12
+        StartMessage: mbox;20|pda_8Oi4K4S
+        CompletedMessage: mbox;20|pda_mKeKCsG
+      - TaskTitle: pda_GUGNek4
+        Actions:
+          - ActionTitle: pda_Om8N6Ti
+            Description: pda_8eeCOeW
+            Check: NearUnit
+            GuidingDistance: 50
+            TriggerDistance: 6
+            Names:
+              - Robotics Tunnel
+              - Tunnel Access Controls
+      - TaskTitle: pda_SmG0K8S
+        Actions:
+          - ActionTitle: pda_GK8uqGY
+            Description: pda_qOqOKam
+            Check: Signal
+            Names:
+              - Hangar2Unlock
+            GuidingDistance: 6
+            TriggerDistance: 4
+        StartMessage: mbox;20|pda_iCwOa4m
+      - TaskTitle: pda_mWiuaqK
+        Actions:
+          - ActionTitle: pda_W8eaqBc
+            Description: pda_OaWq4qe
+            Check: Signal
+            Names:
+              - Hangar3Unlock
+            GuidingDistance: 6
+            TriggerDistance: 4
+        Headline: ''
+        StartMessage: mbox;20|pda_uWmOb9S
+      - TaskTitle: pda_8eG80O4
+        Actions:
+          - ActionTitle: pda_Iu4qe4S
+            Description: pda_KaS8GqA
+            Check: Signal
+            GuidingDistance: 50
+            TriggerDistance: 12
+            Names:
+              - OpenMainBase
+        CompletedMessage: mbox;20|pda_aKquW08
+      - TaskTitle: pda_89iKG84
+        Actions:
+          - ActionTitle: pda_mW0iiKa
+            Description: pda_0OmqWKe
+            Check: NearUnit
+            GuidingDistance: 25
+            TriggerDistance: 13
+            Names:
+              - Robotics Tunnel
+              - EXITPORTAL
+        StartDelay: 7
+        StartMessage: mbox;20|pda_49UGe0C
+      - TaskTitle: pda_i44Ghe4
+        Actions:
+          - ActionTitle: pda_qC4OmKq
+            Description: pda_qmmiSam
+            Check: Signal
+            Names:
+              - AllPowerOn
+        StartMessage: mbox;20|pda_W44444K
+      - TaskTitle: pda_KCKtSqK
+        Actions:
+          - ActionTitle: pda_0mK4OeC
+            Description: pda_GKW88ie
+            Check: NearUnit
+            GuidingDistance: 25
+            TriggerDistance: 13
+            Names:
+              - Robotics Tunnel
+              - EXITPORTAL
+        StartMessage: mbox;20|pda_OiS4Oeq
+        CompletedMessage: mbox;20|pda_8Imj4OO
+      - TaskTitle: pda_iK0GuG2
+        Actions:
+          - ActionTitle: pda_4O4qCaK
+            Description: pda_4O4OeWG
+            Check: WaitAction
+            Amount: 30
+    CompletedMessage: dlg;HC_HavenVR_RoboticsTunnel_PDAComplete|
+    Rewards:
+      - Type: XP
+        Count: 7500
+      - Type: Reputation
+        Faction:
+          - Polaris
+          - Talon
+          - Trader
+          - Colonists
+        Count: 1000
+      - Item: AncientRelics
+        Count: 10
+      - Item: Token
+        Count: 1
+        Meta: 7239
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    Description: pda_K9qqqeC
+    PictureFile: ArcRoboticsTunnel.jpg
+  - ChapterTitle: pda_iCaOSae
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_SS8u8Ce
+        Actions:
+          - ActionTitle: pda_Kaua44C
+            Description: pda_88u8S0u
+            Check: NearUnit
+            GuidingDistance: 1000
+            TriggerDistance: 10
+            Names:
+              - Arcadia Station
+              - LegacyDreadnaught
+      - TaskTitle: pda_qaiC140
+        Actions:
+          - ActionTitle: pda_SiuwgGO
+            Description: pda_t4qiWau
+            Check: Signal
+            Names:
+              - PlayerArrives
+      - TaskTitle: pda_eSCSWeO
+        Actions:
+          - ActionTitle: pda_emWKe6G
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 15
+            Description: pda_exu084w
+            Names:
+              - LegacyDreadnaught
+              - Enter Legacy Dreadnaught
+      - TaskTitle: pda_eqm0Wqq
+        Actions:
+          - ActionTitle: pda_4WwdKKm
+            Check: Signal
+            Names:
+              - CargoDoorBoom
+            Description: pda_GZCeKmC
+      - TaskTitle: pda_8W8Oa0e
+        Actions:
+          - ActionTitle: pda_8W7YkK4
+            Description: pda_4YcqOWG
+            Check: NearUnit
+            GuidingDistance: 20
+            TriggerDistance: 5
+            Names:
+              - LegacyDreadnaught
+              - Engineering
+      - TaskTitle: pda_S00WKeW
+        Actions:
+          - ActionTitle: pda_ieKSuKa
+            Check: Signal
+            Names:
+              - BridgeAccess
+            Description: pda_q4WKWGU
+      - TaskTitle: pda_iuSCOei
+        Actions:
+          - ActionTitle: pda_44u8Km8
+            Description: pda_WiOqu8m
+            Check: NearUnit
+            GuidingDistance: 50
+            TriggerDistance: 10
+            Names:
+              - LegacyDreadnaught
+              - Bridge
+      - TaskTitle: pda_a0am844
+        Actions:
+          - ActionTitle: pda_aA0Bru8
+            Description: pda_Ste0WSK
+            Check: WaitAction
+            Amount: 3
+      - TaskTitle: pda_1WKGiWC
+        Actions:
+          - ActionTitle: pda_qKSOKCm
+            Check: Signal
+            Names:
+              - LeftWing
+            Description: pda_OQOa0Oq
+      - TaskTitle: pda_e0OmKW4
+        Actions:
+          - ActionTitle: pda_8OuiDSi
+            Check: Signal
+            Names:
+              - LeftHangarPower
+            Description: pda_WiiSi86
+      - TaskTitle: pda_Su8iKde
+        Actions:
+          - ActionTitle: pda_WiKSTae
+            Description: pda_KeSmCmg
+            Check: NearUnit
+            GuidingDistance: 100
+            TriggerDistance: 20
+            Names:
+              - LegacyDreadnaught
+              - Bridge
+      - TaskTitle: pda_u48C4O0
+        Actions:
+          - ActionTitle: pda_CW8eOK8
+            Description: pda_qeC0qCW
+            Check: Signal
+            Names:
+              - RightWing
+      - TaskTitle: pda_Cqam04C
+        Actions:
+          - ActionTitle: pda_n0uG4Ci
+            Description: pda_S2i4SOo
+            Check: NearPoi
+            Names:
+              - EscapeSV
+            GuidingDistance: 60
+            TriggerDistance: 15
+      - TaskTitle: pda_Ku80uee
+        Actions:
+          - ActionTitle: pda_Oe40i4e
+            Description: pda_W50mmCW
+            Check: NearPoi
+            Names:
+              - Corrupted Station
+            GuidingDistance: -1
+            TriggerDistance: 300
+      - TaskTitle: pda_uCa0aIS
+        Actions:
+          - ActionTitle: pda_aiSauAm
+            Description: pda_uKiq8WS
+            Check: NearUnit
+            GuidingDistance: -1
+            TriggerDistance: 30
+            Names:
+              - Corrupted Station
+              - EXITPORTAL2
+      - TaskTitle: pda_GquOWcv
+        Actions:
+          - ActionTitle: pda_04D8qQP
+            Description: pda_ucu4S4e
+            Check: WaitAction
+            Amount: 30
+    Description: pda_gkKL40O
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    PictureFile: ArcDreadnaught.jpg
+    Rewards:
+      - Type: XP
+        Count: 5000
+      - Item: Optronics
+        Count: 10
+      - Item: Robotics
+        Count: 10
+      - Item: Token
+        Count: 1
+        Meta: 7239
+  - ChapterTitle: pda_a40CSf8
+    Category: SoloMission
+    NoSkip: true
+    Activatable: Always
+    Visibility: Always
+    PlayerLevel: 1
+    Description: pda_bmZuqKG
+    Tasks:
+      - TaskTitle: pda_aS84emq
+        Actions:
+          - ActionTitle: pda_4WqGSqI
+            Description: pda_8iiOGaS
+            Check: WaitAction
+            Amount: 3
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 240
+      DelayAdd: 0
+      NoReminder: 'true'
+    CompletedMessage: mbox;20|pda_SuCGmSm
+    PictureFile: ArcDeathMart.jpg

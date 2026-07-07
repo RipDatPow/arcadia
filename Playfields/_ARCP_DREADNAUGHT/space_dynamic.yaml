@@ -1,0 +1,259 @@
+# Playfield Characteristics
+Description: "Difficulty: [c][ff00ff][b]Difficult[/b][-][/c]\n[c][ff00ff][b]Legacy Dreadnaught[/b][-][/c]"
+
+
+Gravity: 0
+AtmosphereEnabled: False
+PvPProb: 0
+UseFixed: True
+Instance:
+   Time: 60
+   MaxPlayers: 2
+   PortalOpen: 60
+   Cooldown: 240
+   AllowBlueprints: False
+
+# Cold Star
+Radiation: [5,10]
+TemperatureDay: [-250,-200]
+Music: [Praxis]
+
+PlayfieldType: Space
+LandClaimZone: Device
+PlanetType: Arcadia Space
+PlayfieldLevelOverride: [4,4]
+
+    # # ---------------------------------------------------------------------
+# ===========================================================================================================================================================================================
+# ===========================================================================================================================================================================================
+# ===========================================================================================================================================================================================
+
+### Resource Asteroid
+Resources:                     
+    - Name: [ AsteroidVoxel01Iron, AsteroidVoxel02Iron, AsteroidVoxel03Iron]
+      DisplayName: Iron Asteroid
+      CountMinMax: [ 0, 0 ]
+      Probability: 0    
+      Properties:     
+        - Key: RegenAfter
+          Value: 180         
+
+### POIs
+POIs:
+    - Type: AsteroidVoxel01Ice
+      Name: [AsteroidVoxel01Ice, AsteroidVoxel02Ice, AsteroidVoxel03Ice]
+      DisplayName: Ice Asteroid
+      Faction: None
+      Mode: Survival
+      CountMinMax: [ 12, 20 ]    
+      Probability: 1
+      Properties:     
+        - Key: RegenAfter
+          Value: 180  
+
+
+# ======================================================================================================================================================================================================
+#Legacy Dreadnaught----------------------------------------------------------
+    - Type: BA_Alien   
+      Name: [ARCP_LEGACYDREADNAUGHT]
+      DisplayName: LegacyDreadnaught
+      Faction: TheLegacy
+      Mode: Survival
+      CountMinMax: [ 1, 1 ]    
+      Probability: 1
+      InitPower: True
+      SpaceDefenseOverrideDefaults: True
+      SpaceDefenseProbability: 0
+      Compound:
+        CountMinMax: [8, 10]
+        Probability: 1
+        Name: [SV_Destroyed_withWarp, CV_Destroyed1, CV_Destroyed2, CV_Destroyed3, CV_Destroyed4, CV_Destroyed5, CV_DestroyedFront, CV_DestroyedRear, BA_CrashedCV_2, BA_CrashedCV_3]
+        DistanceMinMax: [400, 1500] 
+        Rotate: true
+      Pos: [50, 0, 50]
+      Rot: [0, 0, 0]
+      Properties:     
+        - Key: Discovery
+          Value: False
+        - Key: MapMarker 
+          Value: Neutral  
+        - Key: RegenAfter
+          Value: 720   
+    - Type: SV_Player   
+      Name: [ARCP_SV_DREADNAUGHTESCAP]
+      DisplayName: EscapeSV
+      Faction: None
+      Mode: Survival
+      CountMinMax: [ 1, 1 ]    
+      Probability: 1
+      InitPower: True
+      Pos: [-30.0, 21.0, 95.0]
+      Rot: [0, 0, 0]
+      Properties:     
+        - Key: Discovery
+          Value: False
+        - Key: MapMarker 
+          Value: Neutral  
+        - Key: RegenAfter
+          Value: 720  
+#CorruptedStation----------------------------------------------------------
+    - Type: BA_Alien   
+      Name: [ARCP_CORRUPTEDSTATION]
+      DisplayName: Corrupted Station
+      Faction: Alien
+      Mode: Survival
+      CountMinMax: [ 1, 1 ]    
+      Probability: 1
+      InitPower: True
+      SpaceDefenseOverrideDefaults: True
+      SpaceDefenseProbability: 0
+      Pos: [4000, -300, 800]
+      Rot: [0, 0, 0]
+      Properties:     
+        - Key: Discovery
+          Value: False
+        - Key: MapMarker 
+          Value: Neutral  
+        - Key: RegenAfter
+          Value: 720   
+
+# ================================================================================================================================================================================= Graveyard
+# ======================================================================================================================================================================================================
+#Graveyard Distress Beacon----------------------------------------------------------
+    # - Type: BA_Admin   
+    #   Name: [Eden_BeaconAdmin]
+    #   DisplayName: Beacon
+    #   Faction: Alien
+    #   Mode: Survival
+    #   CountMinMax: [ 1, 1 ]    
+    #   Probability: 1
+    #   InitPower: True
+    #   SpaceDefenseOverrideDefaults: True
+    #   SpaceDefenseProbability: 0
+    #   Compound:
+    #     CountMinMax: [8, 10]
+    #     Probability: 1
+    #     Name: [SV_Destroyed_withWarp, CV_Destroyed1, CV_Destroyed2, CV_Destroyed3, CV_Destroyed4, CV_Destroyed5, CV_DestroyedFront, CV_DestroyedRear, BA_CrashedCV_2, BA_CrashedCV_3]
+    #     DistanceMinMax: [400, 1500] 
+    #     Rotate: true
+    #   Position:
+    #      PosXZMinMax: [100, 500]
+    #      PosYMax: 500 
+    #   Properties:     
+    #     - Key: Discovery
+    #       Value: False
+    #     - Key: MapMarker 
+    #       Value: Neutral  
+    #     - Key: RegenAfter
+    #       Value: 720   
+
+# Compound Definitions for Graveyards       
+    # - Type: SV_Player   
+    #   Name: [SV_Destroyed_withWarp]
+    #   DisplayName: Destroyed Small Vessel
+    #   Faction: None
+    #   Mode: Survival
+    #   CountMinMax: [ 1, 1 ]    
+    #   Probability: 1 
+    #   IsCompoundSubDesc: True      
+    #   InitPower: False
+    #   Properties:     
+    #     - Key: MapMarker 
+    #       Value: Neutral  
+    #     - Key: RegenAfter
+    #       Value: 720     
+
+#Default Space Wrecks ------------------------------------------------------------------------------------------------------------------
+    - Type: BA_Alien   
+      Name: [BAO_BurntOutReconVessel, BAO_CombatWreckage, BAO_JettisonedCargoPod, BAO_SeveredShip, BAO_TornThrusterArray, CV_LightCarrierWreck, SV_FA005XHunter]  
+      DisplayName: Wreckage
+      Faction: None
+      Mode: Survival
+      CountMinMax: [ 6, 12 ]     
+      Probability: 1
+      # Rotate: true
+      InitPower: True
+      Position:
+         PosXZMinMax: [800, 3000]
+         PosYMax: 1000 
+      Properties: 
+        - Key: RegenAfter
+          Value: 720  
+
+DroneBaseSetup:
+    - Name: MainDroneBase
+      Count: [1, 1]
+      DroneOnDuty:
+        Name: [SpaceDroneLaser, SpaceDronePlasma]
+        Faction: Alien
+        Count: [2, 4]
+        Radius: [1400, 2000]
+      FreeDrones:
+          - Name: [SpaceDroneLaser, SpaceDronePlasma]
+            Faction: Alien
+            CanNotBeControlledByMasterAI: False
+            Count: [3, 5]
+            Radius: [50, 100]
+            Properties:
+              - Key: AIManPatrolGroups
+                Value: ARC_CORRUPTEDSTATION
+              - Key: AIManMaxPursuitRange
+                Value: 5000
+              - Key: AIManPatrolFactions #POI's of which factions can be patrolled?
+                Value: Alien
+      SpaceVessels:
+          - Name: [Eden_OPVPolarisMiner]
+            Faction: Polaris
+            Count: [1, 2]
+            FixedMaxSpeed: [15, 20]
+            Mission: SpacePatrol
+            MissionDescription:
+              Name: RangePatrol
+              RadiusMinMax: [3500, 4500] 
+              Position:
+                PosXZMinMax: [50, 100]
+                PosYMax: 100
+              DelayBetweenRespawnMinMax: [2100, 2400]
+              DelayBeforeSelfDestructionMinMax: [1800, 1800]
+              IsRespawnAfterDestruction: True
+            StockDescription:
+              Name: [SpaceDroneLaser]
+              AmountMinMax: [0, 0]
+              ExtraMinMax: [0,0]    
+
+          - Name: [Eden_OPVPolarisMinerIce]
+            Faction: Polaris
+            Count: [1, 2]
+            FixedMaxSpeed: [15, 20]
+            Mission: SpacePatrol
+            MissionDescription:
+              Name: RangePatrol
+              RadiusMinMax: [2000, 3500] 
+              Position:
+                PosXZMinMax: [50, 100]
+                PosYMax: 100
+              DelayBetweenRespawnMinMax: [2100, 2400]
+              DelayBeforeSelfDestructionMinMax: [1800, 1800]
+              IsRespawnAfterDestruction: True
+            StockDescription:
+              Name: [SpaceDroneLaser]
+              AmountMinMax: [0, 0]
+              ExtraMinMax: [0,0]
+                    
+          - Name: [BAO_Dion-III, BAO_Thermica-Station, BAO_OrbitalSpire, BAO_CrusaldOrbital] 
+            Count: [2, 4]
+            Faction: Zirax     
+            FixedMaxSpeed: [0,0]
+            Mission: Immobile
+            MissionDescription:
+              Name: Immobile
+              Position:
+                PosXZMinMax: [5000, 9000]
+                PosYMax: 1000               
+            StockDescription:
+              Name: [SpaceDroneLaser, SpaceDronePlasma]
+              AmountMinMax: [5, 10]
+              ExtraMinMax: [0,0]      
+            Properties: 
+              - Key: RegenAfter
+                Value: 720    

@@ -1,0 +1,2122 @@
+{ +Dialogue Name: HCTrader_DialogueSwitch_Start
+  NPCName: dialogue_O8ua08a
+  Next_1: HCTrader_DialogueSwitch_Router
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_Talk
+  NPCName: dialogue_O8ua08a
+  Next_1: HCTrader_DialogueSwitch_Router
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_Trade
+  NPCName: dialogue_O8ua08a
+  Execute_1: "OpenTraderWindow()"
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_Router
+  Variable_1: "randomizer", param1: int
+  Next_1: HCTrader_DialogueSwitch_RouterG1
+  NextIf_1: "randomizer == 1"
+  Next_2: HCTrader_DialogueSwitch_RouterG2
+  NextIf_2: "randomizer == 2"
+  Next_3: HCTrader_DialogueSwitch_RouterG3
+  NextIf_3: "randomizer == 3"
+  Next_4: HCTrader_DialogueSwitch_RouterG4
+  NextIf_4: "randomizer == 4"
+  NPCName: dialogue_O8ua08a
+  Execute_1: "randomizer = Random(1,4)"
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterG1
+  NPCName: dialogue_O8ua08a
+  Output: dialogue_UOWuGiI
+  Next_1: HCTrader_DialogueSwitch_RouterMenu
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterG2
+  NPCName: dialogue_O8ua08a
+  Output: dialogue_C2EQSqi
+  Next_1: HCTrader_DialogueSwitch_RouterMenu
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterG3
+  NPCName: dialogue_O8ua08a
+  Output: dialogue_mO00mCO
+  Next_1: HCTrader_DialogueSwitch_RouterMenu
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterG4
+  NPCName: dialogue_O8ua08a
+  Output: dialogue_E8MS0iS
+  Next_1: HCTrader_DialogueSwitch_RouterMenu
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterMenu
+  Option_1: dialogue_mSa4Km0
+  OptionNext_1: HCTrader_DialogueSwitch_RouterRumors
+  Option_2: dialogue_0O8qCW0
+  OptionNext_2: HCTrader_DialogueSwitch_Trade
+  Option_3: dialogue_GKiiW0G
+  OptionNext_3: End
+  NPCName: dialogue_O8ua08a
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors
+  Variable_1: "randomrumor", param1: int
+  Execute_1: "randomrumor = Random(1,11)"
+  Next_1: HCTrader_DialogueSwitch_RouterRumors1
+  NextIf_1: "randomrumor == 1"
+  Next_2: HCTrader_DialogueSwitch_RouterRumors2
+  NextIf_2: "randomrumor == 2"
+  Next_3: HCTrader_DialogueSwitch_RouterRumors3
+  NextIf_3: "randomrumor == 3"
+  Next_4: HCTrader_DialogueSwitch_RouterRumors4
+  NextIf_4: "randomrumor == 4"
+  Next_5: HCTrader_DialogueSwitch_RouterRumors5
+  NextIf_5: "randomrumor == 5"
+  Next_6: HCTrader_DialogueSwitch_RouterRumors6
+  NextIf_6: "randomrumor == 6"
+  Next_7: HCTrader_DialogueSwitch_RouterRumors7
+  NextIf_7: "randomrumor == 7"
+  Next_8: HCTrader_DialogueSwitch_RouterRumors8
+  NextIf_8: "randomrumor == 8"
+  Next_9: HCTrader_DialogueSwitch_RouterRumors9
+  NextIf_9: "randomrumor == 9"
+  Next_10: HCTrader_DialogueSwitch_RouterRumors10
+  NextIf_10: "randomrumor == 10"
+  Next_11: HCTrader_DialogueSwitch_RouterRumors11
+  NextIf_11: "randomrumor == 11"
+  NPCName: dialogue_O8ua08a
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors1
+  Next_1: HCTrader_DialogueSwitch_RouterMenu
+  Output: dialogue_iSKamuW
+  NPCName: dialogue_O8ua08a
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors2
+  Next_1: HCTrader_DialogueSwitch_RouterMenu
+  Output: dialogue_OSbGqWS
+  NPCName: dialogue_O8ua08a
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors3
+  Next_1: HCTrader_DialogueSwitch_RouterMenu
+  Output: dialogue_SGS2SWO
+  NPCName: dialogue_O8ua08a
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors4
+  Next_1: HCTrader_DialogueSwitch_RouterMenu
+  Output: dialogue_mauKSa0
+  NPCName: dialogue_O8ua08a
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors5
+  Next_1: HCTrader_DialogueSwitch_RouterMenu
+  Output: dialogue_waaGaC4
+  NPCName: dialogue_O8ua08a
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors6
+  Next_1: HCTrader_DialogueSwitch_RouterMenu
+  NPCName: dialogue_O8ua08a
+  Output: dialogue_WK0C8CK
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors7
+  Next_1: HCTrader_DialogueSwitch_RouterMenu
+  NPCName: dialogue_O8ua08a
+  Output: dialogue_UKSm7eG
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors8
+  Next_1: HCTrader_DialogueSwitch_RouterMenu
+  NPCName: dialogue_O8ua08a
+  Output: dialogue_u88mXWq
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors9
+  NPCName: dialogue_SWZ0SCq
+  Output: dialogue_0umemu0
+  Next_1: HCTrader_DialogueSwitch_RouterMenu
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors10
+  NPCName: dialogue_8eaCO0S
+  Output: dialogue_aSa4sSi
+  Next_1: HCTrader_DialogueSwitch_RouterMenu
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors11
+  NPCName: dialogue_8WCC4oW
+  Output: dialogue_qaSSqeG
+  Next_1: HCTrader_DialogueSwitch_RouterRumors11_HasShake
+  NextIf_1: "HasItem('Milkshake', 1)"
+  Next_2: HCTrader_DialogueSwitch_RouterMenu
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors11_HasShake
+  NPCName: dialogue_de0aWiG
+  Option_1: dialogue_uiSCaW4
+  OptionNext_1: HCTrader_DialogueSwitch_RouterRumors11_HasShake_Give
+  Option_2: dialogue_mW4WOWK
+  OptionNext_2: HCTrader_DialogueSwitch_RouterMenu
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors11_HasShake_Give
+  NPCName: dialogue_KW00KWF
+  Output: dialogue_eKaLWa0
+  Option_1: dialogue_a84H4Ki
+  OptionNext_1: HCTrader_DialogueSwitch_RouterRumors11_HasShake_Give_2
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors11_HasShake_Give_2
+  Output: dialogue_8qTC8eq
+  Next_1: HCTrader_DialogueSwitch_RouterRumors11_HasShake_Give_2_Menu
+  NPCName: dialogue_maC80uC
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors11_HasShake_Give_2_Menu
+  Option_1: dialogue_uCWKOKi
+  OptionNext_1: HCTrader_DialogueSwitch_RouterRumors11_HasShake_Give_2_Menu_1
+  Option_2: dialogue_0ue40RO
+  OptionNext_2: HCTrader_DialogueSwitch_RouterRumors11_HasShake_Give_2_Menu_2
+  Option_3: dialogue_G88eGCe
+  OptionNext_3: HCTrader_DialogueSwitch_RouterRumors11_HasShake_Give_2_Menu_3
+  Option_4: dialogue_uw2OWmf
+  OptionNext_4: HCTrader_DialogueSwitch_RouterMenu
+  NPCName: dialogue_K4iauih
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors11_HasShake_Give_2_Menu_1
+  NPCName: dialogue_9OqGGqW
+  Output: dialogue_0ma8aO8
+  Next_1: HCTrader_DialogueSwitch_RouterRumors11_HasShake_Give_2_Menu
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors11_HasShake_Give_2_Menu_2
+  NPCName: dialogue_8e4GGSi
+  Output: dialogue_KKi4SqK
+  Next_1: HCTrader_DialogueSwitch_RouterRumors11_HasShake_Give_2_Menu
+}
+{ +Dialogue Name: HCTrader_DialogueSwitch_RouterRumors11_HasShake_Give_2_Menu_3
+  NPCName: dialogue_u44SGa5
+  Output: dialogue_aO8WCam
+  Next_1: HCTrader_DialogueSwitch_RouterRumors11_HasShake_Give_2_Menu
+}
+{ +Dialogue Name: HC_VRStation_BarkingInit
+  BarkingState: HC_VRStation_BarkingRouter
+}
+{ +Dialogue Name: HC_VRStation_BarkingRouter
+  Execute_1: "randomizer = Random(1,11)"
+  Variable_1: "randomizer", param1: int
+  Next_1: HC_VRStation_BarkingRouterOpt1
+  NextIf_1: "randomizer == 1"
+  Next_2: HC_VRStation_BarkingRouterOpt2
+  NextIf_2: "randomizer == 2"
+  Next_3: HC_VRStation_BarkingRouterOpt3
+  NextIf_3: "randomizer == 3"
+  Next_4: HC_VRStation_BarkingRouterOpt4
+  NextIf_4: "randomizer == 4"
+  Next_5: HC_VRStation_BarkingRouterOpt5
+  NextIf_5: "randomizer == 5"
+  Next_6: HC_VRStation_BarkingRouterOpt6
+  NextIf_6: "randomizer == 6"
+  Next_7: HC_VRStation_BarkingRouterOpt7
+  NextIf_7: "randomizer == 7"
+  Next_8: HC_VRStation_BarkingRouterOpt8
+  NextIf_8: "randomizer == 8"
+  Next_9: HC_VRStation_BarkingRouterOpt9
+  NextIf_9: "randomizer == 9"
+  Next_10: HC_VRStation_BarkingRouterOpt10
+  NextIf_10: "randomizer == 10"
+  Next_11: HC_VRStation_BarkingRouterOpt11
+  NextIf_11: "randomizer == 11"
+}
+{ +Dialogue Name: HC_VRStation_BarkingRouterOpt1
+  Option_1: dialogue_WWumW40
+  OptionNext_1: End
+  Output: dialogue_aiWQaKm
+}
+{ +Dialogue Name: HC_VRStation_BarkingRouterOpt2
+  Option_1: dialogue_aWmu84G
+  OptionNext_1: End
+  Output: dialogue_Wma4i0e
+}
+{ +Dialogue Name: HC_VRStation_BarkingRouterOpt3
+  Option_1: dialogue_iiKreIe
+  OptionNext_1: End
+  Output: dialogue_WWCm4oK
+}
+{ +Dialogue Name: HC_VRStation_BarkingRouterOpt4
+  Option_1: dialogue_ikOEGOE
+  OptionNext_1: End
+  Output: dialogue_a0CWm0Q
+}
+{ +Dialogue Name: HC_VRStation_BarkingRouterOpt5
+  Option_1: dialogue_5eWSKam
+  OptionNext_1: End
+  Output: dialogue_8SWKOum
+}
+{ +Dialogue Name: HC_VRStation_BarkingRouterOpt6
+  Option_1: dialogue_gqimu2W
+  OptionNext_1: End
+  Output: dialogue_uuu8eiO
+}
+{ +Dialogue Name: HC_VRStation_BarkingRouterOpt7
+  Option_1: dialogue_au2Simu
+  OptionNext_1: End
+  Output: dialogue_uuaCeCi
+}
+{ +Dialogue Name: HC_VRStation_BarkingRouterOpt8
+  Option_1: dialogue_MGeDi00
+  OptionNext_1: End
+  Output: dialogue_0CtCqGG
+}
+{ +Dialogue Name: HC_VRStation_BarkingRouterOpt9
+  Output: dialogue_mmCiOii
+  Option_1: dialogue_8qemim8
+  OptionNext_1: End
+}
+{ +Dialogue Name: HC_VRStation_BarkingRouterOpt10
+  Output: dialogue_CfsK2Wm
+  Option_1: dialogue_ieSuOWC
+  OptionNext_1: End
+}
+{ +Dialogue Name: HC_VRStation_BarkingRouterOpt11
+  Output: dialogue_08qKOeS
+  Option_1: dialogue_KmeCui2
+  OptionNext_1: End
+}
+{ +Dialogue Name: HC_HavenVR
+  Next_1: HC_HavenVR_Router
+  Output: dialogue_me4q8Tu
+  NPCName: dialogue_0iWGmmm
+  Variable_1: "HC_HavenVR_Completed", param1: dbplayer_int
+  Variable_2: "HC_FactionMission_CompletedCount", param1: dbplayer_int
+  Variable_3: "HC_Job_CompletedCount", param1: dbplayer_int
+  Variable_4: "HC_Medusa_CompletedCount", param1: dbplayer_int
+}
+{ +Dialogue Name: HC_HavenVR_Router
+  NPCName: dialogue_maGmaGG
+  Output: dialogue_eWbWGe0
+  Option_1: dialogue_GuWS4G0
+  OptionNext_1: HC_HavenVR_Router_WhatIs
+  Option_2: dialogue_S0SinC0
+  OptionNext_2: HC_HavenVR_Router_HowTo
+  Option_3: dialogue_WKjcuOm
+  OptionNext_3: HC_HavenVR_Router_Locations
+  Option_4: dialogue_qmuWaem
+  OptionNext_4: HC_HavenVR_Router_VRPlanets
+  Option_5: dialogue_C4SKlm0
+  OptionNext_5: HC_HavenVR_GamerProfile
+  Option_6: dialogue_WKumqmW
+  OptionNext_6: HC_HavenVR_LogOut
+}
+{ +Dialogue Name: HC_HavenVR_Router_WhatIs
+  Option_1: dialogue_q8eCemc
+  OptionNext_1: HC_HavenVR_Router
+  Output: dialogue_CISuGi4
+  NPCName: dialogue_Gm8KmWO
+}
+{ +Dialogue Name: HC_HavenVR_Router_HowTo
+  Option_1: dialogue_umOWq8i
+  OptionNext_1: HC_HavenVR_Router
+  Output: dialogue_0qGC4Ma
+  NPCName: dialogue_4OKW8Ka
+}
+{ +Dialogue Name: HC_HavenVR_Router_Locations
+  Option_1: dialogue_SqCWG0O
+  OptionNext_1: HC_HavenVR_Router
+  Output: dialogue_i44Wq0E
+  NPCName: dialogue_uWWeOSa
+}
+{ +Dialogue Name: HC_HavenVR_Router_VRPlanets
+  Next_1: HC_HavenVR_VRPlanets_Menu
+  NPCName: dialogue_aG4MqCK
+}
+{ +Dialogue Name: HC_HavenVR_LogOut
+  Next_1: End
+  Output: dialogue_8i4Kuqq
+  NPCName: dialogue_aSCC0uK
+}
+{ +Dialogue Name: HC_HavenVR_GamerProfile
+  Output: dialogue_qOCuOKG
+  Option_1: dialogue_SGKE8e4
+  OptionIf_1: "HasItem('FireStickRed', 1)"
+  OptionNext_1: HC_HavenVR_GamerProfile_HackMenu
+  OptionExecute_1: "RemoveItem('FireStickRed', 1);"
+  Option_2: dialogue_K0GZmii
+  OptionNext_2: HC_HavenVR
+  NPCName: dialogue_oSuiamG
+}
+{ +Dialogue Name: HC_HavenVR_GamerProfile_HackMenu
+  NPCName: dialogue_aC248OS
+  Output: dialogue_paKOeW4
+  Option_1: dialogue_aeS0uSS
+  OptionIf_1: "HasItem('FireStickRed', 2) && HasItem('FireStickBlue', 1) && HasItem('FireStickGreen', 1)"
+  OptionNext_1: HC_HavenVR_GamerProfile_HackMenu_Hacked25
+  OptionExecute_1: "RemoveItem('FireStickRed', 2); RemoveItem('FireStickBlue', 1); RemoveItem('FireStickGreen', 1);"
+  Option_2: dialogue_eCC4SWW
+  OptionIf_2: "HasItem('FireStickRed', 5) && HasItem('FireStickBlue', 2) && HasItem('FireStickGreen', 2)"
+  OptionNext_2: HC_HavenVR_GamerProfile_HackMenu_Hacked50
+  OptionExecute_2: "RemoveItem('FireStickRed', 5); RemoveItem('FireStickBlue', 2); RemoveItem('FireStickGreen', 2);"
+  Option_3: dialogue_CqeGGC8
+  OptionIf_3: "HasItem('FireStickRed', 10) && HasItem('FireStickBlue', 5) && HasItem('FireStickGreen', 5)"
+  OptionNext_3: HC_HavenVR_GamerProfile_HackMenu_Hacked100
+  OptionExecute_3: "RemoveItem('FireStickRed', 10); RemoveItem('FireStickBlue', 5); RemoveItem('FireStickGreen', 5);"
+  Option_4: dialogue_KS8824u
+  OptionNext_4: HC_HavenVR_GamerProfile_HackMenu_Help
+  Option_5: dialogue_uA4SWGW
+  OptionNext_5: HC_HavenVR_GamerProfile_HackMenu_GoBack
+}
+{ +Dialogue Name: HC_HavenVR_GamerProfile_HackMenu_Help
+  NPCName: dialogue_04Q0m88
+  Output: dialogue_00mOxu8
+  Option_1: dialogue_CmSiqvm
+  OptionNext_1: HC_HavenVR_GamerProfile_HackMenu
+}
+{ +Dialogue Name: HC_HavenVR_GamerProfile_HackMenu_GoBack
+  NPCName: dialogue_qmSOSqm
+  Output: dialogue_qMOeWue
+  Next_1: HC_HavenVR_Router
+}
+{ +Dialogue Name: HC_HavenVR_GamerProfile_HackMenu_Hacked25
+  NPCName: dialogue_mmQmW7W
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 25; HC_Medusa_CompletedCount = HC_Medusa_CompletedCount + 25; HC_FactionMission_CompletedCount = HC_FactionMission_CompletedCount + 25; HC_HavenVR_Completed = HC_HavenVR_Completed + 25;"
+  Output: dialogue_66qCqbq
+  Next_1: HC_HavenVR_GamerProfile_HackMenu_GoBack
+}
+{ +Dialogue Name: HC_HavenVR_GamerProfile_HackMenu_Hacked50
+  NPCName: dialogue_OSqPGuK
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 50; HC_Medusa_CompletedCount = HC_Medusa_CompletedCount + 50; HC_FactionMission_CompletedCount = HC_FactionMission_CompletedCount + 50; HC_HavenVR_Completed = HC_HavenVR_Completed + 50;"
+  Output: dialogue_GaWe4WG
+  Next_1: HC_HavenVR_GamerProfile_HackMenu_GoBack
+}
+{ +Dialogue Name: HC_HavenVR_GamerProfile_HackMenu_Hacked100
+  NPCName: dialogue_KKmueSO
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 100; HC_Medusa_CompletedCount = HC_Medusa_CompletedCount + 100; HC_FactionMission_CompletedCount = HC_FactionMission_CompletedCount + 100; HC_HavenVR_Completed = HC_HavenVR_Completed + 100;"
+  Output: dialogue_miAOSiq
+  Next_1: HC_HavenVR_GamerProfile_HackMenu_GoBack
+}
+{ +Dialogue Name: HC_HavenVR_VRPlanets_Menu
+  Output: dialogue_GGGKOCW
+  Option_1: dialogue_mqOqY0K
+  OptionNext_1: HC_HavenVR_VRPlanets_Menu_Aethon
+  Option_2: dialogue_quG8GWe
+  OptionNext_2: HC_HavenVR_VRPlanets_Menu_Medusa
+  Option_3: dialogue_mWt4qWq
+  OptionNext_3: HC_HavenVR_VRPlanets_Menu_ShangriLa
+  Option_4: dialogue_WS8eu0i
+  OptionNext_4: HC_HavenVR_VRPlanets_Menu_Nyxara
+  Option_5: dialogue_SWWGWim
+  OptionNext_5: HC_HavenVR_Router
+  NPCName: dialogue_m0m8e8q
+}
+{ +Dialogue Name: HC_HavenVR_VRPlanets_Menu_Aethon
+  Output: dialogue_qMXMumG
+  Option_1: dialogue_8amKqS6
+  OptionNext_1: HC_HavenVR_VRPlanets_Menu
+  NPCName: dialogue_iSOKOS0
+}
+{ +Dialogue Name: HC_HavenVR_VRPlanets_Menu_Medusa
+  Output: dialogue_OmO8EGK
+  Option_1: dialogue_Sq4Ieq4
+  OptionNext_1: HC_HavenVR_VRPlanets_Menu
+  NPCName: dialogue_aKwGea4
+}
+{ +Dialogue Name: HC_HavenVR_VRPlanets_Menu_ShangriLa
+  Output: dialogue_SumuaKS
+  Option_1: dialogue_0oC4uCG
+  OptionNext_1: HC_HavenVR_VRPlanets_Menu
+  NPCName: dialogue_5a4uaue
+}
+{ +Dialogue Name: HC_HavenVR_VRPlanets_Menu_Nyxara
+  Output: dialogue_DGKmSmW
+  Option_1: dialogue_aI4eaK0
+  OptionNext_1: HC_HavenVR_VRPlanets_Menu
+  NPCName: dialogue_mrGaSeC
+}
+{ +Dialogue Name: HC_HavenVR_HallofChampions_PDAComplete
+  NPCName: dialogue_Ka5O44K
+  Output: dialogue_4iWew0m
+  Next_1: End
+  Variable_1: "HC_HavenVR_Completed", param1: dbplayer_int
+  Execute: "HC_HavenVR_Completed = HC_HavenVR_Completed + 1"
+}
+{ +Dialogue Name: HC_HavenVR_RoboticsTunnel_PDAComplete
+  NPCName: dialogue_uPWq4mW
+  Output: dialogue_QoGWO1A
+  Next_1: End
+  Variable_1: "HC_HavenVR_Completed", param1: dbplayer_int
+  Execute: "HC_HavenVR_Completed = HC_HavenVR_Completed + 1"
+}
+{ +Dialogue Name: HC_HavenVR_HavenCorpResort_PDAComplete
+  NPCName: dialogue_0S4qeWi
+  Output: dialogue_u4amKK4
+  Next_1: End
+  Variable_1: "HC_Job_CompletedCount", param1: dbplayer_int
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 1"
+}
+{ +Dialogue Name: HC_HavenVR_ExpeditionRescue_PDAComplete
+  NPCName: dialogue_4aOOOmK
+  Output: dialogue_OuC04CK
+  Next_1: End
+  Variable_1: "HC_Job_CompletedCount", param1: dbplayer_int
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 1"
+}
+{ +Dialogue Name: HC_HavenVR_BusinessCenter_PDAComplete
+  NPCName: dialogue_SmW4ZSO
+  Output: dialogue_G8O6OGS
+  Next_1: End
+  Variable_1: "HC_Job_CompletedCount", param1: dbplayer_int
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 1"
+}
+{ +Dialogue Name: HC_HavenVR_RaptorLab_PDAComplete
+  NPCName: dialogue_SGSGO0i
+  Output: dialogue_uO84GYW
+  Next_1: End
+  Variable_1: "HC_Job_CompletedCount", param1: dbplayer_int
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 1"
+}
+{ +Dialogue Name: HC_HavenVR_TempleOfHarvest_PDAComplete
+  NPCName: dialogue_88CKuuW
+  Output: dialogue_WSQPvGa
+  Next_1: End
+  Variable_1: "HC_Job_CompletedCount", param1: dbplayer_int
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 1"
+}
+{ +Dialogue Name: HC_HavenVR_VaultOfTheDoomed_PDAComplete
+  NPCName: dialogue_SQmSm0q
+  Output: dialogue_m4JuQCC
+  Next_1: End
+  Variable_1: "HC_Job_CompletedCount", param1: dbplayer_int
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 1"
+}
+{ +Dialogue Name: HC_HavenVR_SyndicateLair_PDAComplete
+  NPCName: dialogue_mSCu84u
+  Output: dialogue_umu0juG
+  Next_1: End
+  Variable_1: "HC_Job_CompletedCount", param1: dbplayer_int
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 1"
+}
+{ +Dialogue Name: HC_HavenVR_RedWater_PDAComplete
+  Output: dialogue_eG4qnC0
+  NPCName: dialogue_m8CCSOK
+  Next_1: End
+  Execute: "HC_FactionMission_CompletedCount = HC_FactionMission_CompletedCount + 1"
+  Variable_1: "HC_FactionMission_CompletedCount", param1: dbplayer_int
+}
+{ +Dialogue Name: HC_HavenVR_RoyalFlush_PDAComplete
+  NPCName: dialogue_KCmeW8i
+  Execute: "HC_FactionMission_CompletedCount = HC_FactionMission_CompletedCount + 1"
+  Output: dialogue_CSuWiWK
+  Next_1: End
+  Variable_1: "HC_FactionMission_CompletedCount", param1: dbplayer_int
+}
+{ +Dialogue Name: HC_HavenVR_PirateNet_PDAComplete
+  Output: dialogue_00uuOiF
+  Execute: "HC_FactionMission_CompletedCount = HC_FactionMission_CompletedCount + 1"
+  Next_1: End
+  NPCName: dialogue_0E4Cq8i
+  Variable_1: "HC_FactionMission_CompletedCount", param1: dbplayer_int
+}
+{ +Dialogue Name: HC_HavenVR_PrisonBreak_PDAComplete
+  Output: dialogue_qmimGGK
+  Variable_1: "HC_FactionMission_CompletedCount", param1: dbplayer_int
+  Execute: "HC_FactionMission_CompletedCount = HC_FactionMission_CompletedCount + 1"
+  Next_1: End
+  NPCName: dialogue_0iEK4U4
+}
+{ +Dialogue Name: HC_HavenVR_OceanLab_PDAComplete
+  Output: dialogue_iSSGe4E
+  Next_1: End
+  Execute: "HC_FactionMission_CompletedCount = HC_FactionMission_CompletedCount + 1"
+  NPCName: dialogue_Ga8ue0K
+  Variable_1: "HC_FactionMission_CompletedCount", param1: dbplayer_int
+}
+{ +Dialogue Name: HC_HavenVR_AbanPyramid_PDAComplete
+  Output: dialogue_gYCOKa4
+  NPCName: dialogue_Ke0OKau
+  Variable_1: "HC_FactionMission_CompletedCount", param1: dbplayer_int
+  Execute: "HC_FactionMission_CompletedCount = HC_FactionMission_CompletedCount + 1"
+  Next_1: End
+}
+{ +Dialogue Name: HC_HavenVR_TribalArena_PDAComplete
+  Output: dialogue_8m04e4K
+  NPCName: dialogue_WKqG8q8
+  Execute: "HC_Medusa_CompletedCount = HC_Medusa_CompletedCount + 1"
+  Variable_1: "HC_Medusa_CompletedCount", param1: dbplayer_int
+  Next_1: End
+}
+{ +Dialogue Name: HC_HavenVR_TribalArena_PDAComplete_Victory
+  NPCName: dialogue_e7GGi8S
+  Output: dialogue_0qmCKSq
+  Next_1: End
+}
+{ +Dialogue Name: HC_HavenVR_InfestedMine_PDAComplete
+  Output: dialogue_ukD3YaO
+  Next_1: End
+  Variable_1: "HC_Medusa_CompletedCount", param1: dbplayer_int
+  Execute: "HC_Medusa_CompletedCount = HC_Medusa_CompletedCount + 1"
+  NPCName: dialogue_iCka8eC
+}
+{ +Dialogue Name: HC_HavenVR_InfestedDeepMine_PDAComplete
+  Output: dialogue_iCYSkqO
+  NPCName: dialogue_eSGC8Ka
+  Variable_1: "HC_Medusa_CompletedCount", param1: dbplayer_int
+  Execute: "HC_Medusa_CompletedCount = HC_Medusa_CompletedCount + 1"
+  Next_1: End
+}
+{ +Dialogue Name: HCS9B_DialogueSwitch_Start
+  NPCName: dialogue_4Oa8Wi4
+  Next_1: HCS9B_DialogueSwitch_Router
+}
+{ +Dialogue Name: HCS9B_DialogueSwitch_Router
+  Execute_1: "randomizer = Random(1,4)"
+  Next_1: HCS9B_DialogueSwitch_RouterG1
+  NextIf_1: "randomizer == 1"
+  Next_2: HCS9B_DialogueSwitch_RouterG2
+  NextIf_2: "randomizer == 2"
+  Next_3: HCS9B_DialogueSwitch_RouterG3
+  NextIf_3: "randomizer == 3"
+  Next_4: HCS9B_DialogueSwitch_RouterG4
+  NextIf_4: "randomizer == 4"
+  NPCName: dialogue_GuCu8Uu
+  Variable_1: "randomizer", param1: int
+}
+{ +Dialogue Name: HCS9B_DialogueSwitch_RouterG1
+  Next_1: HCS9B_DialogueSwitch_RouterMenu
+  NPCName: dialogue_Gq4NCqe
+  Output: dialogue_OmGaM80
+}
+{ +Dialogue Name: HCS9B_DialogueSwitch_RouterG2
+  Next_1: HCS9B_DialogueSwitch_RouterMenu
+  NPCName: dialogue_aaOiC1M
+  Output: dialogue_uOeGlCn
+}
+{ +Dialogue Name: HCS9B_DialogueSwitch_RouterG3
+  Next_1: HCS9B_DialogueSwitch_RouterMenu
+  NPCName: dialogue_OSuGiaE
+  Output: dialogue_KG2C4eK
+}
+{ +Dialogue Name: HCS9B_DialogueSwitch_RouterG4
+  Next_1: HCS9B_DialogueSwitch_RouterMenu
+  NPCName: dialogue_rOSKKaW
+  Output: dialogue_Mq4has4
+}
+{ +Dialogue Name: HCS9B_DialogueSwitch_RouterMenu
+  Option_1: dialogue_qqqSiaG
+  OptionNext_1: HCS9B_DialogueSwitch_RouterRumors
+  Option_2: dialogue_iMGECaO
+  OptionNext_2: HCS9B_DialogueSwitch_RouterMenu_Trade
+  NPCName: dialogue_SmOGGqe
+}
+{ +Dialogue Name: HCS9B_DialogueSwitch_RouterMenu_Trade
+  Execute_1: "OpenTraderWindow()"
+  NPCName: dialogue_SWKKS4q
+}
+{ +Dialogue Name: HCS9B_DialogueSwitch_RouterRumors
+  Variable_1: "randomizer2", param1: int
+  Execute_1: "randomizer2 = Random(1,4)"
+  Next_1: HCS9B_DialogueSwitch_Rumor1
+  NextIf_1: "randomizer2 == 1"
+  Next_2: HCS9B_DialogueSwitch_Rumor2
+  NextIf_2: "randomizer2 == 2"
+  Next_3: HCS9B_DialogueSwitch_Rumor3
+  NextIf_3: "randomizer2 == 3"
+  Next_4: HCS9B_DialogueSwitch_Rumor4
+  NextIf_4: "randomizer2 == 4"
+  NPCName: dialogue_W0ieR8K
+}
+{ +Dialogue Name: HCS9B_DialogueSwitch_Rumor1
+  Next_1: HCS9B_DialogueSwitch_RouterMenu
+  NPCName: dialogue_qaKC8aK
+  Output: dialogue_GmKKmJC
+}
+{ +Dialogue Name: HCS9B_DialogueSwitch_Rumor2
+  Next_1: HCS9B_DialogueSwitch_RouterMenu
+  NPCName: dialogue_mum4iJ4
+  Output: dialogue_qCeCiui
+}
+{ +Dialogue Name: HCS9B_DialogueSwitch_Rumor3
+  Next_1: HCS9B_DialogueSwitch_RouterMenu
+  NPCName: dialogue_O9emGou
+  Output: dialogue_04mm8Wu
+}
+{ +Dialogue Name: HCS9B_DialogueSwitch_Rumor4
+  Next_1: HCS9B_DialogueSwitch_RouterMenu
+  NPCName: dialogue_OK44KW8
+  Output: dialogue_2CqKWSY
+}
+{ +Dialogue Name: HCS9B_Console_Start
+  NPCName: dialogue_iimu8KC
+  Output: dialogue_G0mWxh8
+  Option_1: dialogue_628Guuq
+  OptionNext_1: HCS9B_Console_Start_Info
+  Option_2: dialogue_OmqKSS8
+  OptionNext_2: HCS9B_Console_Start_Status
+  Option_3: dialogue_wOO08au
+  OptionNext_3: End
+}
+{ +Dialogue Name: HCS9B_Console_Start_Info
+  Next_1: HCS9B_Console_Start
+  NPCName: dialogue_mUOmnum
+  Output: dialogue_uCWeui6
+}
+{ +Dialogue Name: HCS9B_Console_Start_Status
+  Next_1: HCS9B_Console_Start
+  NPCName: dialogue_SSKWqim
+  Output: dialogue_GeGq0iS
+}
+{ +Dialogue Name: HCS9B_Console2_Start
+  NPCName: dialogue_YGCiCKW
+  Option_1: dialogue_4KuKLGq
+  OptionNext_1: End
+  Option_2: dialogue_aumSSaC
+  OptionIf_2: "HasItem('FireStickRed', 1)"
+  OptionNext_2: HCS9B_Console2_Start_Hacked
+  OptionExecute_2: "RemoveItem('FireStickRed', 1); AddItem('MoneyCard', 25000)"
+  Output: dialogue_OGmqKi0
+}
+{ +Dialogue Name: HCS9B_Console2_Start_Hacked
+  Output: dialogue_ieK4ue0
+  Option_1: dialogue_OOe8KWS
+  OptionNext_1: End
+  NPCName: dialogue_4q8ma4S
+}
+{ +Dialogue Name: HCParasaurGrill_DialogueSwitch_Start
+  Next_1: HCParasaurGrill_DialogueSwitch_Router
+  NPCName: dialogue_i4O4wii
+}
+{ +Dialogue Name: HCParasaurGrill_DialogueSwitch_Router
+  Variable_1: "randomizer", param1: int
+  Execute_1: "randomizer = Random(1,3)"
+  Next_1: HCParasaurGrill_DialogueSwitch_RouterG1
+  NextIf_1: "randomizer == 1"
+  Next_2: HCParasaurGrill_DialogueSwitch_RouterG2
+  NextIf_2: "randomizer == 2"
+  Next_3: HCParasaurGrill_DialogueSwitch_RouterG3
+  NextIf_3: "randomizer == 3"
+  NPCName: dialogue_WuY54qG
+}
+{ +Dialogue Name: HCParasaurGrill_DialogueSwitch_RouterG1
+  NPCName: dialogue_8aWmIu8
+  Output: dialogue_qKm4K0W
+  Option_1: dialogue_CPgaKG4
+  OptionNext_1: HCParasaurGrill_DialogueSwitch_RouterG1Wait
+}
+{ +Dialogue Name: HCParasaurGrill_DialogueSwitch_RouterG1Wait
+  Option_1: dialogue_8KKq4am
+  OptionNext_1: HCParasaurGrill_DialogueSwitch_RouterG1Wait2
+  Output: dialogue_eaiuEeS
+  NPCName: dialogue_K48GeaR
+}
+{ +Dialogue Name: HCParasaurGrill_DialogueSwitch_RouterG1Wait2
+  Output: dialogue_WiWeSu4
+  Option_1: dialogue_OeiG0eW
+  OptionNext_1: HCParasaurGrill_DialogueSwitch_RouterG1Wait3
+  NPCName: dialogue_qm8aKmG
+}
+{ +Dialogue Name: HCParasaurGrill_DialogueSwitch_RouterG1Wait3
+  Output: dialogue_Wi8uCmu
+  NPCName: dialogue_CjSOumm
+  Next_1: HCParasaurGrill_DialogueSwitch_Router_Menu
+}
+{ +Dialogue Name: HCParasaurGrill_DialogueSwitch_RouterG2
+  NPCName: dialogue_OGsE8ii
+  Output: dialogue_sqCWC0O
+  Option_1: dialogue_4W8OaK4
+  OptionNext_1: HCParasaurGrill_DialogueSwitch_RouterG2Hello
+}
+{ +Dialogue Name: HCParasaurGrill_DialogueSwitch_RouterG2Hello
+  Output: dialogue_0qaK04q
+  NPCName: dialogue_uSciWbu
+  Next_1: HCParasaurGrill_DialogueSwitch_Router_Menu
+}
+{ +Dialogue Name: HCParasaurGrill_DialogueSwitch_RouterG3
+  NPCName: dialogue_0GggmG4
+  Output: dialogue_uiFKWCS
+  Next_1: HCParasaurGrill_DialogueSwitch_Router_Menu
+}
+{ +Dialogue Name: HCParasaurGrill_DialogueSwitch_Router_Menu
+  Option_1: dialogue_uWKeCe4
+  OptionNext_1: HCParasaurGrill_DialogueSwitch_Router_Menu_Trade
+  Option_2: dialogue_8aS8WqS
+  OptionNext_2: End
+  NPCName: dialogue_40WGgSG
+}
+{ +Dialogue Name: HCParasaurGrill_DialogueSwitch_Router_Menu_Trade
+  Execute_1: "OpenTraderWindow()"
+  NPCName: dialogue_84K08G0
+}
+{ +Dialogue Name: HCParasaurGrill_DialogueSwitch_Dan
+  NPCName: dialogue_EKOOq4I
+  Output: dialogue_8GK080G
+  Option_1: dialogue_CaSgCUe
+  OptionNext_1: End
+}
+{ +Dialogue Name: HCParasaurGrill_DialogueSwitch_Stew
+  Output: dialogue_SS0iieO
+  NPCName: dialogue_euS0u4B
+  Option_1: dialogue_0Ce4iq0
+  OptionNext_1: End
+}
+{ +Dialogue Name: HC_Mine_Foreman
+  NPCName: dialogue_Wquq4qe
+  Output: dialogue_8iSqW40
+  Option_1: dialogue_GiSK4Sm
+  OptionNext_1: HC_Mine_Foreman_Intro
+}
+{ +Dialogue Name: HC_Mine_Foreman_Intro
+  Output: dialogue_SSSmGGq
+  Next_1: HC_Mine_Foreman_Router
+  NPCName: dialogue_Ge4aOOe
+}
+{ +Dialogue Name: HC_Mine_Foreman_Router
+  Output: dialogue_KWiqS88
+  Option_1: dialogue_WKemK08
+  OptionNext_1: HC_Mine_Foreman_Router_1
+  Option_2: dialogue_auKWqaS
+  OptionNext_2: HC_Mine_Foreman_Router_2
+  Option_3: dialogue_RuGW4eK
+  OptionNext_3: HC_Mine_Foreman_Router_3
+  Option_4: dialogue_aQeeiuK
+  OptionNext_4: End
+  NPCName: dialogue_KW8mC2C
+}
+{ +Dialogue Name: HC_Mine_Foreman_Router_1
+  Output: dialogue_4KuWeKu
+  Next_1: HC_Mine_Foreman_Router
+  NPCName: dialogue_StWOKie
+}
+{ +Dialogue Name: HC_Mine_Foreman_Router_2
+  Output: dialogue_uh44AGK
+  Next_1: HC_Mine_Foreman_Router
+  NPCName: dialogue_q04qA0e
+}
+{ +Dialogue Name: HC_Mine_Foreman_Router_3
+  Next_1: HC_Mine_Foreman_Router
+  Output: dialogue_KGW0Oq0
+  NPCName: dialogue_meeW4am
+}
+{ +Dialogue Name: HC_DeepMine_Foreman
+  NPCName: dialogue_bW0ueuC
+  Output: dialogue_Oqv00eW
+  Next_1: HC_DeepMine_ForemanRouter
+}
+{ +Dialogue Name: HC_DeepMine_ForemanRouter
+  Output: dialogue_WGqq8qu
+  NPCName: dialogue_mSmequO
+  Option_1: dialogue_CmWmKmC
+  OptionNext_1: HC_DeepMine_ForemanRouter_WhatsGoingOn
+  Option_2: dialogue_Wa0qiSi
+  OptionNext_2: End
+}
+{ +Dialogue Name: HC_DeepMine_ForemanRouter_WhatsGoingOn
+  NPCName: dialogue_e4WeSGW
+  Output: dialogue_Ke0SuOu
+  Option_1: dialogue_SGuuaOO
+  OptionNext_1: HC_DeepMine_ForemanRouter_WhatsGoingOn2
+}
+{ +Dialogue Name: HC_DeepMine_ForemanRouter_WhatsGoingOn2
+  Output: dialogue_O0Q40CO
+  NPCName: dialogue_4u4S80i
+  Option_1: dialogue_QSK4Oma
+  OptionNext_1: End
+}
+{ +Dialogue Name: HC_DeepMine_MiningComputer
+  NPCName: dialogue_WeSuKWa
+  Output: dialogue_7eSu0O4
+  Option_1: dialogue_GGGq08C
+  OptionNext_1: End
+  Option_2: dialogue_K8Kmmq8
+  OptionIf_2: "HasItem('FireStickRed', 1)"
+  OptionNext_2: HC_DeepMine_MiningComputer_Spam
+  OptionExecute_2: "RemoveItem('FireStickRed', 1); AddItem('MoneyCard', 25000)"
+}
+{ +Dialogue Name: HC_DeepMine_MiningComputer_Spam
+  NPCName: dialogue_eqKgOae
+  Output: dialogue_W0a4apS
+  Option_1: dialogue_m0aaEma
+  OptionNext_1: End
+}
+{ +Dialogue Name: HC_PrisonBreak_PrisonerStart
+  Output: dialogue_iGYa0G4
+  Next_1: HC_PrisonBreak_Prisoner
+  NPCName: dialogue_CiGWaOG
+}
+{ +Dialogue Name: HC_PrisonBreak_Prisoner
+  Option_1: dialogue_uaaOWmq
+  OptionNext_1: HC_PrisonBreak_Prisoner_1
+  Option_2: dialogue_eeiG4uq
+  OptionNext_2: HC_PrisonBreak_Prisoner_2
+  Option_3: dialogue_ui0uiaq
+  OptionNext_3: End
+  NPCName: dialogue_iuuOqui
+}
+{ +Dialogue Name: HC_PrisonBreak_Prisoner_1
+  Output: dialogue_8444emi
+  Next_1: HC_PrisonBreak_Prisoner
+  NPCName: dialogue_Oukm8qa
+}
+{ +Dialogue Name: HC_PrisonBreak_Prisoner_2
+  Output: dialogue_08ab8SC
+  Next_1: HC_PrisonBreak_Prisoner_3
+  NextIf_1: "HasItem('FireStickRed', 1) || HasItem('FireStickBlue', 1) || HasItem('FireStickGreen', 1)"
+  Next_2: End
+  NPCName: dialogue_VKGGSiO
+}
+{ +Dialogue Name: HC_PrisonBreak_Prisoner_3
+  Output: dialogue_aquaaO1
+  Next_1: End
+}
+{ +Dialogue Name: HC_CriminalTransport_VIPStart
+  NPCName: dialogue_0aaC60q
+  Output: dialogue_W0440Wq
+  Next_1: HC_CriminalTransport_VIP
+}
+{ +Dialogue Name: HC_CriminalTransport_VIP
+  NPCName: dialogue_GuSKOi8
+  Option_1: dialogue_AV4uGKi
+  OptionNext_1: HC_CriminalTransport_VIP_1
+  Option_2: dialogue_Ge3mlmS
+  OptionNext_2: HC_CriminalTransport_VIP_2
+  Option_3: dialogue_O4mqWia
+  OptionIf_3: "HasItem('FireStickRed', 1) || HasItem('FireStickBlue', 1) || HasItem('FireStickGreen', 1)"
+  OptionNext_3: HC_CriminalTransport_VIP_3
+  Option_4: dialogue_Oi44QqG
+  OptionNext_4: End
+}
+{ +Dialogue Name: HC_CriminalTransport_VIP_1
+  NPCName: dialogue_mmCeiua
+  Output: dialogue_GmWeWim
+  Next_1: HC_CriminalTransport_VIP
+}
+{ +Dialogue Name: HC_CriminalTransport_VIP_2
+  NPCName: dialogue_8eaqGGG
+  Output: dialogue_ueFuGG4
+  Next_1: End
+}
+{ +Dialogue Name: HC_CriminalTransport_VIP_3
+  Output: dialogue_Su14uum
+  NPCName: dialogue_aKKC0WS
+  Next_1: HC_CriminalTransport_VIP
+}
+{ +Dialogue Name: HC_HavenCorpCEO
+  Next_1: HC_HavenCorpCEO_Router
+  NPCName: dialogue_KuO0m0W
+  Output: dialogue_CKG0aqm
+  Variable_1: "HC_Rank", param1: dbplayer_int
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Router
+  Option_1: dialogue_ev4K4mO
+  OptionNext_1: HC_HavenCorpCEO_Greet
+  Option_2: dialogue_Ubi20gK
+  OptionNext_2: HC_HavenCorpCEO_Bye
+  Option_3: dialogue_0WiWsFW
+  OptionIf_3: "IsPdaTaskActive('pda_vK4GeqG', 'pda_eK4O8O0')"
+  OptionNext_3: HC_HavenCorpCEO_Summons
+  Option_4: dialogue_reOW408
+  OptionIf_4: "IsPdaTaskActive('pda_vK4GeqG', 'pda_veuH0Sm')"
+  OptionNext_4: HC_HavenCorpCEO_Summons_JobComplete
+  NPCName: dialogue_I40iE4O
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Greet
+  NPCName: dialogue_umWiOSS
+  Output: dialogue_wSSEuSY
+  Option_1: dialogue_COWCKm0
+  OptionNext_1: HC_HavenCorpCEO_Bye
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Bye
+  NPCName: dialogue_8USKU44
+  Output: dialogue_O6WmCiC
+  Next_1: End
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Summons
+  NPCName: dialogue_u4OKaO4
+  Output: dialogue_OS8qSmW
+  Option_1: dialogue_0KkWmaG
+  OptionNext_1: HC_HavenCorpCEO_Summons2
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Summons2
+  NPCName: dialogue_SGW4S8u
+  Output: dialogue_OSKkGSe
+  Option_1: dialogue_4u8m8uq
+  OptionNext_1: HC_HavenCorpCEO_Summons3
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Summons3
+  Output: dialogue_CiaAieG
+  Option_1: dialogue_Oue9Q0O
+  OptionNext_1: HC_HavenCorpCEO_Summons3_Job
+  NPCName: dialogue_eH4mKeq
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Summons3_Job
+  Output: dialogue_4uaSu08
+  Next_1: HC_HavenCorpCEO_Summons3_JobMenu
+  NPCName: dialogue_OeCeEK8
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Summons3_JobMenu
+  NPCName: dialogue_WwG88a8
+  Option_1: dialogue_OuuS8Km
+  OptionNext_1: HC_HavenCorpCEO_Summons3_JobMenu_1
+  Option_2: dialogue_CCKWWGe
+  OptionNext_2: HC_HavenCorpCEO_Summons3_JobMenu_2
+  Option_3: dialogue_aiS8eiB
+  OptionNext_3: HC_HavenCorpCEO_Summons3_JobMenu_3
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Summons3_JobMenu_1
+  NPCName: dialogue_aKOO48q
+  Output: dialogue_Suqu08c
+  Next_1: HC_HavenCorpCEO_Summons3_JobMenu
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Summons3_JobMenu_2
+  NPCName: dialogue_u0m8mS8
+  Next_1: HC_HavenCorpCEO_Summons3_JobMenu
+  Output: dialogue_4GabUaq
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Summons3_JobMenu_3
+  NPCName: dialogue_CStua4O
+  Output: dialogue_9cmsGmN
+  Next_1: End
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Summons_JobComplete
+  Next_1: HC_HavenCorpCEO_Summons_JobComplete_HasGoldCoins
+  NextIf_1: "HasItem('GoldCoins', 1000)"
+  Next_2: HC_HavenCorpCEO_Summons_JobComplete_NoGoldCoins
+  NextIf_2: "!HasItem('GoldCoins', 1000)"
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Summons_JobComplete_HasGoldCoins
+  Output: dialogue_aSC0KCi
+  Option_1: dialogue_mmumWWw
+  OptionNext_1: HC_HavenCorpCEO_Summons_JobComplete_GiveGoldCoins
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Summons_JobComplete_NoGoldCoins
+  Output: dialogue_mqdKCOm
+  Option_1: dialogue_CuOKOmi
+  OptionNext_1: HC_HavenCorpCEO_Summons_JobComplete_NoGoldCoins_Bye
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Summons_JobComplete_NoGoldCoins_Bye
+  Output: dialogue_OGS8iGu
+  Next_1: End
+}
+{ +Dialogue Name: HC_HavenCorpCEO_Summons_JobComplete_GiveGoldCoins
+  Output: dialogue_m00aqSC
+  Next_1: End
+  Execute: "HC_Rank = HC_Rank + 1; RemoveItem('GoldCoins', 1000)"
+}
+{ +Dialogue Name: HC_HavenCEOTerminal
+  Output: dialogue_mKumC4a
+  Option_1: dialogue_4qO0R8u
+  OptionNext_1: End
+  Option_2: dialogue_iu8K0OO
+  OptionNext_2: HC_HavenMail
+  NPCName: dialogue_SOKciOe
+}
+{ +Dialogue Name: HC_TribalArena_GameMaster
+  Next_1: HC_TribalArena_GameMaster_Router
+  NPCName: dialogue_qMOu4wm
+  Output: dialogue_mSn4eea
+}
+{ +Dialogue Name: HC_TribalArena_GameMaster_Router
+  NPCName: dialogue_u0ue8Gu
+  Option_1: dialogue_K4mOuWG
+  OptionNext_1: HC_TribalArena_GameMaster_Welcome
+  Option_2: dialogue_mS4S0q4
+  OptionNext_2: HC_TribalArena_GameMaster_WhatIsThisPlace
+  Option_3: dialogue_aGiiGG4
+  OptionNext_3: HC_TribalArena_GameMaster_ExplainGames
+  Option_4: dialogue_OCCGu0i
+  OptionNext_4: HC_TribalArena_GameMaster_Enroll
+  Option_5: dialogue_80GueOm
+  OptionNext_5: HC_TribalArena_GameMaster_Bye
+}
+{ +Dialogue Name: HC_TribalArena_GameMaster_Bye
+  Output: dialogue_GOWsqKG
+  Next_1: End
+  NPCName: dialogue_ea6iW4c
+}
+{ +Dialogue Name: HC_TribalArena_GameMaster_Welcome
+  NPCName: dialogue_qcC88qU
+  Output: dialogue_CKYqOWS
+  Next_1: HC_TribalArena_GameMaster_Router
+}
+{ +Dialogue Name: HC_TribalArena_GameMaster_WhatIsThisPlace
+  NPCName: dialogue_uSOOmWG
+  Output: dialogue_SuCmxWG
+  Next_1: HC_TribalArena_GameMaster_Router
+}
+{ +Dialogue Name: HC_TribalArena_GameMaster_ExplainGames
+  NPCName: dialogue_a6iuKKa
+  Output: dialogue_SCme0MS
+  Option_1: dialogue_u4GmGWC
+  OptionNext_1: HC_TribalArena_GameMaster_ExplainGamesRouter
+}
+{ +Dialogue Name: HC_TribalArena_GameMaster_ExplainGamesRouter
+  Output: dialogue_aOuK0Ce
+  Option_1: dialogue_oe00Mee
+  OptionNext_1: HC_TribalArena_GameMaster_ExplainGamesRouter_Fee
+  Option_2: dialogue_Ok1Igma
+  OptionNext_2: HC_TribalArena_GameMaster_ExplainGamesRouter_Rules
+  Option_3: dialogue_aCDeGeO
+  OptionNext_3: HC_TribalArena_GameMaster_Enroll
+  Option_4: dialogue_44qKumS
+  OptionNext_4: HC_TribalArena_GameMaster_ExplainGamesRouter_NoThanks
+  NPCName: dialogue_qmq8mK2
+}
+{ +Dialogue Name: HC_TribalArena_GameMaster_ExplainGamesRouter_Rules
+  Output: dialogue_4naLiKq
+  NPCName: dialogue_G4KqaWe
+  Next_1: HC_TribalArena_GameMaster_ExplainGamesRouter
+}
+{ +Dialogue Name: HC_TribalArena_GameMaster_ExplainGamesRouter_Fee
+  Output: dialogue_wK8S4KO
+  Next_1: HC_TribalArena_GameMaster_ExplainGamesRouter
+  NPCName: dialogue_2G0qKSK
+}
+{ +Dialogue Name: HC_TribalArena_GameMaster_ExplainGamesRouter_NoThanks
+  Next_1: HC_TribalArena_GameMaster_Bye
+  Output: dialogue_eu40CGi
+  NPCName: dialogue_8aS6KC2
+}
+{ +Dialogue Name: HC_TribalArena_GameMaster_Enroll
+  Output: dialogue_FuCWOCG
+  NPCName: dialogue_imIWeGu
+  Option_1: dialogue_ueuGwee
+  OptionNext_1: HC_TribalArena_GameMaster_Enroll_Announce
+}
+{ +Dialogue Name: HC_TribalArena_GameMaster_Enroll_Announce
+  Output: dialogue_OqGemG8
+  Next_1: End
+  NPCName: dialogue_m0seYSu
+}
+{ +Dialogue Name: HC_TempleOfHarvest_MainMenu
+  Output: dialogue_GWqO8Gm
+  Option_1: dialogue_HGGeoG0
+  OptionNext_1: HC_TempleOfHarvest_MainMenu_1
+  Option_2: dialogue_kmC0Oim
+  OptionNext_2: HC_TempleOfHarvest_MainMenu_2
+  Option_3: dialogue_OoGea0G
+  OptionNext_3: HC_TempleOfHarvest_MainMenu_3
+  Option_4: dialogue_RW8mu0S
+  OptionNext_4: End
+}
+{ +Dialogue Name: HC_TempleOfHarvest_MainMenu_1
+  Output: dialogue_iuC4Mm8
+  Option_1: dialogue_KCSSWaq
+  OptionNext_1: HC_TempleOfHarvest_MainMenu
+}
+{ +Dialogue Name: HC_TempleOfHarvest_MainMenu_2
+  Option_1: dialogue_ii0SOuG
+  OptionNext_1: HC_TempleOfHarvest_MainMenu
+  Output: dialogue_8CQaa48
+}
+{ +Dialogue Name: HC_TempleOfHarvest_MainMenu_3
+  Output: dialogue_08WCW4u
+  Option_1: dialogue_mSCqYKK
+  OptionNext_1: HC_TempleOfHarvest_MainMenu_3_Menu
+}
+{ +Dialogue Name: HC_TempleOfHarvest_MainMenu_3_Menu
+  Output: dialogue_2mQ0s44
+  Option_1: dialogue_OGWiKuK
+  OptionNext_1: HC_TempleOfHarvest_MainMenu_3_Menu_1
+  Option_2: dialogue_CKCS8H4
+  OptionNext_2: HC_TempleOfHarvest_MainMenu_3_Menu_2
+  Option_3: dialogue_0iGSWCi
+  OptionNext_3: HC_TempleOfHarvest_MainMenu_3_Menu_3
+  Option_4: dialogue_eOD0aWa
+  OptionNext_4: HC_TempleOfHarvest_MainMenu_3_Menu_4
+}
+{ +Dialogue Name: HC_TempleOfHarvest_MainMenu_3_Menu_1
+  Output: dialogue_SOuGKmm
+  Option_1: dialogue_AmGYGii
+  OptionNext_1: HC_TempleOfHarvest_MainMenu_3_Menu
+}
+{ +Dialogue Name: HC_TempleOfHarvest_MainMenu_3_Menu_2
+  Output: dialogue_iWSCOGi
+  Option_1: dialogue_KiGGuK2
+  OptionNext_1: HC_TempleOfHarvest_MainMenu_3_Menu
+}
+{ +Dialogue Name: HC_TempleOfHarvest_MainMenu_3_Menu_3
+  Output: dialogue_Wuu8OBu
+  Option_1: dialogue_O8e0PvA
+  OptionNext_1: HC_TempleOfHarvest_MainMenu_3_Menu
+}
+{ +Dialogue Name: HC_TempleOfHarvest_MainMenu_3_Menu_4
+  Output: dialogue_4aeqO0f
+  Option_1: dialogue_uWuOemS
+  OptionNext_1: HC_TempleOfHarvest_MainMenu_3_Menu_4_Menu
+}
+{ +Dialogue Name: HC_TempleOfHarvest_MainMenu_3_Menu_4_Menu
+  Output: dialogue_SeoEm40
+  Option_1: dialogue_u8a8H0m
+  OptionNext_1: HC_TempleOfHarvest_MainMenu_3_Menu_4_Menu_1
+  Option_2: dialogue_O8qK8qw
+  OptionNext_2: HC_TempleOfHarvest_MainMenu_3_Menu_4_Menu_2
+  Option_3: dialogue_amWWuGo
+  OptionNext_3: HC_TempleOfHarvest_MainMenu_3_Menu_4_Menu_3
+}
+{ +Dialogue Name: HC_TempleOfHarvest_MainMenu_3_Menu_4_Menu_1
+  Output: dialogue_8SuSC8q
+  Next_1: HC_TempleOfHarvest_MainMenu_3_Menu_4_Menu
+}
+{ +Dialogue Name: HC_TempleOfHarvest_MainMenu_3_Menu_4_Menu_2
+  Output: dialogue_me4Smaa
+  Next_1: HC_TempleOfHarvest_MainMenu_3_Menu_4_Menu
+}
+{ +Dialogue Name: HC_TempleOfHarvest_MainMenu_3_Menu_4_Menu_3
+  Output: dialogue_G4MiaOg
+  Option_1: dialogue_aSmSGsW
+  OptionNext_1: HC_TempleOfHarvest_MainMenu_3_Menu_4_Menu_3_END
+}
+{ +Dialogue Name: HC_TempleOfHarvest_MainMenu_3_Menu_4_Menu_3_END
+  Output: dialogue_6S4ie48
+  Option_1: dialogue_uKeKiec
+  OptionNext_1: End
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_BarkingInit
+  BarkingState: HC_HavenCorp_DeathRace_BarkingRouter
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_BarkingRouter
+  Variable_1: "randomizer", param1: int
+  Execute_1: "randomizer = Random(1,3)"
+  Next_1: HC_HavenCorp_DeathRace_BarkingRouterOpt1
+  NextIf_1: "randomizer == 1"
+  Next_2: HC_HavenCorp_DeathRace_BarkingRouterOpt2
+  NextIf_2: "randomizer == 2"
+  Next_3: HC_HavenCorp_DeathRace_BarkingRouterOpt3
+  NextIf_3: "randomizer == 3"
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_BarkingRouterOpt1
+  Output: dialogue_GKu8SOm
+  Option_1: dialogue_GCimg8M
+  OptionNext_1: End
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_BarkingRouterOpt2
+  Option_1: dialogue_KCquaQ0
+  OptionNext_1: End
+  Output: dialogue_euOaC0W
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_BarkingRouterOpt3
+  Option_1: dialogue_ii0Ou4S
+  OptionNext_1: End
+  Output: dialogue_OeKO4Wq
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_Medical
+  Output: dialogue_W8aieK0
+  Option_1: dialogue_SSmImKu
+  OptionNext_1: HC_HavenCorp_DeathRace_Medical_WhatsGoingOn
+  Option_2: dialogue_q3ueqe0
+  OptionIf_2: "HC_DeathRace_FirstTime < 1"
+  OptionNext_2: HC_HavenCorp_DeathRace_Medical_FirstTime
+  Option_3: dialogue_74lWmCC
+  OptionNext_3: End
+  OptionExecute_3: "OpenTraderWindow()"
+  Variable_1: "HC_DeathRace_FirstTime", param1: dbplayerpoi_int
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_Medical_FirstTime
+  Output: dialogue_ua0CTGx
+  Option_1: dialogue_q8GgGoO
+  OptionNext_1: HC_HavenCorp_DeathRace_Medical_FirstTime_Thanks
+  OptionExecute_1: "HC_DeathRace_FirstTime = HC_DeathRace_FirstTime + 1; AddItem('Medikit01', 3); AddItem('Medikit02', 3); AddItem('Medikit03', 3); AddItem('Medikit04', 3);"
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_Medical_FirstTime_Thanks
+  Output: dialogue_GOWGw0q
+  Next_1: End
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_Medical_WhatsGoingOn
+  Output: dialogue_WOcea4G
+  Option_1: dialogue_qOeGnKu
+  OptionNext_1: HC_HavenCorp_DeathRace_Medical_WhatsGoingOn_Menu
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_Medical_WhatsGoingOn_Menu
+  Output: dialogue_74LCGe0
+  Option_1: dialogue_Ea8GuOG
+  OptionNext_1: HC_HavenCorp_DeathRace_Medical_WhatsGoingOn_MenuOpt1
+  Option_2: dialogue_qmG4mmC
+  OptionNext_2: HC_HavenCorp_DeathRace_Medical_WhatsGoingOn_MenuOpt2
+  Option_3: dialogue_W0SHi4G
+  OptionNext_3: HC_HavenCorp_DeathRace_Medical_WhatsGoingOn_MenuOpt3
+  Option_4: dialogue_eSa8uuC
+  OptionNext_4: End
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_Medical_WhatsGoingOn_MenuOpt1
+  Output: dialogue_i8iiau8
+  Option_1: dialogue_e8eiiS0
+  OptionNext_1: HC_HavenCorp_DeathRace_Medical_WhatsGoingOn_Menu
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_Medical_WhatsGoingOn_MenuOpt2
+  Output: dialogue_oKmaGK8
+  Option_1: dialogue_uCqGiI0
+  OptionNext_1: HC_HavenCorp_DeathRace_Medical_WhatsGoingOn_Menu
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_Medical_WhatsGoingOn_MenuOpt3
+  Output: dialogue_miqlq4E
+  Option_1: dialogue_8S4iKGe
+  OptionNext_1: HC_HavenCorp_DeathRace_Medical_WhatsGoingOn_Menu
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_Dealer
+  Output: dialogue_q0u0ZSG
+  Option_1: dialogue_aWqLmui
+  OptionNext_1: HC_HavenCorp_DeathRace_Dealer_2
+  Option_2: dialogue_0edC4ui
+  OptionNext_2: End
+  OptionExecute_2: "OpenTraderWindow()"
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_Dealer_2
+  Output: dialogue_Wkam0S0
+  Option_1: dialogue_8Yui8Ce
+  OptionNext_1: End
+  OptionExecute_1: "OpenTraderWindow()"
+  Option_2: dialogue_KGW0eq8
+  OptionNext_2: HC_HavenCorp_DeathRace_Dealer_3
+}
+{ +Dialogue Name: HC_HavenCorp_DeathRace_Dealer_3
+  Output: dialogue_uiiQqe6
+  Next_1: End
+}
+{ +Dialogue Name: HC_RaptorLab_Worker
+  Variable_1: "HC_RaptorLabIncrement", param1: dbplayerpoi_int
+  Next_1: HC_RaptorLab_Worker_IntroArriving
+  NextIf_1: "HC_RaptorLabIncrement < 1"
+  Next_2: HC_RaptorLab_Worker_IntroLeaving
+  NextIf_2: "(IsPdaTaskActive('pda_ZmSZiqK', 'pda_uau4mii') || IsPdaTaskActive('pda_ZmSZiqK', 'pda_K0eSSWG') || IsPdaTaskActive('pda_ZmSZiqK', 'pda_i8GuCKK')) && HC_RaptorLabIncrement == 1"
+  Next_3: HC_RaptorLab_Worker_IntroLeavingAgain
+  NextIf_3: "HC_RaptorLabIncrement == 2"
+  NPCName: dialogue_WW8Li0m
+}
+{ +Dialogue Name: HC_RaptorLab_Worker_IntroArriving
+  Output: dialogue_S4e80Ge
+  Option_1: dialogue_S40ZaG4
+  OptionNext_1: HC_RaptorLab_Worker_2
+  NPCName: dialogue_aSuGQ4u
+}
+{ +Dialogue Name: HC_RaptorLab_Worker_IntroLeaving
+  Output: dialogue_JmWK8eK
+  Option_1: dialogue_ieWmuee
+  OptionNext_1: HC_RaptorLab_Worker_Finish
+  NPCName: dialogue_O8mWiee
+}
+{ +Dialogue Name: HC_RaptorLab_Worker_IntroLeavingAgain
+  Output: dialogue_2WOO0qi
+  Option_1: dialogue_G4wu0OW
+  OptionNext_1: End
+  NPCName: dialogue_SFWeEmK
+}
+{ +Dialogue Name: HC_RaptorLab_Worker_2
+  Output: dialogue_q4CWCOK
+  Option_1: dialogue_uY0XSKO
+  OptionNext_1: HC_RaptorLab_Worker_3
+  NPCName: dialogue_KkmS0WO
+}
+{ +Dialogue Name: HC_RaptorLab_Worker_3
+  Output: dialogue_GCWW8Ci
+  Option_1: dialogue_U8OqKOK
+  OptionNext_1: HC_RaptorLab_Worker_4
+  NPCName: dialogue_pC4iKCm
+}
+{ +Dialogue Name: HC_RaptorLab_Worker_4
+  Output: dialogue_404OWWe
+  Option_1: dialogue_k44aiqK
+  OptionNext_1: HC_RaptorLab_Worker_5
+  OptionExecute_1: "HC_RaptorLabIncrement = HC_RaptorLabIncrement + 1;"
+  NPCName: dialogue_gCuO8Wu
+}
+{ +Dialogue Name: HC_RaptorLab_Worker_5
+  Output: dialogue_ba6CWKG
+  OptionNext_1: End
+  NPCName: dialogue_UiSe0Ke
+}
+{ +Dialogue Name: HC_RaptorLab_Worker_Finish
+  Output: dialogue_mIG18Gi
+  Option_1: dialogue_GGmePue
+  OptionNext_1: HC_RaptorLab_Worker_Finish_2
+  OptionExecute_1: "AddItem('EnergyDrink', 6); HC_RaptorLabIncrement = HC_RaptorLabIncrement + 1"
+  NPCName: dialogue_0Gi8WOq
+}
+{ +Dialogue Name: HC_RaptorLab_Worker_Finish_2
+  Output: dialogue_W24mKSY
+  Option_1: dialogue_0GSCiau
+  OptionNext_1: End
+  NPCName: dialogue_KWCiKeO
+}
+{ +Dialogue Name: HC_BusinessCenter_Receptionist
+  Output: dialogue_m0G8CWG
+  Option_1: dialogue_Geu4SG4
+  OptionNext_1: HC_BusinessCenter_Receptionist_CheckIn
+  NPCName: dialogue_qaiiC4B
+}
+{ +Dialogue Name: HC_BusinessCenter_Receptionist_AltGreet
+  Output: dialogue_a0uKa4u
+  Option_1: dialogue_o0uEWGW
+  OptionNext_1: HC_BusinessCenter_Receptionist_CheckIn
+  NPCName: dialogue_GlKG00u
+}
+{ +Dialogue Name: HC_BusinessCenter_Receptionist_CheckIn
+  Output: dialogue_KOiqOW0
+  Option_1: dialogue_qiqaeum
+  OptionNext_1: HC_BusinessCenter_Receptionist_CheckIn_Denied
+  Option_2: dialogue_C0cqK4C
+  OptionNext_2: HC_BusinessCenter_Receptionist_CheckIn_Denied
+  Option_3: dialogue_E8KGm4i
+  OptionNext_3: HC_BusinessCenter_Receptionist_CheckIn_Approved
+  NPCName: dialogue_u8iOuG8
+}
+{ +Dialogue Name: HC_BusinessCenter_Receptionist_CheckIn_Approved
+  Output: dialogue_EHeW8KG
+  Option_1: dialogue_iasui0i
+  OptionNext_1: HC_BusinessCenter_Receptionist_CheckIn_Approved_2
+  NPCName: dialogue_SWuueOC
+}
+{ +Dialogue Name: HC_BusinessCenter_Receptionist_CheckIn_Approved_2
+  Output: dialogue_mCSeIKC
+  Option_1: dialogue_WKmuSW4
+  OptionNext_1: End
+  NPCName: dialogue_qKG84IW
+}
+{ +Dialogue Name: HC_BusinessCenter_Receptionist_CheckIn_Denied
+  Output: dialogue_Guikqcn
+  Option_1: dialogue_40KC0qe
+  OptionNext_1: HC_BusinessCenter_Receptionist_AltGreet
+  NPCName: dialogue_iYq0OO8
+}
+{ +Dialogue Name: HC_CriminalCity_BugtronAI
+  Output: dialogue_mCWKKu8
+  Option_1: dialogue_0mCKSGK
+  OptionNext_1: HC_CriminalCity_BugtronAI_LOADING
+  NPCName: dialogue_GCROKaO
+}
+{ +Dialogue Name: HC_CriminalCity_BugtronAI_LOADING
+  Output: dialogue_iS6Ue4i
+  Option_1: dialogue_SmamKSC
+  OptionNext_1: HC_CriminalCity_BugtronAI_MENU
+  NPCName: dialogue_miWqaKe
+}
+{ +Dialogue Name: HC_CriminalCity_BugtronAI_MENU
+  Output: dialogue_aCCKiao
+  Option_1: dialogue_uiKGiCq
+  OptionNext_1: HC_CriminalCity_BugtronAI_MENU_OPT1
+  Option_2: dialogue_u4aqWGi
+  OptionNext_2: HC_CriminalCity_BugtronAI_MENU_OPT2
+  Option_3: dialogue_uSKamjS
+  OptionNext_3: HC_CriminalCity_BugtronAI_MENU_OPT3
+  NPCName: dialogue_WqYeaiq
+}
+{ +Dialogue Name: HC_CriminalCity_BugtronAI_MENU_OPT1
+  Output: dialogue_GqOGOme
+  Option_1: dialogue_iamem0a
+  OptionNext_1: HC_CriminalCity_BugtronAI_MENU
+  NPCName: dialogue_EumG0a8
+}
+{ +Dialogue Name: HC_CriminalCity_BugtronAI_MENU_OPT2
+  Output: dialogue_imOWE0C
+  Option_1: dialogue_8GO0GKv
+  OptionNext_1: HC_CriminalCity_BugtronAI_MENU
+  NPCName: dialogue_Xi8O0e1
+}
+{ +Dialogue Name: HC_CriminalCity_BugtronAI_MENU_OPT3
+  Output: dialogue_m4iSGO0
+  Option_1: dialogue_eeKCWiu
+  OptionNext_1: HC_CriminalCity_BugtronAI_MENU_OPT3_ERROR
+  NPCName: dialogue_IOm4OSW
+}
+{ +Dialogue Name: HC_CriminalCity_BugtronAI_MENU_OPT3_ERROR
+  Output: dialogue_448WWeE
+  Option_1: dialogue_icKaWn0
+  OptionNext_1: End
+  NPCName: dialogue_8OOWSme
+}
+{ +Dialogue Name: HC_HavenMail
+  Output: dialogue_uq8uoOa
+  Option_1: dialogue_qCGu4OK
+  OptionNext_1: HC_HavenMail_JobsBoard
+  Option_2: dialogue_m40CGma
+  OptionNext_2: End
+  Option_3: dialogue_qmkWuqC
+  OptionIf_3: "HC_Job_CompletedCount >= 5 && HC_PromotionOperative_Started < 1"
+  OptionNext_3: HC_HavenMail_JobsBoard_JobsCompleted
+  Option_4: dialogue_uoEeGW4
+  OptionIf_4: "HC_FactionMission_CompletedCount >= 5 && HC_Job_CompletedCount >= 10 && HC_PromotionLieutenant_Started < 1"
+  OptionNext_4: HC_HavenMail_JobsBoard_FactionMissionsCompleted
+  Option_5: dialogue_IC0s4GC
+  OptionNext_5: HC_HavenMail_PersonnelFile
+  Option_6: dialogue_qOWm4i4
+  OptionIf_6: "HasItem('FireStickRed', 1)"
+  OptionNext_6: HC_HavenMail_Hack_Spam
+  Option_7: dialogue_iAWau4m
+  OptionIf_7: "HasItem('FireStickGreen', 1)"
+  OptionNext_7: HC_HavenMail_Hack_Overclock
+  Option_8: dialogue_ea8a9e4
+  OptionIf_8: "HasItem('FireStickBlue', 1)"
+  OptionNext_8: HC_HavenMail_Hack_Fortify
+  Option_9: dialogue_KnH2mIu
+  OptionIf_9: "HC_FactionMission_CompletedCount >= 10 && HC_Job_CompletedCount >= 20 && HC_HavenVR_Completed >= 5 && HC_PromotionCaptain_Started < 1"
+  OptionNext_9: HC_HavenMail_JobsBoard_CaptainCriteriaCompleted
+  Variable_1: "HC_Job_CriminalHQ_Started", param1: dbplayer_int
+  Variable_2: "HC_Job_CriminalLair_Started", param1: dbplayer_int
+  Variable_3: "HC_Job_CriminalCity_Started", param1: dbplayer_int
+  Variable_4: "HC_Job_CriminalFrigate_Started", param1: dbplayer_int
+  Variable_5: "HC_Job_CriminalBeacon_Started", param1: dbplayer_int
+  Variable_6: "HC_Job_CompletedCount", param1: dbplayer_int
+  Variable_7: "HC_PromotionOperative_Started", param1: dbplayer_int
+  Variable_8: "HC_FactionMission_CompletedCount", param1: dbplayer_int
+  Variable_9: "HC_PromotionLieutenant_Started", param1: dbplayer_int
+  Variable_10: "HC_HavenVR_Completed", param1: dbplayer_int
+  Variable_11: "HC_PromotionCaptain_Started", param1: dbplayer_int
+  Variable_12: "HC_Rank", param1: dbplayer_int
+  NPCName: dialogue_GqqKu4S
+}
+{ +Dialogue Name: HC_HavenMail_Hack_Spam
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 5; RemoveItem('FireStickRed', 1) "
+  Next_1: HC_HavenMail
+  Output: dialogue_eqaiO8W
+  NPCName: dialogue_GSW0SOC
+}
+{ +Dialogue Name: HC_HavenMail_Hack_Overclock
+  Output: dialogue_1GGAmuu
+  Execute: "HC_FactionMission_CompletedCount = HC_FactionMission_CompletedCount + 5; RemoveItem('FireStickGreen', 1) "
+  Next_1: HC_HavenMail
+  NPCName: dialogue_ma0qWs0
+}
+{ +Dialogue Name: HC_HavenMail_Hack_Fortify
+  Output: dialogue_Caq4GIC
+  Next_1: HC_HavenMail
+  Execute: "HC_HavenVR_Completed = HC_HavenVR_Completed + 5; RemoveItem('FireStickBlue', 1) "
+  NPCName: dialogue_GGO0Sqa
+}
+{ +Dialogue Name: HC_HavenMail_PersonnelFile_Promotion
+  NPCName: dialogue_qSWWniu
+  Next_1: HC_HavenMail_PersonnelFile_Promotion_Rank0
+  NextIf_1: "HC_Rank == 0"
+  Next_2: HC_HavenMail_PersonnelFile_Promotion_Rank1
+  NextIf_2: "HC_Rank == 1"
+  Next_3: HC_HavenMail_PersonnelFile_Promotion_Rank2
+  NextIf_3: "HC_Rank == 2"
+  Next_4: HC_HavenMail_PersonnelFile_Promotion_Rank3
+  NextIf_4: "HC_Rank == 3"
+  Next_5: HC_HavenMail_PersonnelFile_Promotion_Rank4
+  NextIf_5: "HC_Rank == 4"
+}
+{ +Dialogue Name: HC_HavenMail_PersonnelFile_Promotion_Rank0
+  NPCName: dialogue_emeWqWi
+  Output: dialogue_OSCSCWC
+  Option_1: dialogue_0omeOem
+  OptionNext_1: HC_HavenMail_PersonnelFile
+}
+{ +Dialogue Name: HC_HavenMail_PersonnelFile_Promotion_Rank1
+  NPCName: dialogue_m8KaSPe
+  Output: dialogue_TKSCa8i
+  Option_1: dialogue_C0040ai
+  OptionNext_1: HC_HavenMail_PersonnelFile
+}
+{ +Dialogue Name: HC_HavenMail_PersonnelFile_Promotion_Rank2
+  NPCName: dialogue_8IiqerG
+  Output: dialogue_uuoWqWu
+  Option_1: dialogue_WuKuCOC
+  OptionNext_1: HC_HavenMail_PersonnelFile
+}
+{ +Dialogue Name: HC_HavenMail_PersonnelFile_Promotion_Rank3
+  NPCName: dialogue_2WCKWO0
+  Output: dialogue_eK88O0a
+  Option_1: dialogue_uCHuUKG
+  OptionNext_1: HC_HavenMail_PersonnelFile
+}
+{ +Dialogue Name: HC_HavenMail_PersonnelFile_Promotion_Rank4
+  NPCName: dialogue_uOqo8WG
+  Output: dialogue_0Ki8S86
+  Option_1: dialogue_08oimDu
+  OptionNext_1: HC_HavenMail_PersonnelFile
+}
+{ +Dialogue Name: HC_HavenMail_JobsBoard
+  Option_1: dialogue_8gCOuah
+  OptionIf_1: "HC_Job_CriminalHQ_Started < 1"
+  OptionNext_1: HC_HavenMail_Job_CriminalHQ_Menu
+  Option_2: dialogue_e8KS6cS
+  OptionIf_2: "HC_Job_CriminalLair_Started < 1"
+  OptionNext_2: HC_HavenMail_Job_CriminalLair_Menu
+  Option_3: dialogue_8CqgqaQ
+  OptionIf_3: "HC_Job_CriminalCity_Started < 1"
+  OptionNext_3: HC_HavenMail_Job_CriminalCity_Menu
+  Option_4: dialogue_iiaq04K
+  OptionIf_4: "HC_Job_CriminalFrigate_Started < 1"
+  OptionNext_4: HC_HavenMail_Job_CriminalFrigate_Menu
+  Option_5: dialogue_S6a8CEm
+  OptionIf_5: "HC_Job_CriminalBeacon_Started < 1"
+  OptionNext_5: HC_HavenMail_Job_CriminalBeacon_Menu
+  Option_6: dialogue_qGuO0YQ
+  OptionNext_6: HC_HavenMail
+  Output: dialogue_eSiG0eZ
+  NPCName: dialogue_paO8T0H
+}
+{ +Dialogue Name: HC_HavenMail_JobsBoard_JobsCompleted
+  Output: dialogue_uuV4R44
+  NPCName: dialogue_aKa0IS4
+  Option_1: dialogue_iqmGvCO
+  OptionNext_1: End
+  OptionExecute_1: "HC_Job_CriminalHQ_Started = 0; HC_Job_CriminalLair_Started = 0; HC_Job_CriminalCity_Started = 0; HC_Job_CriminalFrigate_Started = 0; HC_Job_CriminalBeacon_Started = 0; HC_PromotionOperative_Started = HC_PromotionOperative_Started + 1"
+}
+{ +Dialogue Name: HC_HavenMail_JobsBoard_FactionMissionsCompleted
+  Output: dialogue_imuaGS8
+  Option_1: dialogue_OWKm4OM
+  OptionNext_1: End
+  OptionExecute_1: "HC_PromotionLieutenant_Started = HC_PromotionLieutenant_Started + 1"
+  NPCName: dialogue_mmUWGS0
+}
+{ +Dialogue Name: HC_HavenMail_JobsBoard_CaptainCriteriaCompleted
+  Output: dialogue_SCCGmOW
+  Option_1: dialogue_q8uuC4g
+  OptionNext_1: End
+  OptionExecute_1: "HC_PromotionCaptain_Started = HC_PromotionCaptain_Started + 1"
+  NPCName: dialogue_m0qeiAe
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalBeacon_Menu
+  Output: dialogue_884NmWm
+  Option_1: dialogue_SCMmOmi
+  OptionNext_1: HC_HavenMail_Job_CriminalBeacon_Briefing
+  Option_2: dialogue_CFimuOS
+  OptionNext_2: HC_HavenMail_Job_CriminalBeacon_Objective
+  Option_3: dialogue_8umO8Wu
+  OptionNext_3: HC_HavenMail_Job_CriminalBeacon_Accept
+  NPCName: dialogue_iOKquqG
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalBeacon_Briefing
+  Output: dialogue_qeaQeGJ
+  Next_1: HC_HavenMail_Job_CriminalBeacon_Menu
+  NPCName: dialogue_00ig4um
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalBeacon_Objective
+  Output: dialogue_0OWuOaK
+  Next_1: HC_HavenMail_Job_CriminalBeacon_Menu
+  NPCName: dialogue_i4KWKeW
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalBeacon_Accept
+  Option_1: dialogue_Je0GeiE
+  OptionNext_1: End
+  OptionExecute_1: "HC_Job_CriminalBeacon_Started = HC_Job_CriminalBeacon_Started + 1"
+  Option_2: dialogue_8Wu1GOO
+  OptionNext_2: HC_HavenMail
+  NPCName: dialogue_YGiqqid
+  Output: dialogue_CG8OiWa
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalBeacon_PDAComplete
+  NPCName: dialogue_CGWW0a8
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 1"
+  Output: dialogue_KuGumqi
+  Next_1: End
+  Variable_1: "HC_Job_CompletedCount", param1: dbplayer_int
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalFrigate_Menu
+  Output: dialogue_mmGiGC2
+  Option_1: dialogue_uqOlamC
+  OptionNext_1: HC_HavenMail_Job_CriminalFrigate_Briefing
+  Option_2: dialogue_aSq4a0A
+  OptionNext_2: HC_HavenMail_Job_CriminalFrigate_Objective
+  Option_3: dialogue_QpmWqeG
+  OptionNext_3: HC_HavenMail_Job_CriminalFrigate_Accept
+  NPCName: dialogue_X4mmOer
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalFrigate_Briefing
+  Output: dialogue_CWE0iWQ
+  Next_1: HC_HavenMail_Job_CriminalFrigate_Menu
+  NPCName: dialogue_uWGqO2i
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalFrigate_Objective
+  Next_1: HC_HavenMail_Job_CriminalFrigate_Menu
+  Output: dialogue_ka8TCSS
+  NPCName: dialogue_m4iuCq2
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalFrigate_Accept
+  Option_1: dialogue_et4maam
+  OptionNext_1: End
+  OptionExecute_1: "HC_Job_CriminalFrigate_Started = HC_Job_CriminalFrigate_Started + 1"
+  Option_2: dialogue_8W1WqeS
+  OptionNext_2: HC_HavenMail
+  NPCName: dialogue_WO04q8O
+  Output: dialogue_AuOiE88
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalFrigate_PDAComplete
+  NPCName: dialogue_4SCuOcq
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 1"
+  Output: dialogue_GaKSGWs
+  Next_1: End
+  Variable_1: "HC_Job_CompletedCount", param1: dbplayer_int
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalCity_Menu
+  Output: dialogue_PjaiG6W
+  Option_1: dialogue_RMBiGd8
+  OptionNext_1: HC_HavenMail_Job_CriminalCity_Briefing
+  Option_2: dialogue_umiGaJq
+  OptionNext_2: HC_HavenMail_Job_CriminalCity_Objective
+  Option_3: dialogue_SsmAWqC
+  OptionNext_3: HC_HavenMail_Job_CriminalCity_Accept
+  NPCName: dialogue_sua4O8m
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalCity_Briefing
+  Output: dialogue_G0S0f8S
+  Next_1: HC_HavenMail_Job_CriminalCity_Menu
+  NPCName: dialogue_mGeCMmC
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalCity_Objective
+  Output: dialogue_aOG8Hm4
+  Next_1: HC_HavenMail_Job_CriminalCity_Menu
+  NPCName: dialogue_WaWGehS
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalCity_Accept
+  Output: dialogue_aqG848G
+  Option_1: dialogue_aauOEuu
+  OptionNext_1: End
+  OptionExecute_1: "HC_Job_CriminalCity_Started = HC_Job_CriminalCity_Started + 1"
+  Option_2: dialogue_i4CWaW4
+  OptionNext_2: HC_HavenMail
+  NPCName: dialogue_d3meqGu
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalLair_Menu
+  Output: dialogue_SKmmSaa
+  Option_1: dialogue_CW48aKu
+  OptionNext_1: HC_HavenMail_Job_CriminalLair_Briefing
+  Option_2: dialogue_ae0eUvW
+  OptionNext_2: HC_HavenMail_Job_CriminalLair_Objective
+  Option_3: dialogue_GqSWqKS
+  OptionNext_3: HC_HavenMail_Job_CriminalLair_Accept
+  NPCName: dialogue_qLcSCua
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalLair_Briefing
+  Output: dialogue_8Kq0O4M
+  Next_1: HC_HavenMail_Job_CriminalLair_Menu
+  NPCName: dialogue_Cmmq0im
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalLair_Objective
+  Output: dialogue_uGOa6qa
+  Next_1: HC_HavenMail_Job_CriminalLair_Menu
+  NPCName: dialogue_iiOmWqm
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalLair_Accept
+  Output: dialogue_4L4Qiga
+  Option_1: dialogue_emSkeu8
+  OptionNext_1: End
+  OptionExecute_1: "HC_Job_CriminalLair_Started = HC_Job_CriminalLair_Started + 1"
+  Option_2: dialogue_OeeGeSC
+  OptionNext_2: HC_HavenMail
+  NPCName: dialogue_amSGmOi
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalLair_PDAComplete
+  NPCName: dialogue_4WqmOua
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 1"
+  Output: dialogue_8qSeWie
+  Next_1: End
+  Variable_1: "HC_Job_CompletedCount", param1: dbplayer_int
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalHQ_Menu
+  Output: dialogue_WU4a48E
+  Option_1: dialogue_88IqhOI
+  OptionNext_1: HC_HavenMail_Job_CriminalHQ_Briefing
+  Option_2: dialogue_iG0uWS4
+  OptionNext_2: HC_HavenMail_Job_CriminalHQ_Objective
+  Option_3: dialogue_a0GeaiW
+  OptionNext_3: HC_HavenMail_Job_CriminalHQ_Accept
+  NPCName: dialogue_M4K4Aq0
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalHQ_Briefing
+  Output: dialogue_Ga44SI8
+  Next_1: HC_HavenMail_Job_CriminalHQ_Menu
+  NPCName: dialogue_iCkWiNW
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalHQ_Objective
+  Output: dialogue_48OimuK
+  Next_1: HC_HavenMail_Job_CriminalHQ_Menu
+  NPCName: dialogue_WSq40i4
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalHQ_Accept
+  Output: dialogue_GcqX4O9
+  Option_1: dialogue_8eaWGGS
+  OptionNext_1: End
+  OptionExecute_1: "HC_Job_CriminalHQ_Started = HC_Job_CriminalHQ_Started + 1"
+  Option_2: dialogue_mKWpG8e
+  OptionNext_2: HC_HavenMail
+  NPCName: dialogue_qO4KKKa
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalHQ_PDAComplete
+  NPCName: dialogue_F8q4Eii
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 1"
+  Output: dialogue_uWGSOC8
+  Next_1: End
+  Variable_1: "HC_Job_CompletedCount", param1: dbplayer_int
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalCamp_PDAComplete
+  Output: dialogue_SCeqWWa
+  Next_1: End
+  Variable_1: "HC_Job_CompletedCount", param1: dbplayer_int
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 1"
+  NPCName: dialogue_0KuYSKa
+}
+{ +Dialogue Name: HC_HavenMail_Job_CriminalTransport_PDAComplete
+  NPCName: dialogue_aSQWqWO
+  Output: dialogue_pKOuGOK
+  Variable_1: "HC_Job_CompletedCount", param1: dbplayer_int
+  Execute: "HC_Job_CompletedCount = HC_Job_CompletedCount + 1"
+  Next_1: End
+}
+{ +Dialogue Name: HC_OceanLab_Captain
+  NPCName: dialogue_uiKOaWu
+  Output: dialogue_DOSWm4W
+  Next_1: HC_OceanLab_CaptainRouter
+}
+{ +Dialogue Name: HC_OceanLab_CaptainRouter
+  Option_1: dialogue_qKeuu0G
+  OptionNext_1: HC_OceanLab_CaptainRouter_Story
+  Option_2: dialogue_GKeeiqM
+  OptionNext_2: HC_OceanLab_CaptainRouter_WhatIsThisPlace
+  Option_3: dialogue_S0qAaaq
+  OptionNext_3: HC_OceanLab_CaptainRouter_Bye
+  NPCName: dialogue_8aauS4a
+}
+{ +Dialogue Name: HC_OceanLab_CaptainRouter_Story
+  Output: dialogue_qOiCiqS
+  Option_1: dialogue_OUGO8K8
+  OptionNext_1: HC_OceanLab_CaptainRouter_Story_2
+  NPCName: dialogue_W8OCWCG
+}
+{ +Dialogue Name: HC_OceanLab_CaptainRouter_Story_2
+  Output: dialogue_88ROGuG
+  Option_1: dialogue_o8uG6ei
+  OptionNext_1: HC_OceanLab_CaptainRouter
+  NPCName: dialogue_88CSCi4
+}
+{ +Dialogue Name: HC_OceanLab_CaptainRouter_WhatIsThisPlace
+  Output: dialogue_iu0Kuei
+  Option_1: dialogue_K40KO89
+  OptionNext_1: HC_OceanLab_CaptainRouter_Bye
+  NPCName: dialogue_ja4eqSG
+}
+{ +Dialogue Name: HC_OceanLab_CaptainRouter_Bye
+  Output: dialogue_88KK0Zu
+  Next_1: End
+  NPCName: dialogue_G8C08uG
+}
+{ +Dialogue Name: HC_OceanLab_Chief
+  NPCName: dialogue_sKquWWW
+  Output: dialogue_WqiS4GO
+  Next_1: HC_OceanLab_Chief_Router
+}
+{ +Dialogue Name: HC_OceanLab_Chief_Router
+  NPCName: dialogue_8GOilOa
+  Option_1: dialogue_K4O08SO
+  OptionNext_1: HC_OceanLab_Chief_Router1
+  Option_2: dialogue_0m80OCi
+  OptionNext_2: HC_OceanLab_Chief_Router2
+  Option_3: dialogue_SaaKOCC
+  OptionNext_3: HC_OceanLab_Chief_Router4
+}
+{ +Dialogue Name: HC_OceanLab_Chief_Router1
+  Output: dialogue_8q8ae4q
+  NPCName: dialogue_OuCGuK8
+  Next_1: HC_OceanLab_Chief_Router
+}
+{ +Dialogue Name: HC_OceanLab_Chief_Router2
+  Output: dialogue_SK0KqD4
+  Option_1: dialogue_iCOu83u
+  OptionNext_1: HC_OceanLab_Chief_Router3
+  NPCName: dialogue_WeuC20K
+}
+{ +Dialogue Name: HC_OceanLab_Chief_Router3
+  Output: dialogue_SUmu44W
+  Option_1: dialogue_WWWKS2W
+  OptionNext_1: HC_OceanLab_Chief_Router4
+  NPCName: dialogue_emu0GaC
+}
+{ +Dialogue Name: HC_OceanLab_Chief_Router4
+  Output: dialogue_qeYK0u4
+  OptionNext_1: End
+  NPCName: dialogue_4a0a8qW
+}
+{ +Dialogue Name: HC_ResortManagement
+  NPCName: dialogue_iKOA0qS
+  Variable_1: "HC_StartedResortMission", param1: dbplayerpoi_int
+  Next_1: HC_ResortManagement_QuestNotStarted
+  NextIf_1: "HC_StartedResortMission < 1"
+  Next_2: HC_ResortManagement_QuestStarted
+  NextIf_2: "HC_StartedResortMission >= 1"
+}
+{ +Dialogue Name: HC_ResortManagement_QuestNotStarted
+  Output: dialogue_Keqc8O8
+  Option_1: dialogue_QCul8QC
+  OptionNext_1: HC_ResortManagement_AcceptDrink
+  Option_2: dialogue_a4qGEWK
+  OptionNext_2: HC_ResortManagement_DeclineDrink
+  NPCName: dialogue_GWCm8G4
+}
+{ +Dialogue Name: HC_ResortManagement_QuestStarted
+  Output: dialogue_SeqmkS0
+  Next_1: End
+  NPCName: dialogue_OmKimKm
+}
+{ +Dialogue Name: HC_ResortManagement_AcceptDrink
+  Output: dialogue_88l5iKS
+  Next_1: HC_ResortManagement_StartQuest
+  Execute: "AddItem('AkuaWine', 1)"
+  NPCName: dialogue_0m8qOkG
+}
+{ +Dialogue Name: HC_ResortManagement_DeclineDrink
+  Output: dialogue_e0S480S
+  Next_1: HC_ResortManagement_StartQuest
+  NPCName: dialogue_GCOGWqW
+}
+{ +Dialogue Name: HC_ResortManagement_StartQuest
+  Output: dialogue_4C8Ye0i
+  Option_1: dialogue_SsSCW04
+  OptionNext_1: HC_ResortManagement_StartQuest_2
+  NPCName: dialogue_SGOSWeq
+}
+{ +Dialogue Name: HC_ResortManagement_StartQuest_2
+  Output: dialogue_0Kq88Su
+  Option_1: dialogue_WGWOCeS
+  OptionNext_1: HC_ResortManagement_StartQuest_3
+  NPCName: dialogue_iSeWqg8
+}
+{ +Dialogue Name: HC_ResortManagement_StartQuest_3
+  Output: dialogue_KWK2KSa
+  Option_1: dialogue_uKaiCij
+  OptionNext_1: HC_ResortManagement_StartQuest_4
+  NPCName: dialogue_606k0uu
+}
+{ +Dialogue Name: HC_ResortManagement_StartQuest_4
+  Output: dialogue_oi0eMIl
+  Option_1: dialogue_9mqKSOO
+  OptionNext_1: HC_ResortManagement_StartQuest_5
+  NPCName: dialogue_Smu8a8S
+}
+{ +Dialogue Name: HC_ResortManagement_StartQuest_5
+  Output: dialogue_uei4CSG
+  Option_1: dialogue_uuGC0CO
+  OptionNext_1: HC_ResortManagement_StartQuest_6
+  NPCName: dialogue_mqqOtum
+}
+{ +Dialogue Name: HC_ResortManagement_StartQuest_6
+  Output: dialogue_SS8imq0
+  Execute: "AddItem('Medikit01', 3); AddItem('Medikit02', 3); AddItem('Medikit03', 3); AddItem('Medikit04', 3); HC_StartedResortMission = HC_StartedResortMission + 1"
+  Next_1: End
+  NPCName: dialogue_O8mGuYI
+}
+{ +Dialogue Name: HC_Temple_Leader
+  Output: dialogue_8m0G34J
+  Option_1: dialogue_8GiiiaS
+  OptionNext_1: End
+  NPCName: dialogue_88KW8YC
+}
+{ +Dialogue Name: HC_Temple_Worker
+  Output: dialogue_W0AGSO3
+  Option_1: dialogue_Waame0m
+  OptionNext_1: End
+  NPCName: dialogue_8KC00Eq
+}
+{ +Dialogue Name: HC_RedWater_Operations
+  Next_1: HC_RedWater_OperationsRouter
+  Variable_1: "HC_RedWater_MetOps", param1: dbplayerpoi_int
+  NPCName: dialogue_Ck0SaSW
+}
+{ +Dialogue Name: HC_RedWater_OperationsRouter
+  Next_1: HC_RedWater_OperationsMainGreeeting
+  NextIf_1: "HC_RedWater_MetOps < 1"
+  Next_2: HC_RedWater_Operations_AltGreeting
+  NextIf_2: "HC_RedWater_MetOps >= 1"
+  NPCName: dialogue_OSmW0mS
+}
+{ +Dialogue Name: HC_RedWater_Operations_AltGreeting
+  Output: dialogue_SSSOWi8
+  Option_1: dialogue_kWi8Wim
+  OptionNext_1: End
+  Option_2: dialogue_uS0CauW
+  OptionNext_2: HC_RedWater_Operations_AltGreeting2
+  NPCName: dialogue_KSWeG8u
+}
+{ +Dialogue Name: HC_RedWater_Operations_AltGreeting2
+  Output: dialogue_40W3ema
+  Option_1: dialogue_KGmu4bK
+  OptionNext_1: HC_RedWater_OperationsMainGreeeting3_RepeatDone
+  NPCName: dialogue_S0OOKqq
+}
+{ +Dialogue Name: HC_RedWater_OperationsMainGreeeting
+  Output: dialogue_GWqSa52
+  Option_1: dialogue_auCKeie
+  OptionNext_1: HC_RedWater_OperationsMainGreeeting2
+  NPCName: dialogue_mev884o
+}
+{ +Dialogue Name: HC_RedWater_OperationsMainGreeeting2
+  Output: dialogue_MKqasm0
+  Option_1: dialogue_imTqSSW
+  OptionNext_1: HC_RedWater_OperationsMainGreeeting3
+  NPCName: dialogue_GYGKAUK
+}
+{ +Dialogue Name: HC_RedWater_OperationsMainGreeeting3
+  Output: dialogue_W3AkWia
+  Option_1: dialogue_an4c0ZG
+  OptionNext_1: HC_RedWater_OperationsMainGreeeting3_Repeat
+  NPCName: dialogue_G430umS
+}
+{ +Dialogue Name: HC_RedWater_OperationsMainGreeeting3_Repeat
+  Output: dialogue_iSVuxGu
+  Option_1: dialogue_KkSauGS
+  OptionNext_1: HC_RedWater_OperationsMainGreeeting3_Repeat1
+  Option_2: dialogue_OWCaY44
+  OptionNext_2: HC_RedWater_OperationsMainGreeeting3_Repeat2
+  Option_3: dialogue_mG4iKm8
+  OptionNext_3: HC_RedWater_OperationsMainGreeeting3_Repeat3
+  OptionExecute_3: "HC_RedWater_MetOps = HC_RedWater_MetOps + 1"
+  NPCName: dialogue_t4Ouuqq
+}
+{ +Dialogue Name: HC_RedWater_OperationsMainGreeeting3_Repeat1
+  Option_1: dialogue_G06CmSY
+  OptionNext_1: HC_RedWater_OperationsMainGreeeting3_Repeat
+  Output: dialogue_GOim4qq
+  NPCName: dialogue_a4QGWaS
+}
+{ +Dialogue Name: HC_RedWater_OperationsMainGreeeting3_Repeat2
+  Option_1: dialogue_iGuCeOi
+  OptionNext_1: HC_RedWater_OperationsMainGreeeting3_Repeat
+  Output: dialogue_0Qa4SCW
+  NPCName: dialogue_GaGGi8m
+}
+{ +Dialogue Name: HC_RedWater_OperationsMainGreeeting3_Repeat3
+  Option_1: dialogue_Om5e8OG
+  OptionNext_1: HC_RedWater_OperationsMainGreeeting3_RepeatDone
+  Output: dialogue_auuq85u
+  NPCName: dialogue_uXGuG7m
+}
+{ +Dialogue Name: HC_RedWater_OperationsMainGreeeting3_RepeatDone
+  Output: dialogue_bSKMKGL
+  Next_1: End
+  NPCName: dialogue_emSqm8G
+}
+{ +Dialogue Name: HC_RedWater_Ulfric
+  Next_1: HC_RedWater_UlfricRouter
+  Variable_1: "HC_RedWater_MetUlfric", param1: dbplayerpoi_int
+  NPCName: dialogue_8aWOae4
+}
+{ +Dialogue Name: HC_RedWater_UlfricRouter
+  Next_1: HC_RedWater_UlfricRouter_Main
+  NextIf_1: "HC_RedWater_MetUlfric < 1"
+  Next_2: HC_RedWater_UlfricRouter_Alt
+  NextIf_2: "HC_RedWater_MetUlfric >= 1"
+  NPCName: dialogue_GiqCueU
+}
+{ +Dialogue Name: HC_RedWater_UlfricRouter_Alt
+  Output: dialogue_COmkemq
+  Option_1: dialogue_0KqK44O
+  OptionNext_1: End
+  NPCName: dialogue_e0uEOWO
+}
+{ +Dialogue Name: HC_RedWater_UlfricRouter_Main
+  Output: dialogue_G4ualie
+  Option_1: dialogue_u9W708G
+  OptionNext_1: HC_RedWater_UlfricRouter_Main1
+  NPCName: dialogue_feWSqK4
+}
+{ +Dialogue Name: HC_RedWater_UlfricRouter_Main1
+  Output: dialogue_Kii048m
+  Option_1: dialogue_008Kaqq
+  OptionNext_1: HC_RedWater_UlfricRouter_Main2
+  NPCName: dialogue_4qeuKCm
+}
+{ +Dialogue Name: HC_RedWater_UlfricRouter_Main2
+  Output: dialogue_CWiqmeu
+  Option_1: dialogue_CS0WmGO
+  OptionNext_1: HC_RedWater_UlfricMissionRouter
+  NPCName: dialogue_6W8G8qS
+}
+{ +Dialogue Name: HC_RedWater_UlfricMissionRouter
+  Output: dialogue_mAW8WWK
+  Option_1: dialogue_4a4aa8u
+  OptionNext_1: HC_RedWater_UlfricMissionRouter1
+  Option_2: dialogue_C8aamiO
+  OptionNext_2: HC_RedWater_UlfricMissionRouter2
+  Option_3: dialogue_qaskCuK
+  OptionNext_3: HC_RedWater_UlfricMissionRouter3
+  Option_4: dialogue_c8WuCu7
+  OptionNext_4: HC_RedWater_UlfricMissionRouter4
+  OptionExecute_4: "HC_RedWater_MetUlfric = HC_RedWater_MetUlfric + 1"
+  NPCName: dialogue_OWOgi3q
+}
+{ +Dialogue Name: HC_RedWater_UlfricMissionRouter1
+  Output: dialogue_KSeWaWa
+  Option_1: dialogue_4WeCKta
+  OptionNext_1: HC_RedWater_UlfricMissionRouter
+}
+{ +Dialogue Name: HC_RedWater_UlfricMissionRouter2
+  Option_1: dialogue_6WCSemW
+  OptionNext_1: HC_RedWater_UlfricMissionRouter
+  Output: dialogue_mmW88WW
+  NPCName: dialogue_qqqmOSC
+}
+{ +Dialogue Name: HC_RedWater_UlfricMissionRouter3
+  Option_1: dialogue_uQOC8eq
+  OptionNext_1: HC_RedWater_UlfricMissionRouter
+  Output: dialogue_iSSiW2q
+  NPCName: dialogue_eq8S0ma
+}
+{ +Dialogue Name: HC_RedWater_UlfricMissionRouter4
+  Output: dialogue_CkqaWCA
+  Next_1: End
+  NPCName: dialogue_eqmO0Gu
+}
+{ +Dialogue Name: HC_RedWater_ClubManager
+  Next_1: HC_RedWater_ClubManagerRouter
+  Variable_1: "HC_RedWater_MetClubManager", param1: dbplayerpoi_int
+  NPCName: dialogue_aS08qYK
+}
+{ +Dialogue Name: HC_RedWater_ClubManagerRouter
+  Next_1: HC_RedWater_ClubManager_Main
+  NextIf_1: "HC_RedWater_MetClubManager < 1"
+  Next_2: HC_RedWater_ClubManager_Alt
+  NextIf_2: "HC_RedWater_MetClubManager >= 1"
+  NPCName: dialogue_eQ0wc04
+}
+{ +Dialogue Name: HC_RedWater_ClubManager_Alt
+  Output: dialogue_C8C6Yqa
+  Option_1: dialogue_6KaauSi
+  OptionNext_1: HC_RedWater_ClubManager_AltBye
+  Option_2: dialogue_8UmCv08
+  OptionNext_2: HC_RedWater_ClubManager_Alt2
+  NPCName: dialogue_24Ciioh
+}
+{ +Dialogue Name: HC_RedWater_ClubManager_Alt2
+  Output: dialogue_ee0iuiE
+  Option_1: dialogue_4W44eeQ
+  OptionNext_1: HC_RedWater_ClubManager_AltBye
+  NPCName: dialogue_GqWiWMS
+}
+{ +Dialogue Name: HC_RedWater_ClubManager_AltBye
+  Output: dialogue_SOYOSKe
+  Next_1: End
+  NPCName: dialogue_ikqSOGC
+}
+{ +Dialogue Name: HC_RedWater_ClubManager_Main
+  Output: dialogue_uiqGCuu
+  Option_1: dialogue_CiaO0iG
+  OptionNext_1: HC_RedWater_ClubManager_Main1
+  NPCName: dialogue_GGFSY0N
+}
+{ +Dialogue Name: HC_RedWater_ClubManager_Main1
+  Output: dialogue_uC8uK0G
+  Next_1: HC_RedWater_ClubManager_MissionRouter
+  NPCName: dialogue_KeSuUGK
+}
+{ +Dialogue Name: HC_RedWater_ClubManager_MissionRouter
+  Output: dialogue_C0W0iGW
+  Option_1: dialogue_m8CueWi
+  OptionNext_1: HC_RedWater_ClubManager_MissionRouter1
+  Option_2: dialogue_4uCeeCK
+  OptionNext_2: HC_RedWater_ClubManager_MissionRouter2
+  Option_3: dialogue_G4882SG
+  OptionNext_3: HC_RedWater_ClubManager_MissionRouter3
+  Option_4: dialogue_YuiSsKm
+  OptionNext_4: HC_RedWater_ClubManager_MissionRouter4
+  Option_5: dialogue_C8qWuqe
+  OptionNext_5: HC_RedWater_ClubManager_MissionRouter5
+  OptionExecute_5: "HC_RedWater_MetClubManager = HC_RedWater_MetClubManager + 1"
+  NPCName: dialogue_q6Q88uq
+}
+{ +Dialogue Name: HC_RedWater_ClubManager_MissionRouter1
+  Output: dialogue_aeWMOQI
+  Option_1: dialogue_Oi4OOa6
+  OptionNext_1: HC_RedWater_ClubManager_MissionRouter
+  NPCName: dialogue_Om88qYc
+}
+{ +Dialogue Name: HC_RedWater_ClubManager_MissionRouter2
+  Output: dialogue_K0W3CGO
+  Option_1: dialogue_qiAqkiS
+  OptionNext_1: HC_RedWater_ClubManager_MissionRouter
+  NPCName: dialogue_iU8eWWu
+}
+{ +Dialogue Name: HC_RedWater_ClubManager_MissionRouter3
+  Output: dialogue_GSUmGKq
+  Option_1: dialogue_eKBSiuC
+  OptionNext_1: HC_RedWater_ClubManager_MissionRouter
+  NPCName: dialogue_4W4K5Oi
+}
+{ +Dialogue Name: HC_RedWater_ClubManager_MissionRouter4
+  Output: dialogue_SO0S4uq
+  Option_1: dialogue_qi8G8dm
+  OptionNext_1: HC_RedWater_ClubManager_MissionRouter
+  NPCName: dialogue_iUaueuC
+}
+{ +Dialogue Name: HC_RedWater_ClubManager_MissionRouter5
+  Output: dialogue_KWGSKm8
+  Next_1: End
+  NPCName: dialogue_Vaa4ZaS
+}

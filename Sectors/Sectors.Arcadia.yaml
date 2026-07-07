@@ -1,0 +1,141 @@
+# Arcadia Instances - evenly spaced orbital ring around 0,0,0
+# Radius: ~4200
+# Total slots: 25
+      - Coordinates: [4200, 0, 0]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'GoldMiningInstance', _ARCP_GOLDMINING, '']
+
+      - Coordinates: [4068, 0, 1044]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'AbanPyramidInstance', _ARCP_ABANPYRAMID, '']
+
+      - Coordinates: [3680, 0, 2023]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'ExpeditionInstance', _ARCP_EXPEDITION, '']
+
+      - Coordinates: [3062, 0, 2875]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'ResortInstance', _ARCP_RESORT, '']
+
+      - Coordinates: [2250, 0, 3546]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'RaptorInstance', _ARCP_RAPTOR, '']
+
+      - Coordinates: [1298, 0, 3994]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'VaultInstance', _ARCP_VAULT, '']
+
+      - Coordinates: [264, 0, 4192]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'LairInstance', _ARCP_LAIR, '']
+
+      - Coordinates: [-787, 0, 4126]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'TunnelInstance', _ARCP_TUNNEL, '']
+
+      - Coordinates: [-1788, 0, 3800]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'HallOfChampionsInstance', _ARCP_HALLOFCHAMPIONS, '']
+
+      - Coordinates: [-2677, 0, 3236]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'TempleOfHarvestInstance', _ARCP_HARVEST, '']
+
+      - Coordinates: [-3398, 0, 2469]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'BusinessCenterInstance', _ARCP_BUSINESSCENTER, '']
+
+      - Coordinates: [-3900, 0, 1556]
+        Color: '0.68,0.56,0.26'
+        SectorMapType: GasGiant
+        Playfields:
+          - ['0, 0, 0', LegacyDreadnaughtGasGiant, GasGiant,'', '', 'JupiterYellow', '12']
+
+      - Coordinates: [-3905, 0, 1546]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'LegacyDreadnaughtInstance', _ARCP_DREADNAUGHT, '']
+
+      - Coordinates: [-4167, 0, 526]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'CacheInstance', _ARCP_CACHEINSTANCE, '']
+
+      - Coordinates: [-4167, 0, -526]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'RedWaterInstance', _ARCP_REDWATER, '']
+
+      - Coordinates: [-3905, 0, -1546]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'PrisonInstance', _ARCP_PRISON, '']
+
+      - Coordinates: [-3398, 0, -2469]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'RoyalFlushInstance', _ARCP_ROYALFLUSH, '']
+
+      - Coordinates: [-2677, 0, -3236]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'OceanLabInstance', _ARCP_OCEANLAB, '']
+
+      - Coordinates: [-1788, 0, -3800]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'PirateNetInstance', _ARCP_PIRATENET, '']
+
+      - Coordinates: [-787, 0, -4126]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'DeathMartInstance', _ARCP_DEATHMART, '']
+
+      - Coordinates: [264, 0, -4192]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'ArenaInstance', _ARCP_TRIBALARENA, '']
+
+      - Coordinates: [1298, 0, -3994]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'DeepMineInstance', _ARCP_INFESTEDDEEPMINE, '']
+
+      - Coordinates: [2250, 0, -3546]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'InfestedMineInstance', _ARCP_INFESTEDMINE, '']
+
+      # Stub slots for future POIs / instances
+      # - Coordinates: [3062, 0, -2875]
+      #   SectorMapType: Instance
+      #   Playfields:
+      #     - ['0,0,0', 'StubInstance08', _ARCP_STUB08, '']
+
+      # - Coordinates: [3680, 0, -2023]
+      #   SectorMapType: Instance
+      #   Playfields:
+      #     - ['0,0,0', 'StubInstance09', _ARCP_STUB09, '']
+
+      # - Coordinates: [4068, 0, -1044]
+      #   SectorMapType: Instance
+      #   Playfields:
+      #     - ['0,0,0', 'StubInstance10', _ARCP_STUB10, '']
+
+# Arcadia Station
+      - Coordinates: [90, 0, -45]
+        Color: 0.56,0.73,0.56
+        SectorMapType: Station
+        Playfields:
+          - ['0, 0, 0', Arcadia Station, _ARC_ARCADIASTATION,'Human:1', '', '', '']
