@@ -4,7 +4,7 @@ This mod merges Arcadia content into a **copy** of [Reforged Eden 2](https://ste
 
 **Recommended:** use [`Install-ArcadiaMod.ps1`]([Install-ArcadiaMod.ps1](https://github.com/RipDatPow/arcadia/blob/main/Install-Arcadia.ps1)) after preparing your RE2 scenario copy. It automates the merge and copy steps below and is much faster than doing them by hand.
 
-For additional details information, refer to the [Arcadia Project Structure](https://github.com/RipDatPow/arcadia/wiki/Project-Structure) page on the Arcadia wiki.
+For additional detailed information, refer to the [Arcadia Project Structure](https://github.com/RipDatPow/arcadia/wiki/Project-Structure) page on the Arcadia wiki.
 
 ---
 
