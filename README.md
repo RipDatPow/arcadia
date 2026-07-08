@@ -16,7 +16,7 @@ Read the Installation Instructions before installing (important).
 
 ## Links
 
-Wiki (coming soon)
+Wiki
 https://github.com/RipDatPow/arcadia/wiki
 
 Support (issues)
