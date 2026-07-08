@@ -2,7 +2,7 @@
 
 This mod merges Arcadia content into a **copy** of [Reforged Eden 2](https://steamcommunity.com/sharedfiles/filedetails/?id=3143225812) (Steam Workshop `3143225812`). It is not a standalone scenario.
 
-**Recommended:** use [`Install-ArcadiaMod.ps1`]([Install-ArcadiaMod.ps1](https://github.com/RipDatPow/arcadia/blob/main/Install-Arcadia.ps1)) after preparing your RE2 scenario copy. It automates the merge and copy steps below and is much faster than doing them by hand.
+**Recommended:** use [Install-Arcadia.ps1](https://github.com/RipDatPow/arcadia/blob/main/Install-Arcadia.ps1) after preparing your RE2 scenario copy. It automates the merge and copy steps below and is much faster than doing them by hand.
 
 For additional detailed information, refer to the [Arcadia Project Structure](https://github.com/RipDatPow/arcadia/wiki/Project-Structure) page on the Arcadia wiki.
 
@@ -26,7 +26,7 @@ Always start from a **new** RE2 copy. If you reinstall Arcadia on the same scena
 
 ## PowerShell Installation (Recommended)
 
-The script [`Install-ArcadiaMod.ps1`](Install-ArcadiaMod.ps1) in this repo performs steps 4–11 of the manual install automatically.
+The script [Install-Arcadia.ps1](https://github.com/RipDatPow/arcadia/blob/main/Install-Arcadia.ps1) in this repo performs steps 4–11 of the manual install automatically.
 
 ### What you need
 
@@ -41,7 +41,7 @@ Open PowerShell, go to this repo folder, and run:
 ```powershell
 cd "D:\Path\To\ArcadiaProject"
 
-.\Install-ArcadiaMod.ps1 -ScenarioPath "D:\Program Files (x86)\Steam\steamapps\common\Empyrion - Galactic Survival\Content\Scenarios\MyRE2Scenario"
+.\Install-Arcadia.ps1 -ScenarioPath "D:\Program Files (x86)\Steam\steamapps\common\Empyrion - Galactic Survival\Content\Scenarios\MyRE2Scenario"
 ```
 
 Replace the `-ScenarioPath` value with the full path to **your** RE2 scenario copy from step 3.
@@ -51,7 +51,7 @@ Replace the `-ScenarioPath` value with the full path to **your** RE2 scenario co
 To see what would change without writing any files:
 
 ```powershell
-.\Install-ArcadiaMod.ps1 -ScenarioPath "D:\Program Files (x86)\Steam\steamapps\common\Empyrion - Galactic Survival\Content\Scenarios\MyRE2Scenario" -WhatIf
+.\Install-Arcadia.ps1 -ScenarioPath "D:\Program Files (x86)\Steam\steamapps\common\Empyrion - Galactic Survival\Content\Scenarios\MyRE2Scenario" -WhatIf
 ```
 
 ### What the script does
