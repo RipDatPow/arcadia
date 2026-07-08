@@ -24,3 +24,6 @@ https://github.com/RipDatPow/arcadia/issues
 
 Website
 https://ripdatpow.wixsite.com/mods/arcadia
+
+Arcadia Project Structure
+https://github.com/RipDatPow/arcadia/wiki/Project-Structure
