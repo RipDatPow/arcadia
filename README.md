@@ -4,6 +4,8 @@ Arcadia BETA (Release: 7/7/2026)
 
 Arcadia is a NEW Empyrion Galactic Survival scenario add-on designed to be installed on top of Reforged Eden 2.
 
+![Screenshot](/SharedData/Extras/PDA/ArcArcadia.jpg)
+
 ## Key Details
 
 Arcadia must be installed into Reforged Eden 2 to function. It is not designed as a standalone scenario.
