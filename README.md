@@ -8,9 +8,9 @@ Arcadia is a NEW Empyrion Galactic Survival scenario add-on designed to be insta
 
 ## Key Details
 
-Arcadia must be installed into Reforged Eden 2 to function. It is not designed as a standalone scenario.
+Arcadia must be installed into Reforged Eden 2 to function. It is not designed as a standalone scenario. Look at the Arcadia Project Structure link below for more detailed info.
 
-RE2 not included: We don’t provide, distribute, or maintain Reforged Eden 2.
+RE2 not included: We don’t provide, distribute, or maintain Reforged Eden 2. BYORE2 :)
 
 Read the Installation Instructions before installing (important).
 
@@ -27,3 +27,6 @@ https://ripdatpow.wixsite.com/mods/arcadia
 
 Arcadia Project Structure
 https://github.com/RipDatPow/arcadia/wiki/Project-Structure
+
+Installation Instructions
+https://github.com/RipDatPow/arcadia/blob/main/Installation%20Instructions.md
